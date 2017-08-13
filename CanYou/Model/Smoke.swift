@@ -12,7 +12,7 @@ import UIKit
 struct Smoke {
     let id: Int
     let userId: Int
-    var date: Data?
+    var date: Date?
     
     init(userId: Int){
         self.id = 1

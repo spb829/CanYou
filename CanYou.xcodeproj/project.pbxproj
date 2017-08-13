@@ -17,6 +17,11 @@
 		07671BBA1F3F769500DD4E24 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BB91F3F769500DD4E24 /* UserStore.swift */; };
 		07671BBC1F3F797300DD4E24 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BBB1F3F797300DD4E24 /* DataController.swift */; };
 		076C2EF31F402FC100579914 /* RewardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2EF21F402FC100579914 /* RewardStore.swift */; };
+		076C2EF51F40332A00579914 /* BadgeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2EF41F40332A00579914 /* BadgeStore.swift */; };
+		076C2EF71F4033C100579914 /* HealthInfoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2EF61F4033C100579914 /* HealthInfoStore.swift */; };
+		076C2EF91F403D4C00579914 /* SmokeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2EF81F403D4C00579914 /* SmokeStore.swift */; };
+		076C2EFB1F4045C800579914 /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2EFA1F4045C800579914 /* MemoStore.swift */; };
+		076C2EFD1F404B4200579914 /* SettingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2EFC1F404B4200579914 /* SettingStore.swift */; };
 		077EEB0D1F3F070900555921 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077EEB0C1F3F070900555921 /* User.swift */; };
 		07AEE9031F3C42C300D20151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE9021F3C42C300D20151 /* AppDelegate.swift */; };
 		07AEE9051F3C42C300D20151 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE9041F3C42C300D20151 /* ViewController.swift */; };
@@ -56,6 +61,11 @@
 		07671BB91F3F769500DD4E24 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		07671BBB1F3F797300DD4E24 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		076C2EF21F402FC100579914 /* RewardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardStore.swift; sourceTree = "<group>"; };
+		076C2EF41F40332A00579914 /* BadgeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeStore.swift; sourceTree = "<group>"; };
+		076C2EF61F4033C100579914 /* HealthInfoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthInfoStore.swift; sourceTree = "<group>"; };
+		076C2EF81F403D4C00579914 /* SmokeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeStore.swift; sourceTree = "<group>"; };
+		076C2EFA1F4045C800579914 /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
+		076C2EFC1F404B4200579914 /* SettingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingStore.swift; sourceTree = "<group>"; };
 		077EEB0C1F3F070900555921 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		07AEE8FF1F3C42C300D20151 /* CanYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AEE9021F3C42C300D20151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -155,7 +165,9 @@
 			isa = PBXGroup;
 			children = (
 				07671BB51F3F750A00DD4E24 /* Setting.swift */,
+				076C2EFC1F404B4200579914 /* SettingStore.swift */,
 				07671BB71F3F75DF00DD4E24 /* Memo.swift */,
+				076C2EFA1F4045C800579914 /* MemoStore.swift */,
 				07AEE9091F3C42C300D20151 /* CanYou.xcdatamodeld */,
 				077EEB0C1F3F070900555921 /* User.swift */,
 				07671BB91F3F769500DD4E24 /* UserStore.swift */,
@@ -163,8 +175,11 @@
 				076C2EF21F402FC100579914 /* RewardStore.swift */,
 				07671BAD1F3F73B700DD4E24 /* BadgeUser.swift */,
 				07671BAF1F3F746100DD4E24 /* HealthInfo.swift */,
+				076C2EF61F4033C100579914 /* HealthInfoStore.swift */,
 				07671BB11F3F749B00DD4E24 /* Smoke.swift */,
+				076C2EF81F403D4C00579914 /* SmokeStore.swift */,
 				07671BA91F3F722100DD4E24 /* Badge.swift */,
+				076C2EF41F40332A00579914 /* BadgeStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -339,6 +354,10 @@
 				07AEE9051F3C42C300D20151 /* ViewController.swift in Sources */,
 				07671BB21F3F749B00DD4E24 /* Smoke.swift in Sources */,
 				076C2EF31F402FC100579914 /* RewardStore.swift in Sources */,
+				076C2EFB1F4045C800579914 /* MemoStore.swift in Sources */,
+				076C2EFD1F404B4200579914 /* SettingStore.swift in Sources */,
+				076C2EF91F403D4C00579914 /* SmokeStore.swift in Sources */,
+				076C2EF51F40332A00579914 /* BadgeStore.swift in Sources */,
 				07671BBA1F3F769500DD4E24 /* UserStore.swift in Sources */,
 				07671BB81F3F75DF00DD4E24 /* Memo.swift in Sources */,
 				07671BAC1F3F731600DD4E24 /* Reward.swift in Sources */,
@@ -346,6 +365,7 @@
 				07671BAE1F3F73B700DD4E24 /* BadgeUser.swift in Sources */,
 				07671BBC1F3F797300DD4E24 /* DataController.swift in Sources */,
 				07AEE9031F3C42C300D20151 /* AppDelegate.swift in Sources */,
+				076C2EF71F4033C100579914 /* HealthInfoStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,36 +10,32 @@ import Foundation
 import UIKit
 
 struct UserStore{
-    static var idCount = 0
-    static var items = [User]()
+    static let sharedUserStore = UserStore()
+    var idCount = 0
+    var items = [User]()
     
-    static func findBy(id: Int) -> User? {
-        for item in items {
-            if item.id == id {
-                return item
-            }
-        }
-        
-        return nil
+    private init() { }
+    
+    func findBy(id: Int) -> User? {
+        return items.filter({$0.id == id}).first
     }
     
-    static func findBy(name: String) -> User? {
-        for item in items {
-            if item.name == name {
-                return item
-            }
-        }
-        
-        return nil
+    func findBy(name: String) -> User? {
+        return items.filter({$0.name == name}).first
     }
     
-    static func filterBy(name: String) -> [User] {
+    func filterBy(name: String) -> [User] {
         return items.filter({$0.name == name})
     }
     
-    static func add(user: User){
+    @discardableResult mutating func createUser() -> User{
+//        let user = User(random: true)
+        let user = User()
+        
         items.append(user)
+        return user
     }
+    
     
 }
 

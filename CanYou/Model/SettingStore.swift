@@ -1,5 +1,5 @@
 //
-//  RewardStore.swift
+//  SettingStore.swift
 //  CanYou
 //
 //  Created by Macbook Pro on 2017. 8. 13..
@@ -9,33 +9,28 @@
 import Foundation
 import UIKit
 
-struct RewardStore{
-    static let sharedRewardStore = RewardStore()
+struct SettingStore{
+    static let sharedSettingStore = SettingStore()
     
     var idCount = 0
-    var items = [Reward]()
+    var items = [Setting]()
     
     private init() { }
     
-    func findBy(id: Int) -> Reward? {
+    func findBy(id: Int) -> Setting? {
         return items.filter({$0.id == id}).first
     }
     
-    func findBy(name: String) -> Reward? {
+    func findBy(name: String) -> Setting? {
         return items.filter({$0.name == name}).first
     }
     
-    func filterBy(name: String) -> [Reward] {
+    func filterBy(name: String) -> [Setting] {
         return items.filter({$0.name == name})
     }
     
-    func filterBy(userId: Int) -> [Reward] {
+    func filterBy(userId: Int) -> [Setting] {
         return items.filter({$0.userId == userId})
     }
-    
-    func filterBy(purchased: Bool) -> [Reward] {
-        return items.filter({$0.purchased == purchased})
-    }
-    
     
 }

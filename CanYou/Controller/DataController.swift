@@ -9,10 +9,14 @@
 import Foundation
 
 struct DataController {
-    //    static let userStore: UserStore
+    static let sharedDataController = DataController()
+    let userStore = UserStore.sharedUserStore
+    let badgeStore = BadgeStore.sharedBadgeStore
+    let rewardStore = RewardStore.sharedRewardStore
+    let healthInfoStore = HealthInfoStore.sharedHealthInfoStore
     
-    static func add(user: User) {
-        UserStore.add(user: user)
-    }
+
+    private init() { }
+    
     
 }

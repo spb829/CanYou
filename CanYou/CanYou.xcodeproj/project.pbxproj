@@ -22,9 +22,13 @@
 		076C2EF91F403D4C00579914 /* SmokeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2EF81F403D4C00579914 /* SmokeStore.swift */; };
 		076C2EFB1F4045C800579914 /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2EFA1F4045C800579914 /* MemoStore.swift */; };
 		076C2EFD1F404B4200579914 /* SettingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2EFC1F404B4200579914 /* SettingStore.swift */; };
+		076C2EFF1F4053AD00579914 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2EFE1F4053AD00579914 /* WelcomeViewController.swift */; };
+		076C2F011F4053C100579914 /* CanYouAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2F001F4053C100579914 /* CanYouAnimationViewController.swift */; };
+		076C2F031F4053FB00579914 /* CigaretteDailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2F021F4053FB00579914 /* CigaretteDailyViewController.swift */; };
+		076C2F051F40543800579914 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2F041F40543800579914 /* SettingTableViewController.swift */; };
 		077EEB0D1F3F070900555921 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077EEB0C1F3F070900555921 /* User.swift */; };
+		07A35BE51F405BCB00482782 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A35BE41F405BCB00482782 /* DashBoardViewController.swift */; };
 		07AEE9031F3C42C300D20151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE9021F3C42C300D20151 /* AppDelegate.swift */; };
-		07AEE9051F3C42C300D20151 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE9041F3C42C300D20151 /* ViewController.swift */; };
 		07AEE9081F3C42C300D20151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AEE9061F3C42C300D20151 /* Main.storyboard */; };
 		07AEE90B1F3C42C300D20151 /* CanYou.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE9091F3C42C300D20151 /* CanYou.xcdatamodeld */; };
 		07AEE90D1F3C42C300D20151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07AEE90C1F3C42C300D20151 /* Assets.xcassets */; };
@@ -66,10 +70,14 @@
 		076C2EF81F403D4C00579914 /* SmokeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeStore.swift; sourceTree = "<group>"; };
 		076C2EFA1F4045C800579914 /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
 		076C2EFC1F404B4200579914 /* SettingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingStore.swift; sourceTree = "<group>"; };
+		076C2EFE1F4053AD00579914 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		076C2F001F4053C100579914 /* CanYouAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanYouAnimationViewController.swift; sourceTree = "<group>"; };
+		076C2F021F4053FB00579914 /* CigaretteDailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CigaretteDailyViewController.swift; sourceTree = "<group>"; };
+		076C2F041F40543800579914 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		077EEB0C1F3F070900555921 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		07A35BE41F405BCB00482782 /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DashBoardViewController.swift; path = CanYou/ViewController/DashBoardViewController.swift; sourceTree = SOURCE_ROOT; };
 		07AEE8FF1F3C42C300D20151 /* CanYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AEE9021F3C42C300D20151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07AEE9041F3C42C300D20151 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07AEE9071F3C42C300D20151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07AEE90A1F3C42C300D20151 /* CanYou.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CanYou.xcdatamodel; sourceTree = "<group>"; };
 		07AEE90C1F3C42C300D20151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -194,7 +202,11 @@
 		07AEE9351F3C46E700D20151 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				07AEE9041F3C42C300D20151 /* ViewController.swift */,
+				076C2F001F4053C100579914 /* CanYouAnimationViewController.swift */,
+				07A35BE41F405BCB00482782 /* DashBoardViewController.swift */,
+				076C2F021F4053FB00579914 /* CigaretteDailyViewController.swift */,
+				076C2EFE1F4053AD00579914 /* WelcomeViewController.swift */,
+				076C2F041F40543800579914 /* SettingTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -348,21 +360,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				07671BB61F3F750A00DD4E24 /* Setting.swift in Sources */,
+				076C2EFF1F4053AD00579914 /* WelcomeViewController.swift in Sources */,
 				077EEB0D1F3F070900555921 /* User.swift in Sources */,
 				07671BAA1F3F722100DD4E24 /* Badge.swift in Sources */,
 				07AEE90B1F3C42C300D20151 /* CanYou.xcdatamodeld in Sources */,
-				07AEE9051F3C42C300D20151 /* ViewController.swift in Sources */,
 				07671BB21F3F749B00DD4E24 /* Smoke.swift in Sources */,
 				076C2EF31F402FC100579914 /* RewardStore.swift in Sources */,
 				076C2EFB1F4045C800579914 /* MemoStore.swift in Sources */,
 				076C2EFD1F404B4200579914 /* SettingStore.swift in Sources */,
+				076C2F011F4053C100579914 /* CanYouAnimationViewController.swift in Sources */,
 				076C2EF91F403D4C00579914 /* SmokeStore.swift in Sources */,
 				076C2EF51F40332A00579914 /* BadgeStore.swift in Sources */,
 				07671BBA1F3F769500DD4E24 /* UserStore.swift in Sources */,
+				07A35BE51F405BCB00482782 /* DashBoardViewController.swift in Sources */,
 				07671BB81F3F75DF00DD4E24 /* Memo.swift in Sources */,
 				07671BAC1F3F731600DD4E24 /* Reward.swift in Sources */,
 				07671BB01F3F746100DD4E24 /* HealthInfo.swift in Sources */,
+				076C2F031F4053FB00579914 /* CigaretteDailyViewController.swift in Sources */,
 				07671BAE1F3F73B700DD4E24 /* BadgeUser.swift in Sources */,
+				076C2F051F40543800579914 /* SettingTableViewController.swift in Sources */,
 				07671BBC1F3F797300DD4E24 /* DataController.swift in Sources */,
 				07AEE9031F3C42C300D20151 /* AppDelegate.swift in Sources */,
 				076C2EF71F4033C100579914 /* HealthInfoStore.swift in Sources */,

@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07671BAA1F3F722100DD4E24 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BA91F3F722100DD4E24 /* Badge.swift */; };
+		07671BAC1F3F731600DD4E24 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BAB1F3F731600DD4E24 /* Reward.swift */; };
+		07671BAE1F3F73B700DD4E24 /* BadgeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BAD1F3F73B700DD4E24 /* BadgeUser.swift */; };
+		07671BB01F3F746100DD4E24 /* HealthInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BAF1F3F746100DD4E24 /* HealthInfo.swift */; };
+		07671BB21F3F749B00DD4E24 /* Smoke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BB11F3F749B00DD4E24 /* Smoke.swift */; };
+		07671BB61F3F750A00DD4E24 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BB51F3F750A00DD4E24 /* Setting.swift */; };
+		07671BB81F3F75DF00DD4E24 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BB71F3F75DF00DD4E24 /* Memo.swift */; };
+		07671BBA1F3F769500DD4E24 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BB91F3F769500DD4E24 /* UserStore.swift */; };
+		07671BBC1F3F797300DD4E24 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BBB1F3F797300DD4E24 /* DataController.swift */; };
+		076C2EF31F402FC100579914 /* RewardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2EF21F402FC100579914 /* RewardStore.swift */; };
+		077EEB0D1F3F070900555921 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077EEB0C1F3F070900555921 /* User.swift */; };
 		07AEE9031F3C42C300D20151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE9021F3C42C300D20151 /* AppDelegate.swift */; };
 		07AEE9051F3C42C300D20151 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE9041F3C42C300D20151 /* ViewController.swift */; };
 		07AEE9081F3C42C300D20151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AEE9061F3C42C300D20151 /* Main.storyboard */; };
@@ -35,6 +46,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07671BA91F3F722100DD4E24 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		07671BAB1F3F731600DD4E24 /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
+		07671BAD1F3F73B700DD4E24 /* BadgeUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeUser.swift; sourceTree = "<group>"; };
+		07671BAF1F3F746100DD4E24 /* HealthInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthInfo.swift; sourceTree = "<group>"; };
+		07671BB11F3F749B00DD4E24 /* Smoke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smoke.swift; sourceTree = "<group>"; };
+		07671BB51F3F750A00DD4E24 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		07671BB71F3F75DF00DD4E24 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		07671BB91F3F769500DD4E24 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		07671BBB1F3F797300DD4E24 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		076C2EF21F402FC100579914 /* RewardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardStore.swift; sourceTree = "<group>"; };
+		077EEB0C1F3F070900555921 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		07AEE8FF1F3C42C300D20151 /* CanYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AEE9021F3C42C300D20151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07AEE9041F3C42C300D20151 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -132,7 +154,17 @@
 		07AEE9331F3C46D800D20151 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				07671BB51F3F750A00DD4E24 /* Setting.swift */,
+				07671BB71F3F75DF00DD4E24 /* Memo.swift */,
 				07AEE9091F3C42C300D20151 /* CanYou.xcdatamodeld */,
+				077EEB0C1F3F070900555921 /* User.swift */,
+				07671BB91F3F769500DD4E24 /* UserStore.swift */,
+				07671BAB1F3F731600DD4E24 /* Reward.swift */,
+				076C2EF21F402FC100579914 /* RewardStore.swift */,
+				07671BAD1F3F73B700DD4E24 /* BadgeUser.swift */,
+				07671BAF1F3F746100DD4E24 /* HealthInfo.swift */,
+				07671BB11F3F749B00DD4E24 /* Smoke.swift */,
+				07671BA91F3F722100DD4E24 /* Badge.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -155,6 +187,7 @@
 		07AEE9361F3C46EE00D20151 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				07671BBB1F3F797300DD4E24 /* DataController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -299,8 +332,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07671BB61F3F750A00DD4E24 /* Setting.swift in Sources */,
+				077EEB0D1F3F070900555921 /* User.swift in Sources */,
+				07671BAA1F3F722100DD4E24 /* Badge.swift in Sources */,
 				07AEE90B1F3C42C300D20151 /* CanYou.xcdatamodeld in Sources */,
 				07AEE9051F3C42C300D20151 /* ViewController.swift in Sources */,
+				07671BB21F3F749B00DD4E24 /* Smoke.swift in Sources */,
+				076C2EF31F402FC100579914 /* RewardStore.swift in Sources */,
+				07671BBA1F3F769500DD4E24 /* UserStore.swift in Sources */,
+				07671BB81F3F75DF00DD4E24 /* Memo.swift in Sources */,
+				07671BAC1F3F731600DD4E24 /* Reward.swift in Sources */,
+				07671BB01F3F746100DD4E24 /* HealthInfo.swift in Sources */,
+				07671BAE1F3F73B700DD4E24 /* BadgeUser.swift in Sources */,
+				07671BBC1F3F797300DD4E24 /* DataController.swift in Sources */,
 				07AEE9031F3C42C300D20151 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,7 +448,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -455,7 +499,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -469,6 +513,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RD94QKXJBK;
 				INFOPLIST_FILE = CanYou/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Eric.Park.CanYou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -483,6 +528,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RD94QKXJBK;
 				INFOPLIST_FILE = CanYou/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Eric.Park.CanYou;
 				PRODUCT_NAME = "$(TARGET_NAME)";

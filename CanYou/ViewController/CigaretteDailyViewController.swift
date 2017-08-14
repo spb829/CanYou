@@ -1,5 +1,5 @@
 //
-//  CanYouAnimationViewController.swift
+//  CigaretteDailyViewController.swift
 //  CanYou
 //
 //  Created by Macbook Pro on 2017. 8. 13..
@@ -8,12 +8,15 @@
 
 import UIKit
 
-class CanYouAnimationViewController: UIViewController {
+class CigaretteDailyViewController: UIViewController {
 
+    @IBOutlet var cigarettePicker: UIPickerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+//        cigarettePicker.dataSource
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +24,16 @@ class CanYouAnimationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+//        if segue.identifier == "" {
+//
+//        }
+//        let dvc = segue.destination as!
+        
+        
+    }
 
     /*
     // MARK: - Navigation

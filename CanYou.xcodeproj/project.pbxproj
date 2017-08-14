@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		075860D11F41908300E974F8 /* PageContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075860D01F41908300E974F8 /* PageContainerView.swift */; };
+		075860D31F4191F900E974F8 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075860D21F4191F900E974F8 /* ContentViewController.swift */; };
 		07671BAA1F3F722100DD4E24 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BA91F3F722100DD4E24 /* Badge.swift */; };
 		07671BAC1F3F731600DD4E24 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BAB1F3F731600DD4E24 /* Reward.swift */; };
 		07671BAE1F3F73B700DD4E24 /* BadgeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BAD1F3F73B700DD4E24 /* BadgeUser.swift */; };
@@ -28,6 +30,7 @@
 		076C2F051F40543800579914 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2F041F40543800579914 /* SettingTableViewController.swift */; };
 		077EEB0D1F3F070900555921 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077EEB0C1F3F070900555921 /* User.swift */; };
 		07A35BE51F405BCB00482782 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A35BE41F405BCB00482782 /* DashBoardViewController.swift */; };
+		07A3692A1F41D110000E2152 /* RootContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A369291F41D110000E2152 /* RootContainerViewController.swift */; };
 		07AEE9031F3C42C300D20151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE9021F3C42C300D20151 /* AppDelegate.swift */; };
 		07AEE9081F3C42C300D20151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AEE9061F3C42C300D20151 /* Main.storyboard */; };
 		07AEE90B1F3C42C300D20151 /* CanYou.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE9091F3C42C300D20151 /* CanYou.xcdatamodeld */; };
@@ -35,6 +38,9 @@
 		07AEE9101F3C42C300D20151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AEE90E1F3C42C300D20151 /* LaunchScreen.storyboard */; };
 		07AEE91B1F3C42C300D20151 /* CanYouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE91A1F3C42C300D20151 /* CanYouTests.swift */; };
 		07AEE9261F3C42C300D20151 /* CanYouUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE9251F3C42C300D20151 /* CanYouUITests.swift */; };
+		735E64F5C8A60F123E41F5BC /* Pods_CanYou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68EC1597700C0C088E5E9FE /* Pods_CanYou.framework */; };
+		C78FDA625A8333DE631DCB54 /* Pods_CanYouUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E59EA89B007D083A911E394 /* Pods_CanYouUITests.framework */; };
+		E87BC8024917941DA61B00F4 /* Pods_CanYouTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C6106EE8B9374A6041525E8 /* Pods_CanYouTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		075860D01F41908300E974F8 /* PageContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContainerView.swift; sourceTree = "<group>"; };
+		075860D21F4191F900E974F8 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		07671BA91F3F722100DD4E24 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		07671BAB1F3F731600DD4E24 /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
 		07671BAD1F3F73B700DD4E24 /* BadgeUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeUser.swift; sourceTree = "<group>"; };
@@ -76,6 +84,7 @@
 		076C2F041F40543800579914 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		077EEB0C1F3F070900555921 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		07A35BE41F405BCB00482782 /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DashBoardViewController.swift; path = CanYou/ViewController/DashBoardViewController.swift; sourceTree = SOURCE_ROOT; };
+		07A369291F41D110000E2152 /* RootContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContainerViewController.swift; sourceTree = "<group>"; };
 		07AEE8FF1F3C42C300D20151 /* CanYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AEE9021F3C42C300D20151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07AEE9071F3C42C300D20151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -89,6 +98,15 @@
 		07AEE9211F3C42C300D20151 /* CanYouUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanYouUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AEE9251F3C42C300D20151 /* CanYouUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanYouUITests.swift; sourceTree = "<group>"; };
 		07AEE9271F3C42C300D20151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CF4F5D980388B138AD363A2 /* Pods-CanYou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYou.release.xcconfig"; path = "Pods/Target Support Files/Pods-CanYou/Pods-CanYou.release.xcconfig"; sourceTree = "<group>"; };
+		314969725ABD038B2CCF0EAE /* Pods-CanYou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CanYou/Pods-CanYou.debug.xcconfig"; sourceTree = "<group>"; };
+		3B382BEF1EA30F19F7EA85B3 /* Pods-CanYouTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYouTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CanYouTests/Pods-CanYouTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B566975E1254538347BAC5C /* Pods-CanYouTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYouTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CanYouTests/Pods-CanYouTests.release.xcconfig"; sourceTree = "<group>"; };
+		5471B3C809B0FF480CC38D51 /* Pods-CanYouUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYouUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CanYouUITests/Pods-CanYouUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		62E64C404BC64A87BB6D734A /* Pods-CanYouUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYouUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CanYouUITests/Pods-CanYouUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6C6106EE8B9374A6041525E8 /* Pods_CanYouTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanYouTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E59EA89B007D083A911E394 /* Pods_CanYouUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanYouUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A68EC1597700C0C088E5E9FE /* Pods_CanYou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanYou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				735E64F5C8A60F123E41F5BC /* Pods_CanYou.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E87BC8024917941DA61B00F4 /* Pods_CanYouTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C78FDA625A8333DE631DCB54 /* Pods_CanYouUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +144,8 @@
 				07AEE9191F3C42C300D20151 /* CanYouTests */,
 				07AEE9241F3C42C300D20151 /* CanYouUITests */,
 				07AEE9001F3C42C300D20151 /* Products */,
+				7810245A5A03C9A8A5843EA6 /* Pods */,
+				A3286EFD903A0715BD487337 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,6 +218,7 @@
 		07AEE9341F3C46DF00D20151 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				075860D01F41908300E974F8 /* PageContainerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -202,6 +226,8 @@
 		07AEE9351F3C46E700D20151 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				07A369291F41D110000E2152 /* RootContainerViewController.swift */,
+				075860D21F4191F900E974F8 /* ContentViewController.swift */,
 				076C2F001F4053C100579914 /* CanYouAnimationViewController.swift */,
 				07A35BE41F405BCB00482782 /* DashBoardViewController.swift */,
 				076C2F021F4053FB00579914 /* CigaretteDailyViewController.swift */,
@@ -228,6 +254,29 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		7810245A5A03C9A8A5843EA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				314969725ABD038B2CCF0EAE /* Pods-CanYou.debug.xcconfig */,
+				0CF4F5D980388B138AD363A2 /* Pods-CanYou.release.xcconfig */,
+				3B382BEF1EA30F19F7EA85B3 /* Pods-CanYouTests.debug.xcconfig */,
+				3B566975E1254538347BAC5C /* Pods-CanYouTests.release.xcconfig */,
+				5471B3C809B0FF480CC38D51 /* Pods-CanYouUITests.debug.xcconfig */,
+				62E64C404BC64A87BB6D734A /* Pods-CanYouUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A3286EFD903A0715BD487337 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A68EC1597700C0C088E5E9FE /* Pods_CanYou.framework */,
+				6C6106EE8B9374A6041525E8 /* Pods_CanYouTests.framework */,
+				8E59EA89B007D083A911E394 /* Pods_CanYouUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -235,9 +284,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07AEE92A1F3C42C300D20151 /* Build configuration list for PBXNativeTarget "CanYou" */;
 			buildPhases = (
+				97797136F1DFC0BC6CDB07F5 /* [CP] Check Pods Manifest.lock */,
 				07AEE8FB1F3C42C300D20151 /* Sources */,
 				07AEE8FC1F3C42C300D20151 /* Frameworks */,
 				07AEE8FD1F3C42C300D20151 /* Resources */,
+				952CDB4E0C2221916C61A0EF /* [CP] Embed Pods Frameworks */,
+				9FFEDE9485B9C8ED5C21A380 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,9 +304,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07AEE92D1F3C42C300D20151 /* Build configuration list for PBXNativeTarget "CanYouTests" */;
 			buildPhases = (
+				60BD4AA80219CD952FE01C44 /* [CP] Check Pods Manifest.lock */,
 				07AEE9121F3C42C300D20151 /* Sources */,
 				07AEE9131F3C42C300D20151 /* Frameworks */,
 				07AEE9141F3C42C300D20151 /* Resources */,
+				C23F5B7097F0A78773F08438 /* [CP] Embed Pods Frameworks */,
+				A23413FD1A73899C4DB5F27B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,9 +325,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07AEE9301F3C42C300D20151 /* Build configuration list for PBXNativeTarget "CanYouUITests" */;
 			buildPhases = (
+				988A909DA079DBCFBB696100 /* [CP] Check Pods Manifest.lock */,
 				07AEE91D1F3C42C300D20151 /* Sources */,
 				07AEE91E1F3C42C300D20151 /* Frameworks */,
 				07AEE91F1F3C42C300D20151 /* Resources */,
+				CD7D80A8377A3CE62FE2B445 /* [CP] Embed Pods Frameworks */,
+				B92B842CE5CEC37EF58B719A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -354,6 +412,156 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		60BD4AA80219CD952FE01C44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CanYouTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		952CDB4E0C2221916C61A0EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CanYou/Pods-CanYou-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CanYou/Pods-CanYou-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97797136F1DFC0BC6CDB07F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CanYou-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		988A909DA079DBCFBB696100 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CanYouUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FFEDE9485B9C8ED5C21A380 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CanYou/Pods-CanYou-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A23413FD1A73899C4DB5F27B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CanYouTests/Pods-CanYouTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B92B842CE5CEC37EF58B719A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CanYouUITests/Pods-CanYouUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C23F5B7097F0A78773F08438 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CanYouTests/Pods-CanYouTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD7D80A8377A3CE62FE2B445 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CanYouUITests/Pods-CanYouUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		07AEE8FB1F3C42C300D20151 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -366,14 +574,17 @@
 				07AEE90B1F3C42C300D20151 /* CanYou.xcdatamodeld in Sources */,
 				07671BB21F3F749B00DD4E24 /* Smoke.swift in Sources */,
 				076C2EF31F402FC100579914 /* RewardStore.swift in Sources */,
+				075860D11F41908300E974F8 /* PageContainerView.swift in Sources */,
 				076C2EFB1F4045C800579914 /* MemoStore.swift in Sources */,
 				076C2EFD1F404B4200579914 /* SettingStore.swift in Sources */,
 				076C2F011F4053C100579914 /* CanYouAnimationViewController.swift in Sources */,
 				076C2EF91F403D4C00579914 /* SmokeStore.swift in Sources */,
 				076C2EF51F40332A00579914 /* BadgeStore.swift in Sources */,
+				07A3692A1F41D110000E2152 /* RootContainerViewController.swift in Sources */,
 				07671BBA1F3F769500DD4E24 /* UserStore.swift in Sources */,
 				07A35BE51F405BCB00482782 /* DashBoardViewController.swift in Sources */,
 				07671BB81F3F75DF00DD4E24 /* Memo.swift in Sources */,
+				075860D31F4191F900E974F8 /* ContentViewController.swift in Sources */,
 				07671BAC1F3F731600DD4E24 /* Reward.swift in Sources */,
 				07671BB01F3F746100DD4E24 /* HealthInfo.swift in Sources */,
 				076C2F031F4053FB00579914 /* CigaretteDailyViewController.swift in Sources */,
@@ -545,6 +756,7 @@
 		};
 		07AEE92B1F3C42C300D20151 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 314969725ABD038B2CCF0EAE /* Pods-CanYou.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RD94QKXJBK;
@@ -560,6 +772,7 @@
 		};
 		07AEE92C1F3C42C300D20151 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CF4F5D980388B138AD363A2 /* Pods-CanYou.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RD94QKXJBK;
@@ -575,6 +788,7 @@
 		};
 		07AEE92E1F3C42C300D20151 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B382BEF1EA30F19F7EA85B3 /* Pods-CanYouTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -591,6 +805,7 @@
 		};
 		07AEE92F1F3C42C300D20151 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B566975E1254538347BAC5C /* Pods-CanYouTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -607,6 +822,7 @@
 		};
 		07AEE9311F3C42C300D20151 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5471B3C809B0FF480CC38D51 /* Pods-CanYouUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = RD94QKXJBK;
@@ -622,6 +838,7 @@
 		};
 		07AEE9321F3C42C300D20151 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62E64C404BC64A87BB6D734A /* Pods-CanYouUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = RD94QKXJBK;

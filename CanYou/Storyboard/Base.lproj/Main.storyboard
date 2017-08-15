@@ -171,7 +171,7 @@
         <!--DashBoard View Controller-->
         <scene sceneID="TF4-J5-u7d">
             <objects>
-                <viewController id="TiN-ey-giU" userLabel="DashBoard View Controller" customClass="DashBoardViewController" customModule="CanYou" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DashBoardViewController" id="TiN-ey-giU" userLabel="DashBoard View Controller" customClass="DashBoardViewController" customModule="CanYou" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3pL-SP-sdk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -314,7 +314,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kUG-YV-h96" firstAttribute="leading" secondItem="f5S-cn-dec" secondAttribute="leading" constant="16" id="3y2-p8-5dL"/>
                             <constraint firstItem="aJp-Nz-Gxt" firstAttribute="leading" secondItem="3tb-77-NWs" secondAttribute="trailing" constant="30" id="BLj-89-8PF"/>
@@ -416,61 +416,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9mp-1l-Uw9"/>
                     </view>
-                    <connections>
-                        <outlet property="pageContainerView" destination="kf6-Qh-g25" id="yi0-Xe-ZSY"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fB9-lx-wVD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2685.5999999999999" y="857.72113943028489"/>
-        </scene>
-        <!--Content View Controller-->
-        <scene sceneID="Jlh-9T-iqG">
-            <objects>
-                <viewController id="Fwg-Tn-rHg" customClass="ContentViewController" customModule="CanYou" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ePM-37-V8u">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xs0-rE-aD8">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view alpha="0.20000000000000001" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kf6-Qh-g25" customClass="PageContainerView" customModule="CanYou" customModuleProvider="target">
-                                <rect key="frame" x="16" y="20" width="343" height="587"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Xs0-rE-aD8" firstAttribute="top" secondItem="I7k-w1-Jfu" secondAttribute="top" id="1E7-g2-3Q0"/>
-                            <constraint firstItem="I7k-w1-Jfu" firstAttribute="bottom" secondItem="Xs0-rE-aD8" secondAttribute="bottom" id="IBn-l9-bxC"/>
-                            <constraint firstItem="I7k-w1-Jfu" firstAttribute="trailing" secondItem="Xs0-rE-aD8" secondAttribute="trailing" id="Vph-IX-Emg"/>
-                            <constraint firstItem="Xs0-rE-aD8" firstAttribute="leading" secondItem="I7k-w1-Jfu" secondAttribute="leading" id="h0H-jy-W0w"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="I7k-w1-Jfu"/>
-                    </view>
-                    <connections>
-                        <outlet property="mainLabel" destination="Xs0-rE-aD8" id="fqw-Xo-fUM"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uEl-9a-aZq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3446" y="858"/>
         </scene>
     </scenes>
 </document>

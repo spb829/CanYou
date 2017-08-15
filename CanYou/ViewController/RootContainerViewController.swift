@@ -21,16 +21,38 @@ class RootContainerViewController: UIViewController {
         $0.currentPage = 0
     }
     
-    var cardViews = [UILabel]()
+    var cardViews = [PageContainerView]()
     var cardIndex: Int = 0
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+//    var dashBoardViewController: DashBoardViewController = DashBoardViewController()
+    private lazy var dashBoardViewController: DashBoardViewController = {
+        // Load Storyboard
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         
+        // Instantiate View Controller
+        var viewController = storyboard.instantiateViewController(withIdentifier: "DashBoardViewController") as! DashBoardViewController
+        
+        // Add View Controller as Child View Controller
+        self.addChildViewController(viewController)
+        
+        return viewController
+    }()
+    
+    
+    override func viewDidLoad() {
+        print("viewDidLoad")
+        super.viewDidLoad()
+//        initChildViewcontrollers()
         initViews()
     }
     
+    func initChildViewcontrollers(){
+        print("initChildViewControllers")
+        self.addChildViewController(dashBoardViewController)
+    }
+    
     func initViews() {
+        print("initViews")
         initCardViews()
         
         self.scrollView.delegate = self
@@ -38,18 +60,24 @@ class RootContainerViewController: UIViewController {
         
         self.view.addSubview(self.scrollView)
         self.view.addSubview(self.pageControl)
+        
     }
     
+    
     func initCardViews() {
+        print("initCardViews")
         for i in 0...2 {
-            let cardView = UILabel().then {
-                $0.text = String(i)
-                $0.textAlignment = .center
+            let cardView = PageContainerView().then {
+                $0.backgroundColor = UIColor.cyan
             }
             
             switch i {
             case 0:
-                cardView.backgroundColor = UIColor.cyan
+                cardView.view.addSubview(dashBoardViewController.view)
+                dashBoardViewController.view.frame = cardView.view.bounds
+                dashBoardViewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+                dashBoardViewController.didMove(toParentViewController: self)
+//                cardView.backgroundColor = UIColor.cyan
             case 1:
                 cardView.backgroundColor = UIColor.red
             case 2:
@@ -61,13 +89,15 @@ class RootContainerViewController: UIViewController {
             self.cardViews.append(cardView)
             self.scrollView.addSubview(cardView)
         }
+        print("initCardViews ends")
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
-        let size = self.view.frame.size
+        print("viewWillLayoutSubviews")
         
+        let size = self.view.frame.size
         let barHeight = UIApplication.shared.statusBarFrame.height
         
         self.scrollView.frame = CGRect(x: 0, y: barHeight + 16, width: size.width, height: size.height - 16 - 80)
@@ -81,6 +111,8 @@ class RootContainerViewController: UIViewController {
     }
     
     func updateCardLayout(_ index: Int) {
+        print("updateCardLayout")
+        
         self.cardIndex = index
         self.pageControl.currentPage = self.cardIndex
         
@@ -88,17 +120,17 @@ class RootContainerViewController: UIViewController {
         
         switch self.cardIndex {
         case 0:
-            cardViews[2].frame = CGRect(x: 0, y: 0, width: size.width, height: size.height)
-            cardViews[0].frame = CGRect(x: size.width, y: 0, width: size.width, height: size.height)
-            cardViews[1].frame = CGRect(x: size.width * 2, y: 0, width: size.width, height: size.height)
+            cardViews[2].updateFrame(x: 0, y: 0, width: size.width, height: size.height)
+            cardViews[0].updateFrame(x: size.width, y: 0, width: size.width, height: size.height)
+            cardViews[1].updateFrame(x: size.width * 2, y: 0, width: size.width, height: size.height)
         case 1:
-            cardViews[0].frame = CGRect(x: 0, y: 0, width: size.width, height: size.height)
-            cardViews[1].frame = CGRect(x: size.width, y: 0, width: size.width, height: size.height)
-            cardViews[2].frame = CGRect(x: size.width * 2, y: 0, width: size.width, height: size.height)
+            cardViews[0].updateFrame(x: 0, y: 0, width: size.width, height: size.height)
+            cardViews[1].updateFrame(x: size.width, y: 0, width: size.width, height: size.height)
+            cardViews[2].updateFrame(x: size.width * 2, y: 0, width: size.width, height: size.height)
         case 2:
-            cardViews[1].frame = CGRect(x: 0, y: 0, width: size.width, height: size.height)
-            cardViews[2].frame = CGRect(x: size.width, y: 0, width: size.width, height: size.height)
-            cardViews[0].frame = CGRect(x: size.width * 2, y: 0, width: size.width, height: size.height)
+            cardViews[1].updateFrame(x: 0, y: 0, width: size.width, height: size.height)
+            cardViews[2].updateFrame(x: size.width, y: 0, width: size.width, height: size.height)
+            cardViews[0].updateFrame(x: size.width * 2, y: 0, width: size.width, height: size.height)
         default:
             break
         }

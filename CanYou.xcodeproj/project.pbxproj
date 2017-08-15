@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		075860D11F41908300E974F8 /* PageContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075860D01F41908300E974F8 /* PageContainerView.swift */; };
-		075860D31F4191F900E974F8 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075860D21F4191F900E974F8 /* ContentViewController.swift */; };
 		07671BAA1F3F722100DD4E24 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BA91F3F722100DD4E24 /* Badge.swift */; };
 		07671BAC1F3F731600DD4E24 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BAB1F3F731600DD4E24 /* Reward.swift */; };
 		07671BAE1F3F73B700DD4E24 /* BadgeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BAD1F3F73B700DD4E24 /* BadgeUser.swift */; };
@@ -62,7 +61,6 @@
 
 /* Begin PBXFileReference section */
 		075860D01F41908300E974F8 /* PageContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContainerView.swift; sourceTree = "<group>"; };
-		075860D21F4191F900E974F8 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		07671BA91F3F722100DD4E24 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		07671BAB1F3F731600DD4E24 /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
 		07671BAD1F3F73B700DD4E24 /* BadgeUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeUser.swift; sourceTree = "<group>"; };
@@ -227,7 +225,6 @@
 			isa = PBXGroup;
 			children = (
 				07A369291F41D110000E2152 /* RootContainerViewController.swift */,
-				075860D21F4191F900E974F8 /* ContentViewController.swift */,
 				076C2F001F4053C100579914 /* CanYouAnimationViewController.swift */,
 				07A35BE41F405BCB00482782 /* DashBoardViewController.swift */,
 				076C2F021F4053FB00579914 /* CigaretteDailyViewController.swift */,
@@ -584,7 +581,6 @@
 				07671BBA1F3F769500DD4E24 /* UserStore.swift in Sources */,
 				07A35BE51F405BCB00482782 /* DashBoardViewController.swift in Sources */,
 				07671BB81F3F75DF00DD4E24 /* Memo.swift in Sources */,
-				075860D31F4191F900E974F8 /* ContentViewController.swift in Sources */,
 				07671BAC1F3F731600DD4E24 /* Reward.swift in Sources */,
 				07671BB01F3F746100DD4E24 /* HealthInfo.swift in Sources */,
 				076C2F031F4053FB00579914 /* CigaretteDailyViewController.swift in Sources */,

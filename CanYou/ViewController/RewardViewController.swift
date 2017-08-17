@@ -1,23 +1,20 @@
 //
-//  CigaretteDailyViewController.swift
+//  RewardViewController.swift
 //  CanYou
 //
-//  Created by Macbook Pro on 2017. 8. 13..
+//  Created by Macbook Pro on 2017. 8. 15..
 //  Copyright © 2017년 Eric Park. All rights reserved.
 //
 
 import UIKit
 
-class CigaretteDailyViewController: UIViewController {
-
-    @IBOutlet var cigaretteDaily: UITextField!
+class RewardViewController: UIViewController {
     var dataController = DataController.sharedDataController
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Do any additional setup after loading the view.
-//        cigarettePicker.dataSource
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,18 +22,6 @@ class CigaretteDailyViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        super.prepare(for: segue, sender: sender)
-        
-        
-//        if segue.identifier == "" {
-//
-//        }
-        var user = dataController.signUp()
-        if let text = cigaretteDaily.text {
-            user.cigaretteDaily = Int(text)
-        }
-    }
 
     /*
     // MARK: - Navigation

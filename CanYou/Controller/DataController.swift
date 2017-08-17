@@ -10,13 +10,17 @@ import Foundation
 
 struct DataController {
     static let sharedDataController = DataController()
-    let userStore = UserStore.sharedUserStore
-    let badgeStore = BadgeStore.sharedBadgeStore
-    let rewardStore = RewardStore.sharedRewardStore
-    let healthInfoStore = HealthInfoStore.sharedHealthInfoStore
-    
+    var userStore = UserStore.sharedUserStore
+    var badgeStore = BadgeStore.sharedBadgeStore
+    var rewardStore = RewardStore.sharedRewardStore
+    var healthInfoStore = HealthInfoStore.sharedHealthInfoStore
+    var currentUser: User?
 
     private init() { }
     
+    @discardableResult mutating func signUp() -> User {
+        self.currentUser = userStore.createUser()
+        return self.currentUser!
+    }
     
 }

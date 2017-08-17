@@ -11,14 +11,14 @@ import UIKit
 
 struct User {
     let id: Int
-    var name: String?
-    var birth: Date?
-    var gender: String?
-    var startDate: Date?
+    var name: String = ""
+    var birth: Date = Date()
+    var gender: String = "남"
+    var startDate: Date = Date()
     
-    var cigaretteDaily: Int?
-    var cigarettePrice: Int?
-    var canValue: Int?
+    var cigaretteDaily: Int = 1
+    var cigarettePrice: Int = 4500
+    var canValue: Int = 0
     
     init(){
         self.id = 1

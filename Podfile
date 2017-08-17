@@ -9,7 +9,7 @@ target 'CanYou' do
 
   # Pods for CanYou
   pod 'Then'
-  pod 'SnapKit', '~> 4.0.0'
+  pod 'SnapKit', '~> 3.2.0'
 
   target 'CanYouTests' do
     inherit! :search_paths

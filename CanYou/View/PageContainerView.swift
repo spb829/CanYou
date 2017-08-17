@@ -10,9 +10,10 @@ import UIKit
 
 class PageContainerView: UIView {
     var view = UIView().then {
-        $0.layer.cornerRadius = 20
-        $0.layer.borderWidth = 1
-        $0.layer.borderColor = UIColor.black.cgColor
+        $0.layer.cornerRadius = 10
+//        $0.layer.borderWidth = 1
+//        $0.layer.borderColor = UIColor.black.cgColor
+        $0.layer.backgroundColor = UIColor.orange.cgColor
     }
     
     /*
@@ -26,6 +27,7 @@ class PageContainerView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.addSubview(view)
+        self.layer.backgroundColor = UIColor.clear.cgColor
     }
     
     required init?(coder aDecoder: NSCoder) {

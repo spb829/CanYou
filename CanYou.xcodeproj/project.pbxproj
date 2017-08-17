@@ -17,6 +17,8 @@
 		07671BB81F3F75DF00DD4E24 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BB71F3F75DF00DD4E24 /* Memo.swift */; };
 		07671BBA1F3F769500DD4E24 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BB91F3F769500DD4E24 /* UserStore.swift */; };
 		07671BBC1F3F797300DD4E24 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BBB1F3F797300DD4E24 /* DataController.swift */; };
+		076B7AA11F42FC6A00C68F05 /* BadgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B7AA01F42FC6900C68F05 /* BadgeViewController.swift */; };
+		076B7AA31F42FD2900C68F05 /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B7AA21F42FD2900C68F05 /* RewardViewController.swift */; };
 		076C2EF31F402FC100579914 /* RewardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2EF21F402FC100579914 /* RewardStore.swift */; };
 		076C2EF51F40332A00579914 /* BadgeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2EF41F40332A00579914 /* BadgeStore.swift */; };
 		076C2EF71F4033C100579914 /* HealthInfoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2EF61F4033C100579914 /* HealthInfoStore.swift */; };
@@ -70,6 +72,8 @@
 		07671BB71F3F75DF00DD4E24 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		07671BB91F3F769500DD4E24 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		07671BBB1F3F797300DD4E24 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		076B7AA01F42FC6900C68F05 /* BadgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BadgeViewController.swift; path = CanYou/ViewController/BadgeViewController.swift; sourceTree = SOURCE_ROOT; };
+		076B7AA21F42FD2900C68F05 /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
 		076C2EF21F402FC100579914 /* RewardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardStore.swift; sourceTree = "<group>"; };
 		076C2EF41F40332A00579914 /* BadgeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeStore.swift; sourceTree = "<group>"; };
 		076C2EF61F4033C100579914 /* HealthInfoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthInfoStore.swift; sourceTree = "<group>"; };
@@ -227,6 +231,8 @@
 				07A369291F41D110000E2152 /* RootContainerViewController.swift */,
 				076C2F001F4053C100579914 /* CanYouAnimationViewController.swift */,
 				07A35BE41F405BCB00482782 /* DashBoardViewController.swift */,
+				076B7AA01F42FC6900C68F05 /* BadgeViewController.swift */,
+				076B7AA21F42FD2900C68F05 /* RewardViewController.swift */,
 				076C2F021F4053FB00579914 /* CigaretteDailyViewController.swift */,
 				076C2EFE1F4053AD00579914 /* WelcomeViewController.swift */,
 				076C2F041F40543800579914 /* SettingTableViewController.swift */,
@@ -435,10 +441,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CanYou/Pods-CanYou-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -584,6 +592,8 @@
 				07671BAC1F3F731600DD4E24 /* Reward.swift in Sources */,
 				07671BB01F3F746100DD4E24 /* HealthInfo.swift in Sources */,
 				076C2F031F4053FB00579914 /* CigaretteDailyViewController.swift in Sources */,
+				076B7AA31F42FD2900C68F05 /* RewardViewController.swift in Sources */,
+				076B7AA11F42FC6A00C68F05 /* BadgeViewController.swift in Sources */,
 				07671BAE1F3F73B700DD4E24 /* BadgeUser.swift in Sources */,
 				076C2F051F40543800579914 /* SettingTableViewController.swift in Sources */,
 				07671BBC1F3F797300DD4E24 /* DataController.swift in Sources */,

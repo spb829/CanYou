@@ -11,20 +11,19 @@ import Then
 
 class RootContainerViewController: UIViewController {
     let scrollView = UIScrollView().then {
-        $0.backgroundColor = UIColor.brown
+        $0.backgroundColor = UIColor.clear
         $0.isPagingEnabled = true
         $0.showsHorizontalScrollIndicator = false
         $0.showsVerticalScrollIndicator = false
     }
     let pageControl = UIPageControl().then {
-        $0.backgroundColor = UIColor.darkGray
+        $0.backgroundColor = UIColor.clear
         $0.currentPage = 0
     }
     
     var cardViews = [PageContainerView]()
     var cardIndex: Int = 0
     
-//    var dashBoardViewController: DashBoardViewController = DashBoardViewController()
     private lazy var dashBoardViewController: DashBoardViewController = {
         // Load Storyboard
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
@@ -38,21 +37,39 @@ class RootContainerViewController: UIViewController {
         return viewController
     }()
     
+    private lazy var badgeViewController: BadgeViewController = {
+        // Load Storyboard
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        
+        // Instantiate View Controller
+        var viewController = storyboard.instantiateViewController(withIdentifier: "BadgeViewController") as! BadgeViewController
+        
+        // Add View Controller as Child View Controller
+        self.addChildViewController(viewController)
+        
+        return viewController
+    }()
+    
+    private lazy var rewardViewController: RewardViewController = {
+        // Load Storyboard
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        
+        // Instantiate View Controller
+        var viewController = storyboard.instantiateViewController(withIdentifier: "RewardViewController") as! RewardViewController
+        
+        // Add View Controller as Child View Controller
+        self.addChildViewController(viewController)
+        
+        return viewController
+    }()
     
     override func viewDidLoad() {
         print("viewDidLoad")
         super.viewDidLoad()
-//        initChildViewcontrollers()
         initViews()
     }
     
-    func initChildViewcontrollers(){
-        print("initChildViewControllers")
-        self.addChildViewController(dashBoardViewController)
-    }
-    
     func initViews() {
-        print("initViews")
         initCardViews()
         
         self.scrollView.delegate = self
@@ -63,25 +80,34 @@ class RootContainerViewController: UIViewController {
         
     }
     
-    
     func initCardViews() {
-        print("initCardViews")
         for i in 0...2 {
             let cardView = PageContainerView().then {
-                $0.backgroundColor = UIColor.cyan
+                $0.backgroundColor = UIColor(red: 255, green: 180, blue: 0, alpha: 1.0)
             }
             
             switch i {
             case 0:
-                cardView.view.addSubview(dashBoardViewController.view)
-                dashBoardViewController.view.frame = cardView.view.bounds
-                dashBoardViewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-                dashBoardViewController.didMove(toParentViewController: self)
+                let viewController = dashBoardViewController
+                cardView.view.addSubview(viewController.view)
+                viewController.view.frame = cardView.view.bounds
+                viewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+                viewController.didMove(toParentViewController: self)
 //                cardView.backgroundColor = UIColor.cyan
             case 1:
-                cardView.backgroundColor = UIColor.red
+                let viewController = badgeViewController
+                cardView.view.addSubview(viewController.view)
+                viewController.view.frame = cardView.view.bounds
+                viewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+                viewController.didMove(toParentViewController: self)
+//                cardView.backgroundColor = UIColor.red
             case 2:
-                cardView.backgroundColor = UIColor.orange
+                let viewController = rewardViewController
+                cardView.view.addSubview(viewController.view)
+                viewController.view.frame = cardView.view.bounds
+                viewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+                viewController.didMove(toParentViewController: self)
+//                cardView.backgroundColor = UIColor.orange
             default:
                 break
             }
@@ -89,7 +115,6 @@ class RootContainerViewController: UIViewController {
             self.cardViews.append(cardView)
             self.scrollView.addSubview(cardView)
         }
-        print("initCardViews ends")
     }
     
     override func viewWillLayoutSubviews() {
@@ -111,8 +136,6 @@ class RootContainerViewController: UIViewController {
     }
     
     func updateCardLayout(_ index: Int) {
-        print("updateCardLayout")
-        
         self.cardIndex = index
         self.pageControl.currentPage = self.cardIndex
         
@@ -141,6 +164,7 @@ class RootContainerViewController: UIViewController {
     
 }
 
+// 스크롤뷰 딜리게이트
 extension RootContainerViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offsetX = scrollView.contentOffset.x
@@ -152,7 +176,7 @@ extension RootContainerViewController: UIScrollViewDelegate {
         
         var index = self.cardIndex
         
-        print("scroll \(offsetX)")
+//        print("scroll \(offsetX)")
         
         switch offsetX {
         case 0:
@@ -170,6 +194,27 @@ extension RootContainerViewController: UIScrollViewDelegate {
         }
         
         updateCardLayout(index)
+    }
+}
+
+// 네비게이션 바 숨기기
+extension RootContainerViewController {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let navigationController = self.navigationController {
+            // Hide the navigation bar on the this view controller
+            navigationController.setNavigationBarHidden(true, animated: animated)
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        if let navigationController = self.navigationController {
+            // Show the navigation bar on other view controllers
+            navigationController.setNavigationBarHidden(false, animated: animated)
+        }
     }
 }
 

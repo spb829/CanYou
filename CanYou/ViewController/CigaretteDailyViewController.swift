@@ -24,19 +24,6 @@ class CigaretteDailyViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        super.prepare(for: segue, sender: sender)
-        
-        
-//        if segue.identifier == "" {
-//
-//        }
-        var user = dataController.signUp()
-        if let text = cigaretteDaily.text {
-            user.cigaretteDaily = Int(text)
-        }
-    }
 
     /*
     // MARK: - Navigation

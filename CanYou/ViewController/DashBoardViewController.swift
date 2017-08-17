@@ -9,34 +9,30 @@
 import UIKit
 
 class DashBoardViewController: UIViewController {
+    @IBOutlet var timeLabel: UILabel!
+    @IBOutlet var dayLabel: UILabel!
+    
+    var timer: Timer?
+    var timerController = TimerController.sharedTimerController
+    
     var dataController = DataController.sharedDataController
-    var currentUser: User? {
-        if let user = DataController.sharedDataController.currentUser {
-            return user
-        }
-        return nil
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        startTimer()
+    }
+    
+    func startTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateLabels), userInfo: nil, repeats: true)
+    }
+    
+    @objc func updateLabels() {
+        dayLabel.text = String(format: "%d", timerController.day)
+        timeLabel.text = String(format: "%02d : %02d : %02d", timerController.hours, timerController.minutes, timerController.seconds)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

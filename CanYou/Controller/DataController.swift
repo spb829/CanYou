@@ -22,5 +22,4 @@ struct DataController {
         self.currentUser = userStore.createUser()
         return self.currentUser!
     }
-    
 }

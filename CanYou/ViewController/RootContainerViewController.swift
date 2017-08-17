@@ -34,6 +34,11 @@ class RootContainerViewController: UIViewController {
         // Add View Controller as Child View Controller
         self.addChildViewController(viewController)
         
+//        viewController.updateLabels()
+        viewController.loadView()
+//        viewController.viewDidLoad()
+//        viewController.startTimer()
+        
         return viewController
     }()
     
@@ -66,6 +71,7 @@ class RootContainerViewController: UIViewController {
     override func viewDidLoad() {
         print("viewDidLoad")
         super.viewDidLoad()
+//        dashBoardViewController.startTimer()
         initViews()
     }
     

@@ -12,10 +12,16 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var stopTimer: WKInterfaceTimer!
+    @IBOutlet var dayLabel: WKInterfaceLabel!
+    
+    var timer: Timer!
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         // Configure interface objects here.
+//        self.stopTimer.count
     }
     
     override func willActivate() {

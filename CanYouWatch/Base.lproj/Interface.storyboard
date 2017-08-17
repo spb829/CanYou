@@ -32,6 +32,10 @@
                             <menuItem title="Badge" icon="info" id="eyX-gf-1K1"/>
                         </items>
                     </menu>
+                    <connections>
+                        <outlet property="dayLabel" destination="tsX-yy-j17" id="5xM-Pu-SHL"/>
+                        <outlet property="stopTimer" destination="gTG-71-sQA" id="jKP-uO-BZI"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>

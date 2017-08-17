@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -300,17 +301,58 @@
         <scene sceneID="mRU-If-Yt8">
             <objects>
                 <tableViewController id="Exc-vx-f6p" customClass="SettingTableViewController" customModule="CanYou" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="01o-2i-YQx">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="40" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="01o-2i-YQx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gad-eT-QJi">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingSwitchTableViewCell" id="ek7-Zz-yal" customClass="SettingSwitchTableViewCell" customModule="CanYou" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="40"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ek7-Zz-yal" id="kR8-dJ-VZw">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="39.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Switch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soq-hJ-qRM">
+                                            <rect key="frame" x="16" y="10" width="286" height="19.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Miw-ak-a3R">
+                                            <rect key="frame" x="318" y="5" width="51" height="29.5"/>
+                                        </switch>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="soq-hJ-qRM" firstAttribute="top" secondItem="kR8-dJ-VZw" secondAttribute="topMargin" constant="2" id="Gus-lN-F0B"/>
+                                        <constraint firstAttribute="trailing" secondItem="Miw-ak-a3R" secondAttribute="trailing" constant="8" id="Pkd-KG-Zhd"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="soq-hJ-qRM" secondAttribute="bottom" constant="2" id="XXF-bU-eWI"/>
+                                        <constraint firstItem="Miw-ak-a3R" firstAttribute="leading" secondItem="soq-hJ-qRM" secondAttribute="trailing" constant="16" id="bBG-aX-hO8"/>
+                                        <constraint firstAttribute="bottom" secondItem="Miw-ak-a3R" secondAttribute="bottom" constant="5" id="hXa-WS-dU6"/>
+                                        <constraint firstItem="Miw-ak-a3R" firstAttribute="top" secondItem="kR8-dJ-VZw" secondAttribute="top" constant="5" id="idR-g1-Yfp"/>
+                                        <constraint firstItem="soq-hJ-qRM" firstAttribute="leading" secondItem="kR8-dJ-VZw" secondAttribute="leadingMargin" constant="8" id="qut-d8-Dza"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="settingSwitch" destination="Miw-ak-a3R" id="bXo-70-Aam"/>
+                                    <outlet property="titleLabel" destination="soq-hJ-qRM" id="9Yk-wV-ke5"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingBasicTableViewCell" textLabel="xWR-Ox-fS3" style="IBUITableViewCellStyleDefault" id="gad-eT-QJi">
+                                <rect key="frame" x="0.0" y="68" width="375" height="40"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gad-eT-QJi" id="vyM-93-9IG">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="39.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xWR-Ox-fS3">
+                                            <rect key="frame" x="16" y="0.0" width="344" height="39.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -323,7 +365,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="erd-gL-mjL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3702" y="865"/>
+            <point key="canvasLocation" x="3701.5999999999999" y="864.91754122938539"/>
         </scene>
         <!--Badge View Controller-->
         <scene sceneID="TlL-lB-6sB">

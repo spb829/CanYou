@@ -9,36 +9,60 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13042.2"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Stop Watch Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CanYouWatch" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" customClass="StopWatchInterfaceController" customModule="CanYouWatch_Extension">
                     <items>
                         <group width="1" alignment="left" id="fqv-ds-ztE">
                             <items>
-                                <label width="1" alignment="left" text="3 일째" textAlignment="left" id="tsX-yy-j17">
-                                    <fontDescription key="font" type="system" pointSize="30"/>
+                                <label width="1" alignment="left" text="금연을 시작하세요!" textAlignment="left" id="tsX-yy-j17">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
                                 </label>
                             </items>
                         </group>
-                        <timer width="1" height="97" alignment="left" textAlignment="center" previewedSeconds="9234" id="gTG-71-sQA">
-                            <fontDescription key="font" type="boldSystem" pointSize="50"/>
-                            <calendarUnit key="units" hour="YES" minute="YES"/>
+                        <timer width="1" height="98" alignment="left" textAlignment="center" previewedSeconds="9234" id="gTG-71-sQA">
+                            <fontDescription key="font" type="boldSystem" pointSize="32"/>
                         </timer>
                     </items>
                     <menu key="menu" id="0Qg-mn-Oh7">
                         <items>
-                            <menuItem title="Smoke" image="nosmoking" id="C14-A4-sVs"/>
-                            <menuItem title="Badge" icon="info" id="eyX-gf-1K1"/>
+                            <menuItem title="Start" icon="play" id="C14-A4-sVs">
+                                <connections>
+                                    <action selector="menuStart" destination="AgC-eL-Hgc" id="BI6-Nj-aBt"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Stop" icon="block" id="eyX-gf-1K1">
+                                <connections>
+                                    <action selector="menuStop" destination="AgC-eL-Hgc" id="Otz-ao-fLP"/>
+                                </connections>
+                            </menuItem>
                         </items>
                     </menu>
                     <connections>
                         <outlet property="dayLabel" destination="tsX-yy-j17" id="5xM-Pu-SHL"/>
                         <outlet property="stopTimer" destination="gTG-71-sQA" id="jKP-uO-BZI"/>
+                        <segue destination="1mh-Az-CZt" kind="relationship" relationship="nextPage" id="yvu-dp-eZH"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="PfI-ti-UA6">
+            <objects>
+                <controller id="1mh-Az-CZt">
+                    <items>
+                        <group width="1" alignment="left" id="65O-qG-qBj">
+                            <items>
+                                <label width="1" alignment="left" text="DashBoard" textAlignment="center" id="TrZ-OK-nd6"/>
+                            </items>
+                        </group>
+                        <table alignment="left" id="Ab5-Xc-Q8R"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

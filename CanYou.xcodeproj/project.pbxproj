@@ -30,10 +30,13 @@
 		076C2F011F4053C100579914 /* CanYouAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2F001F4053C100579914 /* CanYouAnimationViewController.swift */; };
 		076C2F031F4053FB00579914 /* CigaretteDailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2F021F4053FB00579914 /* CigaretteDailyViewController.swift */; };
 		076C2F051F40543800579914 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2F041F40543800579914 /* SettingTableViewController.swift */; };
+		07764A511F45F5380086105F /* DashBoardInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07764A4F1F45F5340086105F /* DashBoardInterfaceController.swift */; };
+		07783FC81F47329F0081FB17 /* BadgeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07783FC71F47329F0081FB17 /* BadgeDetailViewController.swift */; };
+		07783FCA1F4732E30081FB17 /* RewardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07783FC91F4732E30081FB17 /* RewardDetailViewController.swift */; };
 		077E8ECE1F4562550057DDC3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077E8ECC1F4562550057DDC3 /* Interface.storyboard */; };
 		077E8ED01F4562550057DDC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 077E8ECF1F4562550057DDC3 /* Assets.xcassets */; };
 		077E8ED71F4562560057DDC3 /* CanYouWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 077E8ED61F4562560057DDC3 /* CanYouWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		077E8EDC1F4562560057DDC3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077E8EDB1F4562560057DDC3 /* InterfaceController.swift */; };
+		077E8EDC1F4562560057DDC3 /* StopWatchInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077E8EDB1F4562560057DDC3 /* StopWatchInterfaceController.swift */; };
 		077E8EDE1F4562560057DDC3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077E8EDD1F4562560057DDC3 /* ExtensionDelegate.swift */; };
 		077E8EE01F4562560057DDC3 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077E8EDF1F4562560057DDC3 /* NotificationController.swift */; };
 		077E8EE21F4562560057DDC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 077E8EE11F4562560057DDC3 /* Assets.xcassets */; };
@@ -136,12 +139,15 @@
 		076C2F001F4053C100579914 /* CanYouAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanYouAnimationViewController.swift; sourceTree = "<group>"; };
 		076C2F021F4053FB00579914 /* CigaretteDailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CigaretteDailyViewController.swift; sourceTree = "<group>"; };
 		076C2F041F40543800579914 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		07764A4F1F45F5340086105F /* DashBoardInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardInterfaceController.swift; sourceTree = "<group>"; };
+		07783FC71F47329F0081FB17 /* BadgeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeDetailViewController.swift; sourceTree = "<group>"; };
+		07783FC91F4732E30081FB17 /* RewardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardDetailViewController.swift; sourceTree = "<group>"; };
 		077E8ECA1F4562550057DDC3 /* CanYouWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanYouWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		077E8ECD1F4562550057DDC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		077E8ECF1F4562550057DDC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		077E8ED11F4562550057DDC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		077E8ED61F4562560057DDC3 /* CanYouWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CanYouWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		077E8EDB1F4562560057DDC3 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		077E8EDB1F4562560057DDC3 /* StopWatchInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchInterfaceController.swift; sourceTree = "<group>"; };
 		077E8EDD1F4562560057DDC3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		077E8EDF1F4562560057DDC3 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		077E8EE11F4562560057DDC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -219,6 +225,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07764A521F45F5430086105F /* InterfaceController */ = {
+			isa = PBXGroup;
+			children = (
+				07764A4F1F45F5340086105F /* DashBoardInterfaceController.swift */,
+				077E8EDB1F4562560057DDC3 /* StopWatchInterfaceController.swift */,
+			);
+			path = InterfaceController;
+			sourceTree = "<group>";
+		};
 		077E8ECB1F4562550057DDC3 /* CanYouWatch */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,7 +247,7 @@
 		077E8EDA1F4562560057DDC3 /* CanYouWatch Extension */ = {
 			isa = PBXGroup;
 			children = (
-				077E8EDB1F4562560057DDC3 /* InterfaceController.swift */,
+				07764A521F45F5430086105F /* InterfaceController */,
 				077E8EDD1F4562560057DDC3 /* ExtensionDelegate.swift */,
 				077E8EDF1F4562560057DDC3 /* NotificationController.swift */,
 				077E8EE11F4562560057DDC3 /* Assets.xcassets */,
@@ -346,6 +361,8 @@
 				076C2F021F4053FB00579914 /* CigaretteDailyViewController.swift */,
 				076C2EFE1F4053AD00579914 /* WelcomeViewController.swift */,
 				076C2F041F40543800579914 /* SettingTableViewController.swift */,
+				07783FC91F4732E30081FB17 /* RewardDetailViewController.swift */,
+				07783FC71F47329F0081FB17 /* BadgeDetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -745,7 +762,8 @@
 			files = (
 				077E8EE01F4562560057DDC3 /* NotificationController.swift in Sources */,
 				077E8EDE1F4562560057DDC3 /* ExtensionDelegate.swift in Sources */,
-				077E8EDC1F4562560057DDC3 /* InterfaceController.swift in Sources */,
+				07764A511F45F5380086105F /* DashBoardInterfaceController.swift in Sources */,
+				077E8EDC1F4562560057DDC3 /* StopWatchInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -765,6 +783,7 @@
 				076C2EFD1F404B4200579914 /* SettingStore.swift in Sources */,
 				076C2F011F4053C100579914 /* CanYouAnimationViewController.swift in Sources */,
 				07CA6A151F45820600F37159 /* SettingBasicTableViewCell.swift in Sources */,
+				07783FCA1F4732E30081FB17 /* RewardDetailViewController.swift in Sources */,
 				076C2EF91F403D4C00579914 /* SmokeStore.swift in Sources */,
 				0718D7561F4591F5000956E8 /* TimerController.swift in Sources */,
 				076C2EF51F40332A00579914 /* BadgeStore.swift in Sources */,
@@ -784,6 +803,7 @@
 				07671BBC1F3F797300DD4E24 /* DataController.swift in Sources */,
 				07AEE9031F3C42C300D20151 /* AppDelegate.swift in Sources */,
 				076C2EF71F4033C100579914 /* HealthInfoStore.swift in Sources */,
+				07783FC81F47329F0081FB17 /* BadgeDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

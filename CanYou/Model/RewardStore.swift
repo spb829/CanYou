@@ -27,7 +27,7 @@ struct RewardStore{
 //    var purchased: Bool
     
     private init() {
-        
+        print("RewardStore init called")
         // 초기 데이터
         items.append(Reward(userId: 0).then {
             $0.name = "애플워치 사기"
@@ -52,6 +52,8 @@ struct RewardStore{
             $0.content = "2"
             $0.price = 3
         })
+        
+        print(items)
     }
     
     func findBy(id: Int) -> Reward? {

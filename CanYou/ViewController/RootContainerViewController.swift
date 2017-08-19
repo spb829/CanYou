@@ -118,6 +118,7 @@ class RootContainerViewController: UIViewController {
                 break
             }
             
+//            rewardViewController.reloadInputViews()
             self.cardViews.append(cardView)
             self.scrollView.addSubview(cardView)
         }
@@ -164,6 +165,8 @@ class RootContainerViewController: UIViewController {
             break
         }
         
+//        self.rewardViewController.reloadInputViews()
+//        self.rewardViewController.tableView.reloadData()
         self.scrollView.contentOffset = CGPoint(x: size.width, y: 0)
         self.scrollView.contentSize = CGSize(width: size.width * 3, height: size.height)
     }

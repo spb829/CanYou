@@ -11,6 +11,8 @@ import UIKit
 class RewardViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     var dataController = DataController.sharedDataController
     var rewardStore = DataController.sharedDataController.rewardStore
+    @IBOutlet var tableView: UITableView!
+    @IBOutlet var cansLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,15 +25,18 @@ class RewardViewController: UIViewController, UITableViewDelegate, UITableViewDa
     // MARK: - Table view data source
     
     func numberOfSections(in tableView: UITableView) -> Int {
+        print("numberofsectinos")
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("rows")
         return rewardStore.items.count + 1
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print("cells")
         if indexPath.row == rewardStore.items.count {
             let cell = tableView.dequeueReusableCell(withIdentifier: "PlusTableViewCell", for: indexPath) as! PlusTableViewCell
             return cell
@@ -49,5 +54,10 @@ class RewardViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        if segue.identifier == "goToRewardDetail" {
+            
+        }
+    }
 }

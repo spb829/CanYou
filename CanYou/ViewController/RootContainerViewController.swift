@@ -35,8 +35,8 @@ class RootContainerViewController: UIViewController {
         self.addChildViewController(viewController)
         
 //        viewController.updateLabels()
-        viewController.loadView()
-//        viewController.viewDidLoad()
+//        viewController.loadView()
+        viewController.viewDidLoad()
 //        viewController.startTimer()
         
         return viewController

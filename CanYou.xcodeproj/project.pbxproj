@@ -631,10 +631,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CanYou/Pods-CanYou-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -144,7 +144,7 @@
                                 <rect key="frame" x="0.0" y="597" width="375" height="30"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
-                                    <segue destination="DXD-Sg-Uoc" kind="show" id="oon-cF-DSS"/>
+                                    <action selector="startTapped:" destination="o47-kT-Ydq" eventType="touchUpInside" id="XiA-mb-d7V"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -543,7 +543,7 @@
         <!--Navigation Controller-->
         <scene sceneID="mFK-3D-yEB">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DXD-Sg-Uoc" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationController" automaticallyAdjustsScrollViewInsets="NO" id="DXD-Sg-Uoc" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LRa-JP-bQC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

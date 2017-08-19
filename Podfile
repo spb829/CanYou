@@ -9,6 +9,7 @@ target 'CanYou' do
 
   # Pods for CanYou
   pod 'Then'
+  pod 'Hero'
 #  pod 'SnapKit', '~> 3.2.0'
 
   target 'CanYouTests' do

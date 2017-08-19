@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13168.3" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13178.6" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1mh-Az-CZt">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13042.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13045"/>
     </dependencies>
     <scenes>
         <!--Stop Watch Interface Controller-->
@@ -17,7 +17,7 @@
                         <group width="1" alignment="left" id="fqv-ds-ztE">
                             <items>
                                 <label width="1" alignment="left" text="금연을 시작하세요!" textAlignment="left" id="tsX-yy-j17">
-                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <fontDescription key="font" type="system" pointSize="18"/>
                                 </label>
                             </items>
                         </group>
@@ -27,7 +27,7 @@
                     </items>
                     <menu key="menu" id="0Qg-mn-Oh7">
                         <items>
-                            <menuItem title="Start" icon="play" id="C14-A4-sVs">
+                            <menuItem title="Start1" icon="play" id="C14-A4-sVs">
                                 <connections>
                                     <action selector="menuStart" destination="AgC-eL-Hgc" id="BI6-Nj-aBt"/>
                                 </connections>
@@ -42,24 +42,30 @@
                     <connections>
                         <outlet property="dayLabel" destination="tsX-yy-j17" id="5xM-Pu-SHL"/>
                         <outlet property="stopTimer" destination="gTG-71-sQA" id="jKP-uO-BZI"/>
-                        <segue destination="1mh-Az-CZt" kind="relationship" relationship="nextPage" id="yvu-dp-eZH"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Dash Board Interface Controller-->
         <scene sceneID="PfI-ti-UA6">
             <objects>
-                <controller id="1mh-Az-CZt">
+                <controller id="1mh-Az-CZt" customClass="DashBoardInterfaceController" customModule="CanYouWatch_Extension">
                     <items>
-                        <group width="1" alignment="left" id="65O-qG-qBj">
+                        <group width="1" height="129" alignment="left" backgroundImage="Test0" contentMode="scaleAspectFit" animationDuration="1.2" id="tfb-2v-of4">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </group>
+                        <group width="1" alignment="left" id="jS9-cZ-Q7h">
                             <items>
-                                <label width="1" alignment="left" text="DashBoard" textAlignment="center" id="TrZ-OK-nd6"/>
+                                <label width="1" alignment="left" text="체온이 정상으로 돌아옵니다." textAlignment="center" id="n3s-WF-3Xf">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
                             </items>
                         </group>
-                        <table alignment="left" id="Ab5-Xc-Q8R"/>
                     </items>
+                    <connections>
+                        <outlet property="group" destination="tfb-2v-of4" id="J3m-qI-7Uz"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="468" y="345"/>

@@ -54,6 +54,7 @@
 		07D0C3931F48EB1400FE64EC /* BadgeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D0C3921F48EB1400FE64EC /* BadgeTableViewCell.swift */; };
 		07DB35371F48F445007E9515 /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB35361F48F445007E9515 /* RewardTableViewCell.swift */; };
 		07DB353A1F48FBBB007E9515 /* PlusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB35381F48FBBB007E9515 /* PlusTableViewCell.swift */; };
+		07E4FE151F48FB9700F2946C /* Test in Resources */ = {isa = PBXBuildFile; fileRef = 07E4FE141F48FB9600F2946C /* Test */; };
 		735E64F5C8A60F123E41F5BC /* Pods_CanYou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68EC1597700C0C088E5E9FE /* Pods_CanYou.framework */; };
 		C78FDA625A8333DE631DCB54 /* Pods_CanYouUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E59EA89B007D083A911E394 /* Pods_CanYouUITests.framework */; };
 		E87BC8024917941DA61B00F4 /* Pods_CanYouTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C6106EE8B9374A6041525E8 /* Pods_CanYouTests.framework */; };
@@ -172,6 +173,7 @@
 		07D0C3921F48EB1400FE64EC /* BadgeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeTableViewCell.swift; sourceTree = "<group>"; };
 		07DB35361F48F445007E9515 /* RewardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
 		07DB35381F48FBBB007E9515 /* PlusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusTableViewCell.swift; sourceTree = "<group>"; };
+		07E4FE141F48FB9600F2946C /* Test */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Test; sourceTree = "<group>"; };
 		0CF4F5D980388B138AD363A2 /* Pods-CanYou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYou.release.xcconfig"; path = "Pods/Target Support Files/Pods-CanYou/Pods-CanYou.release.xcconfig"; sourceTree = "<group>"; };
 		314969725ABD038B2CCF0EAE /* Pods-CanYou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CanYou/Pods-CanYou.debug.xcconfig"; sourceTree = "<group>"; };
 		3B382BEF1EA30F19F7EA85B3 /* Pods-CanYouTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYouTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CanYouTests/Pods-CanYouTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 		077E8ECB1F4562550057DDC3 /* CanYouWatch */ = {
 			isa = PBXGroup;
 			children = (
+				07E4FE141F48FB9600F2946C /* Test */,
 				077E8ECC1F4562550057DDC3 /* Interface.storyboard */,
 				077E8ECF1F4562550057DDC3 /* Assets.xcassets */,
 				077E8ED11F4562550057DDC3 /* Info.plist */,
@@ -566,6 +569,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07E4FE151F48FB9700F2946C /* Test in Resources */,
 				077E8ED01F4562550057DDC3 /* Assets.xcassets in Resources */,
 				077E8ECE1F4562550057DDC3 /* Interface.storyboard in Resources */,
 			);

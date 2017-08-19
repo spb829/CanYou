@@ -9,27 +9,44 @@
 import UIKit
 
 class RewardDetailViewController: UIViewController {
+//    var dataController = DataController.sharedDataController
+    var rewardStore = DataController.sharedDataController.rewardStore
+    var reward: Reward?
 
+    @IBOutlet var rewardImageView: UIImageView!
+    @IBOutlet var contentLabel: UILabel!
+    @IBOutlet var cansLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        guard let reward = self.reward else {
+            return
+        }
+        
+        if let image = reward.image {
+            rewardImageView.image = image
+        }
+        
+        contentLabel.text = reward.content
+        cansLabel.text = "\(reward.price ?? 0) Cans"
+        self.navigationItem.title = reward.name
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func buyTapped(_ sender: UIButton) {
     }
-    */
-
+    
+    @IBAction func deleteTapped(_ sender: UIButton) {
+    }
+    
+    @IBAction func saveTapped(_ sender: UIBarButtonItem) {
+    }
 }

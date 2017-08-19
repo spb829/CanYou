@@ -52,6 +52,7 @@
 		07AEE9101F3C42C300D20151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AEE90E1F3C42C300D20151 /* LaunchScreen.storyboard */; };
 		07AEE91B1F3C42C300D20151 /* CanYouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE91A1F3C42C300D20151 /* CanYouTests.swift */; };
 		07AEE9261F3C42C300D20151 /* CanYouUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE9251F3C42C300D20151 /* CanYouUITests.swift */; };
+		07D0C3931F48EB1400FE64EC /* BadgeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D0C3921F48EB1400FE64EC /* BadgeTableViewCell.swift */; };
 		07DB35371F48F445007E9515 /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB35361F48F445007E9515 /* RewardTableViewCell.swift */; };
 		07DB353A1F48FBBB007E9515 /* PlusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB35381F48FBBB007E9515 /* PlusTableViewCell.swift */; };
 		735E64F5C8A60F123E41F5BC /* Pods_CanYou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68EC1597700C0C088E5E9FE /* Pods_CanYou.framework */; };
@@ -170,6 +171,7 @@
 		07AEE9211F3C42C300D20151 /* CanYouUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanYouUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AEE9251F3C42C300D20151 /* CanYouUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanYouUITests.swift; sourceTree = "<group>"; };
 		07AEE9271F3C42C300D20151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07D0C3921F48EB1400FE64EC /* BadgeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeTableViewCell.swift; sourceTree = "<group>"; };
 		07DB35361F48F445007E9515 /* RewardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
 		07DB35381F48FBBB007E9515 /* PlusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusTableViewCell.swift; sourceTree = "<group>"; };
 		0CF4F5D980388B138AD363A2 /* Pods-CanYou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYou.release.xcconfig"; path = "Pods/Target Support Files/Pods-CanYou/Pods-CanYou.release.xcconfig"; sourceTree = "<group>"; };
@@ -342,6 +344,7 @@
 		07AEE9341F3C46DF00D20151 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				07D0C3921F48EB1400FE64EC /* BadgeTableViewCell.swift */,
 				07DB35381F48FBBB007E9515 /* PlusTableViewCell.swift */,
 				07DB35361F48F445007E9515 /* RewardTableViewCell.swift */,
 				075860D01F41908300E974F8 /* PageContainerView.swift */,
@@ -356,13 +359,13 @@
 				076C2F001F4053C100579914 /* CanYouAnimationViewController.swift */,
 				07A35BE41F405BCB00482782 /* DashBoardViewController.swift */,
 				076B7AA01F42FC6900C68F05 /* BadgeViewController.swift */,
+				07783FC71F47329F0081FB17 /* BadgeDetailViewController.swift */,
 				076B7AA21F42FD2900C68F05 /* RewardViewController.swift */,
+				07783FC91F4732E30081FB17 /* RewardDetailViewController.swift */,
 				076C2F021F4053FB00579914 /* CigaretteDailyViewController.swift */,
 				076C2EFE1F4053AD00579914 /* WelcomeViewController.swift */,
 				076C2F041F40543800579914 /* SettingTableViewController.swift */,
 				073D27CD1F4841DA00D60444 /* SettingDetailTableViewController.swift */,
-				07783FC91F4732E30081FB17 /* RewardDetailViewController.swift */,
-				07783FC71F47329F0081FB17 /* BadgeDetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -782,6 +785,7 @@
 				073D27CE1F4841DA00D60444 /* SettingDetailTableViewController.swift in Sources */,
 				07DB353A1F48FBBB007E9515 /* PlusTableViewCell.swift in Sources */,
 				076C2EFB1F4045C800579914 /* MemoStore.swift in Sources */,
+				07D0C3931F48EB1400FE64EC /* BadgeTableViewCell.swift in Sources */,
 				076C2EFD1F404B4200579914 /* SettingStore.swift in Sources */,
 				076C2F011F4053C100579914 /* CanYouAnimationViewController.swift in Sources */,
 				07783FCA1F4732E30081FB17 /* RewardDetailViewController.swift in Sources */,

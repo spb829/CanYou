@@ -57,7 +57,12 @@ class RewardViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         if segue.identifier == "goToRewardDetail" {
-            
+            if let row = tableView.indexPathForSelectedRow?.row {
+                let item = rewardStore.items[row]
+                let vc = segue.destination as! RewardDetailViewController
+                
+                vc.reward = item
+            }
         }
     }
 }

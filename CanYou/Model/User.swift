@@ -8,8 +8,9 @@
 
 import Foundation
 import UIKit
+import Then
 
-struct User {
+class User: Then {
     let id: Int
     var name: String = ""
     var birth: Date = Date()

@@ -8,8 +8,9 @@
 
 import Foundation
 import UIKit
+import Then
 
-struct HealthInfo {
+class HealthInfo: Then {
     let id: Int
     var name: String?
     var image: UIImage?

@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Then
 
 enum ConditionType {
     case time
@@ -15,7 +16,7 @@ enum ConditionType {
     case money
 }
 
-struct Badge {
+class Badge: Then {
     let id: Int
     var name: String?
     var image: UIImage?

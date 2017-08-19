@@ -8,8 +8,9 @@
 
 import Foundation
 import UIKit
+import Then
 
-struct Reward {
+class Reward: Then {
     let id: Int
     let userId: Int
     

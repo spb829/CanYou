@@ -15,7 +15,44 @@ struct RewardStore{
     var idCount = 0
     var items = [Reward]()
     
-    private init() { }
+//    Reward Model
+//    let id: Int
+//    let userId: Int
+//
+//    var name: String?
+//    var image: UIImage?
+//    var content: String?
+//
+//    var price: Int?
+//    var purchased: Bool
+    
+    private init() {
+        
+        // 초기 데이터
+        items.append(Reward(userId: 0).then {
+            $0.name = "애플워치 사기"
+            $0.content = "삽시다"
+            $0.price = 2000
+        })
+        
+        items.append(Reward(userId: 0).then {
+            $0.name = "1"
+            $0.content = "2"
+            $0.price = 3
+        })
+        
+        items.append(Reward(userId: 0).then {
+            $0.name = "1"
+            $0.content = "2"
+            $0.price = 3
+        })
+        
+        items.append(Reward(userId: 0).then {
+            $0.name = "1"
+            $0.content = "2"
+            $0.price = 3
+        })
+    }
     
     func findBy(id: Int) -> Reward? {
         return items.filter({$0.id == id}).first

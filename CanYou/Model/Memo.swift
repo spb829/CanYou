@@ -8,8 +8,9 @@
 
 import Foundation
 import UIKit
+import Then
 
-struct Memo {
+class Memo: Then {
     let id: Int
     let userId: Int
     var name: String?

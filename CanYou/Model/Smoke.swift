@@ -8,8 +8,9 @@
 
 import Foundation
 import UIKit
+import Then
 
-struct Smoke {
+class Smoke: Then {
     let id: Int
     let userId: Int
     var date: Date?

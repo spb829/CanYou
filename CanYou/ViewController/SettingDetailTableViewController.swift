@@ -16,13 +16,13 @@ enum InputType {
 
 class SettingDetailTableViewController: UITableViewController {
     var dataController = DataController.sharedDataController
-    
     var inputType: InputType?
-    var titleLabel: UILabel?
-    var textField: UITextField?
-    var datePicker: UIDatePicker?
     
-
+    
+//    var titleLabel: UILabel?
+//    var textField: UITextField?
+//    var datePicker: UIDatePicker?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,21 +33,22 @@ class SettingDetailTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        
     }
     
+    @IBAction func tappedSaveButton(_ sender: UIBarButtonItem) {
+        
+    }
     
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        return 1
     }
     
     /*

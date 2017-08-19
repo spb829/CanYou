@@ -343,48 +343,40 @@
                                     <outlet property="titleLabel" destination="soq-hJ-qRM" id="9Yk-wV-ke5"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingBasicTableViewCell" id="gad-eT-QJi" customClass="SettingBasicTableViewCell" customModule="CanYou" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SettingBasicTableViewCell" id="gad-eT-QJi" customClass="SettingBasicTableViewCell" customModule="CanYou" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="78" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gad-eT-QJi" id="vyM-93-9IG">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="49.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMe-Jt-Rie">
-                                            <rect key="frame" x="16" y="8" width="48" height="24"/>
+                                            <rect key="frame" x="16" y="8" width="310" height="24"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRp-5b-fnF">
-                                            <rect key="frame" x="333.5" y="8" width="33.5" height="33.5"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="dRp-5b-fnF" secondAttribute="height" multiplier="1:1" id="cXv-f5-yRe"/>
-                                            </constraints>
-                                        </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYh-ZP-94k">
-                                            <rect key="frame" x="16" y="32" width="301.5" height="14.5"/>
+                                            <rect key="frame" x="16" y="32" width="318" height="14.5"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="dRp-5b-fnF" secondAttribute="bottom" constant="8" id="6I3-1R-ifH"/>
-                                        <constraint firstItem="dRp-5b-fnF" firstAttribute="top" secondItem="vyM-93-9IG" secondAttribute="top" constant="8" id="Cbp-ol-Gto"/>
-                                        <constraint firstAttribute="trailing" secondItem="dRp-5b-fnF" secondAttribute="trailing" constant="8" id="Pqh-Zv-LGe"/>
                                         <constraint firstItem="VMe-Jt-Rie" firstAttribute="leading" secondItem="vyM-93-9IG" secondAttribute="leadingMargin" constant="8" id="Wry-6F-ReC"/>
                                         <constraint firstItem="VMe-Jt-Rie" firstAttribute="top" secondItem="vyM-93-9IG" secondAttribute="topMargin" id="aVw-g9-A0U"/>
                                         <constraint firstItem="YYh-ZP-94k" firstAttribute="top" secondItem="VMe-Jt-Rie" secondAttribute="bottom" id="au1-CO-XhN"/>
                                         <constraint firstItem="YYh-ZP-94k" firstAttribute="leading" secondItem="vyM-93-9IG" secondAttribute="leading" constant="16" id="cB1-aJ-6cd"/>
+                                        <constraint firstAttribute="trailing" secondItem="YYh-ZP-94k" secondAttribute="trailing" constant="8" id="cWh-RB-z1v"/>
                                         <constraint firstItem="YYh-ZP-94k" firstAttribute="leading" secondItem="VMe-Jt-Rie" secondAttribute="leading" id="eoO-ms-O2z"/>
-                                        <constraint firstItem="dRp-5b-fnF" firstAttribute="leading" secondItem="YYh-ZP-94k" secondAttribute="trailing" constant="16" id="xyC-ai-p75"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="VMe-Jt-Rie" secondAttribute="trailing" constant="8" id="uwF-sA-tKQ"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="cellButton" destination="dRp-5b-fnF" id="Fsm-Sz-UDs"/>
                                     <outlet property="contentLabel" destination="YYh-ZP-94k" id="k74-bX-2Ph"/>
                                     <outlet property="titleLabel" destination="VMe-Jt-Rie" id="paN-SJ-oRl"/>
+                                    <segue destination="JkV-4J-XLd" kind="show" trigger="accessoryAction" id="x02-mS-pyP"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -399,7 +391,7 @@
             </objects>
             <point key="canvasLocation" x="3701.5999999999999" y="864.91754122938539"/>
         </scene>
-        <!--Setting Detail Table View Controller-->
+        <!--Title-->
         <scene sceneID="o7Q-qO-xMR">
             <objects>
                 <tableViewController id="JkV-4J-XLd" customClass="SettingDetailTableViewController" customModule="CanYou" customModuleProvider="target" sceneMemberID="viewController">
@@ -480,6 +472,16 @@
                             <outlet property="delegate" destination="JkV-4J-XLd" id="Cnt-Mg-WJn"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Title" id="9QN-3S-QsJ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="eIu-lJ-d5x">
+                            <connections>
+                                <action selector="tappedSaveButton:" destination="JkV-4J-XLd" id="dh6-1P-7Ub"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="navigationItem" destination="9QN-3S-QsJ" id="TwG-tO-vFj"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ffw-pj-2gS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

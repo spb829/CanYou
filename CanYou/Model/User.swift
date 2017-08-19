@@ -21,7 +21,7 @@ struct User {
     var canValue: Int = 0
     
     init(){
-        self.id = 1
+        self.id = 0
     }
     
     

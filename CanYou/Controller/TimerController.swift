@@ -10,13 +10,13 @@ import Foundation
 
 struct TimerController {
     static let sharedTimerController = TimerController()
+    let dataController = DataController.sharedDataController
     var timer: Timer = Timer()
     
-    var start = Date()
-    var startTime = TimeInterval()
+    var startDate: Date
     
     var timeElapsed: TimeInterval {
-        return Date().timeIntervalSince1970 - start.timeIntervalSince1970
+        return Date().timeIntervalSince1970 - startDate.timeIntervalSince1970
     }
     
     var day: UInt32 {
@@ -35,11 +35,9 @@ struct TimerController {
         return UInt8(timeElapsed.truncatingRemainder(dividingBy: 60))
     }
     
-    var elapsedTimeDate: Date {
-        return Date(timeIntervalSinceReferenceDate: timeElapsed)
+    private init() {
+        startDate = dataController.currentUser.startDate
     }
-    
-    private init() { }
     
     
 }

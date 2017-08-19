@@ -14,12 +14,12 @@ struct DataController {
     var badgeStore = BadgeStore.sharedBadgeStore
     var rewardStore = RewardStore.sharedRewardStore
     var healthInfoStore = HealthInfoStore.sharedHealthInfoStore
-    var currentUser: User?
+    var currentUser: User = User()
 
     private init() { }
     
-    @discardableResult mutating func signUp() -> User {
-        self.currentUser = userStore.createUser()
-        return self.currentUser!
-    }
+//    @discardableResult mutating func signUp() -> User {
+//        self.currentUser = userStore.createUser()
+//        return self.currentUser!
+//    }
 }

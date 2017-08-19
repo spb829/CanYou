@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0718D7561F4591F5000956E8 /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0718D7551F4591F5000956E8 /* TimerController.swift */; };
-		073D27CE1F4841DA00D60444 /* SettingDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073D27CD1F4841DA00D60444 /* SettingDetailTableViewController.swift */; };
 		075860D11F41908300E974F8 /* PageContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075860D01F41908300E974F8 /* PageContainerView.swift */; };
 		07671BAA1F3F722100DD4E24 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BA91F3F722100DD4E24 /* Badge.swift */; };
 		07671BAC1F3F731600DD4E24 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BAB1F3F731600DD4E24 /* Reward.swift */; };
@@ -118,7 +117,6 @@
 
 /* Begin PBXFileReference section */
 		0718D7551F4591F5000956E8 /* TimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
-		073D27CD1F4841DA00D60444 /* SettingDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingDetailTableViewController.swift; sourceTree = "<group>"; };
 		075860D01F41908300E974F8 /* PageContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContainerView.swift; sourceTree = "<group>"; };
 		07671BA91F3F722100DD4E24 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		07671BAB1F3F731600DD4E24 /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
@@ -365,7 +363,6 @@
 				076C2F021F4053FB00579914 /* CigaretteDailyViewController.swift */,
 				076C2EFE1F4053AD00579914 /* WelcomeViewController.swift */,
 				076C2F041F40543800579914 /* SettingTableViewController.swift */,
-				073D27CD1F4841DA00D60444 /* SettingDetailTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -782,7 +779,6 @@
 				07671BB21F3F749B00DD4E24 /* Smoke.swift in Sources */,
 				076C2EF31F402FC100579914 /* RewardStore.swift in Sources */,
 				075860D11F41908300E974F8 /* PageContainerView.swift in Sources */,
-				073D27CE1F4841DA00D60444 /* SettingDetailTableViewController.swift in Sources */,
 				07DB353A1F48FBBB007E9515 /* PlusTableViewCell.swift in Sources */,
 				076C2EFB1F4045C800579914 /* MemoStore.swift in Sources */,
 				07D0C3931F48EB1400FE64EC /* BadgeTableViewCell.swift in Sources */,

@@ -10,8 +10,6 @@ import UIKit
 
 class SettingTableViewController: UITableViewController {
     var dataController = DataController.sharedDataController
-//    var currentUser: User = DataController.sharedDataController.currentUser!
-    var numberOfRows: [Int] = [4, 2, 4]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,5 +19,11 @@ class SettingTableViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        
     }
 }

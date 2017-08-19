@@ -60,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1014" y="121"/>
+            <point key="canvasLocation" x="977" y="121"/>
         </scene>
         <!--Can You Animation View Controller-->
         <scene sceneID="ns5-JO-Abs">
@@ -222,7 +222,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Id-KU-dOk" userLabel="ImageContainerView">
                                 <rect key="frame" x="247" y="114" width="120" height="120"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_image" translatesAutoresizingMaskIntoConstraints="NO" id="wlF-df-JrN">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_image" translatesAutoresizingMaskIntoConstraints="NO" id="wlF-df-JrN">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="잘하고 있어요 !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5k-AY-JN8">
@@ -457,12 +457,37 @@
                                             <segue destination="id5-3f-wRZ" kind="show" trigger="accessoryAction" id="87g-ci-7i1"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" id="7Sb-vn-2Zj" userLabel="건강 정보">
+                                        <rect key="frame" x="0.0" y="228" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7Sb-vn-2Zj" id="zHs-Nd-Rch">
+                                            <rect key="frame" x="0.0" y="0.0" width="308" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="건강 정보" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVZ-eX-sxK">
+                                                    <rect key="frame" x="8" y="14" width="284" height="21.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="VVZ-eX-sxK" firstAttribute="leading" secondItem="zHs-Nd-Rch" secondAttribute="leadingMargin" id="8Bs-yc-oV3"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="VVZ-eX-sxK" secondAttribute="trailing" constant="8" id="P7f-yh-2Sv"/>
+                                                <constraint firstItem="VVZ-eX-sxK" firstAttribute="top" secondItem="zHs-Nd-Rch" secondAttribute="topMargin" constant="6" id="ZT1-XU-OLX"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="VVZ-eX-sxK" secondAttribute="bottom" constant="6" id="n1L-zM-3dX"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="QLN-AX-EXo" kind="show" trigger="accessoryAction" id="TOw-AM-peG"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="개인 설정" id="mbG-sY-n5D">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="VxG-Ae-X6l" userLabel="랜덤 알람 설정">
-                                        <rect key="frame" x="0.0" y="256" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="306" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VxG-Ae-X6l" id="v2i-82-Y4H">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="49.5"/>
@@ -498,7 +523,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Xyj-HT-kml" userLabel="암호 잠금">
-                                        <rect key="frame" x="0.0" y="306" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="356" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xyj-HT-kml" id="yQH-s7-zOU">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="49.5"/>
@@ -538,7 +563,7 @@
                             <tableViewSection headerTitle="고객 지원" id="ReE-t3-S37">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Vo1-j9-4gt" userLabel="버전 정보">
-                                        <rect key="frame" x="0.0" y="384" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="434" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vo1-j9-4gt" id="Nt8-Z4-5yH">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="49.5"/>
@@ -574,7 +599,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" id="hrc-2n-jUL" userLabel="리뷰 작성">
-                                        <rect key="frame" x="0.0" y="434" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="484" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hrc-2n-jUL" id="hlQ-zg-rKP">
                                             <rect key="frame" x="0.0" y="0.0" width="328" height="49.5"/>
@@ -596,7 +621,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" id="Cgf-Zv-oF4" userLabel="문의 및 의견">
-                                        <rect key="frame" x="0.0" y="484" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="534" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cgf-Zv-oF4" id="dwu-eg-qJX">
                                             <rect key="frame" x="0.0" y="0.0" width="328" height="49.5"/>
@@ -618,7 +643,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="aFM-09-tvZ" userLabel="사용 기록 초기화">
-                                        <rect key="frame" x="0.0" y="534" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="584" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aFM-09-tvZ" id="xtm-Cj-3H6">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="49.5"/>
@@ -832,7 +857,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="duS-dO-rxw">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="217"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="524874012.74091798">
                                                         <!--2017-08-19 22:20:12 +0000-->
                                                     </date>
@@ -860,6 +885,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xEn-xl-5eM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4646" y="3704"/>
+        </scene>
+        <!--건강정보-->
+        <scene sceneID="xNe-bV-QeG">
+            <objects>
+                <tableViewController id="QLN-AX-EXo" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="TAF-kz-Wvv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="o00-tr-8AX">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o00-tr-8AX" id="gVl-nf-vcm">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="QLN-AX-EXo" id="ren-5n-S98"/>
+                            <outlet property="delegate" destination="QLN-AX-EXo" id="rYW-Tn-QHz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="건강정보" id="APz-h8-AxU"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DBa-Ao-fJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4646" y="4422"/>
         </scene>
         <!--성별-->
         <scene sceneID="Pn6-II-w77">
@@ -1334,7 +1388,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="310" height="64.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_image" translatesAutoresizingMaskIntoConstraints="NO" id="ERD-yB-I8d">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_image" translatesAutoresizingMaskIntoConstraints="NO" id="ERD-yB-I8d">
                                                     <rect key="frame" x="0.0" y="0.0" width="64.5" height="64.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="ERD-yB-I8d" secondAttribute="height" multiplier="1:1" id="Tgx-1f-5MZ"/>
@@ -1435,7 +1489,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_image" translatesAutoresizingMaskIntoConstraints="NO" id="BpE-S0-LgE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_image" translatesAutoresizingMaskIntoConstraints="NO" id="BpE-S0-LgE">
                                 <rect key="frame" x="16" y="36" width="343" height="343"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="BpE-S0-LgE" secondAttribute="height" multiplier="1:1" id="5S4-29-gBx"/>
@@ -1487,7 +1541,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Szt-9Y-hIn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5624.8000000000002" y="-596.85157421289364"/>
+            <point key="canvasLocation" x="5625" y="-595"/>
         </scene>
     </scenes>
     <resources>

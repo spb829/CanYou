@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RewardViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class RewardViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     var dataController = DataController.sharedDataController
     var rewardStore = DataController.sharedDataController.rewardStore
     
@@ -22,16 +22,16 @@ class RewardViewController: UIViewController, UITableViewDataSource, UITableView
     
     // MARK: - Table view data source
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return rewardStore.items.count + 1
     }
     
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == rewardStore.items.count {
             let cell = tableView.dequeueReusableCell(withIdentifier: "PlusTableViewCell", for: indexPath) as! PlusTableViewCell
             return cell
@@ -42,9 +42,9 @@ class RewardViewController: UIViewController, UITableViewDataSource, UITableView
         
         let reward = rewardStore.items[indexPath.row]
         
-        cell.titleLabel = reward.name!
-        cell.cansLabel = "\(reward.price) Cans"
-        cell.contentLabel = reward.content!
+        cell.titleLabel.text = reward.name!
+        cell.cansLabel.text = "\(reward.price ?? 0) Cans"
+        cell.contentLabel.text = reward.content!
         
         return cell
     }

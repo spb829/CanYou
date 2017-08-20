@@ -857,7 +857,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="duS-dO-rxw">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="217"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="524874012.74091798">
                                                         <!--2017-08-19 22:20:12 +0000-->
                                                     </date>

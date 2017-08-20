@@ -346,10 +346,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="GF4-l4-pul" kind="show" trigger="accessoryAction" id="yI3-L8-QeK"/>
+                                            <segue destination="GF4-l4-pul" kind="show" id="Lya-JT-S7K"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="zNS-nj-wY6" userLabel="이름">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="zNS-nj-wY6" userLabel="성별">
                                         <rect key="frame" x="0.0" y="78" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zNS-nj-wY6" id="YOv-Td-MBh">
@@ -382,7 +382,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="xyE-Ad-uP8" kind="show" trigger="accessoryAction" id="JoI-x2-A2w"/>
+                                            <segue destination="xyE-Ad-uP8" kind="show" id="uQ8-py-clN"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="zPJ-lE-PdJ" userLabel="생년월일">
@@ -418,7 +418,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="obx-Zd-ShB" kind="show" trigger="accessoryAction" id="K0e-xt-ql2"/>
+                                            <segue destination="obx-Zd-ShB" kind="show" id="kxa-PE-mC1"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="RFM-Ph-6Kr" userLabel="금연 시작일">
@@ -454,7 +454,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="id5-3f-wRZ" kind="show" trigger="accessoryAction" id="87g-ci-7i1"/>
+                                            <segue destination="id5-3f-wRZ" kind="show" id="P0W-dY-cCZ"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" id="7Sb-vn-2Zj" userLabel="건강 정보">
@@ -479,7 +479,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="QLN-AX-EXo" kind="show" trigger="accessoryAction" id="TOw-AM-peG"/>
+                                            <segue destination="QLN-AX-EXo" kind="show" id="w4b-hw-iZj"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -519,7 +519,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="edt-oA-aLy" kind="show" trigger="accessoryAction" id="QxF-xH-HvW"/>
+                                            <segue destination="edt-oA-aLy" kind="show" id="NoL-Ph-spE"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Xyj-HT-kml" userLabel="암호 잠금">
@@ -555,7 +555,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="wrq-jb-kiD" kind="show" trigger="accessoryAction" id="NsW-2d-QzI"/>
+                                            <segue destination="wrq-jb-kiD" kind="show" id="g6E-WD-EfJ"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -595,7 +595,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="EkX-6a-1vW" kind="show" trigger="accessoryAction" id="sJ3-vI-XfG"/>
+                                            <segue destination="EkX-6a-1vW" kind="show" id="z1V-oo-2ma"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" id="hrc-2n-jUL" userLabel="리뷰 작성">
@@ -664,7 +664,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="N0o-7D-Utx" kind="show" trigger="accessoryAction" id="kRH-Er-fJI"/>
+                                            <segue destination="N0o-7D-Utx" kind="show" id="vfG-yR-vCe"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>

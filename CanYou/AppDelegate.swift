@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let center = UNUserNotificationCenter.current()
+        let options: UNAuthorizationOptions = [.alert, .sound];
+        center.requestAuthorization(options: options) {
+            (granted, error) in
+            if !granted {
+                print("권한 얻기 실패")
+            }
+        }
+        
+//        center.getNotificationSettings { (settings) in
+//            if settings.authorizationStatus != .authorized {
+//                // Notifications not allowed
+//            }
+//        }
+        
         application.registerUserNotificationSettings(UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil))
         
         return true
@@ -36,21 +53,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          사용자에게 표시될 문장은 속성을 통해 설정할 수 있으며, 반복하는 간격과 알림 상자에 표시될 메시지를 옵션으로 지정할 수 있다.
          */
         
-        let app = UIApplication.shared
-        let notificationSettings = UIUserNotificationSettings(types: UIUserNotificationType([.alert, .sound /*, .Badge*/]), categories:nil)
-        app.registerUserNotificationSettings(notificationSettings)
+//        let app = UIApplication.shared
+//        let notificationSettings = UIUserNotificationSettings(types: UIUserNotificationType([.alert, .sound /*, .Badge*/]), categories:nil)
+//        app.registerUserNotificationSettings(notificationSettings)
         
-        let alarmType = Date().addingTimeInterval(10)       // 현재 시간에 10초를 더한후 이 시간에 LocalNotification 발생처리
-        let notifyAlaram = UILocalNotification()
+//        let alarmTime = Date().addingTimeInterval(10)
         
-        notifyAlaram.fireDate = alarmType
-        notifyAlaram.timeZone = NSTimeZone.default
-        notifyAlaram.soundName = "bell_tree.mp3"
-        notifyAlaram.alertBody = "30분뒤 회의예정입니다."
-        app.scheduleLocalNotification(notifyAlaram)
+//        let alarmType = Date().addingTimeInterval(10)       // 현재 시간에 10초를 더한후 이 시간에 LocalNotification 발생처리
+//        let notifyAlaram = UILocalNotification()
+//
+//        notifyAlaram.fireDate = alarmTime
+//        notifyAlaram.timeZone = NSTimeZone.default
+//        notifyAlaram.soundName = "bell_tree.mp3"
+//        notifyAlaram.alertBody = "30분뒤 회의예정입니다."
+//        app.scheduleLocalNotification(notifyAlaram)
+//
+        let content = UNMutableNotificationContent()
+        content.title = "Don't forget"
+        content.body = "Buy some milk"
+        content.sound = UNNotificationSound.default()
         
-        
-        
+        // trigger
+        let _ = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
+//        let date = Date(timeIntervalSinceNow: 3600)
+//        let triggerDate = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second,], from: date)
+//        let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate, repeats: false)
+
+//        let triggerDaily = Calendar.current.dateComponents([hour,.minute,.second,], from: date)
+//        let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDaily, repeats: true)
+//        let triggerWeekly = Calendar.current.dateComponents([.weekday,hour,.minute,.second,], from: date)
+//        let trigger = UNCalendarNotificationTrigger(dateMatching: triggerWeekly, repeats: true)
         
         /*
          예약된 알림 취소하기
@@ -62,19 +94,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //            app.cancelAllLocalNotifications()
         //        }
         
-        
-        
-        
         /*
          즉시 로컬 알림 호출하기
          이미 예약된 알림의 fireDate속성을 무시하고 즉시 발생시킬 수도 있다.  아래는 현재 예약된 알림의 목록을 얻은후 이중 첫번째 알림을 즉시 화면에 표시한다.
          
          다만 즉시 로컬 알림을 호출하여도 취소하지 않는 이상 fireDate에 설정된 시간에 화면에 다시 표시된다.
          */
-        let notifications = app.scheduledLocalNotifications
-        if notifications!.count > 0 {
-            app.presentLocalNotificationNow(notifications![0] as UILocalNotification)
-        }
+//        let notifications = app.scheduledLocalNotifications
+//        if notifications!.count > 0 {
+//            app.presentLocalNotificationNow(notifications![0] as UILocalNotification)
+//        }
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {

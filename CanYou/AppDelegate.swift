@@ -17,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        application.registerUserNotificationSettings(UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil))
+        
         return true
     }
 
@@ -28,6 +30,51 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        
+        /*
+         로컬 알림은 알림이 발생한 날짜와 시간으로 구성된 NSDate 객체를 결합한 UILocalNotification 클래스를 사용해야 한다.
+         사용자에게 표시될 문장은 속성을 통해 설정할 수 있으며, 반복하는 간격과 알림 상자에 표시될 메시지를 옵션으로 지정할 수 있다.
+         */
+        
+        let app = UIApplication.shared
+        let notificationSettings = UIUserNotificationSettings(types: UIUserNotificationType([.alert, .sound /*, .Badge*/]), categories:nil)
+        app.registerUserNotificationSettings(notificationSettings)
+        
+        let alarmType = Date().addingTimeInterval(10)       // 현재 시간에 10초를 더한후 이 시간에 LocalNotification 발생처리
+        let notifyAlaram = UILocalNotification()
+        
+        notifyAlaram.fireDate = alarmType
+        notifyAlaram.timeZone = NSTimeZone.default
+        notifyAlaram.soundName = "bell_tree.mp3"
+        notifyAlaram.alertBody = "30분뒤 회의예정입니다."
+        app.scheduleLocalNotification(notifyAlaram)
+        
+        
+        
+        
+        /*
+         예약된 알림 취소하기
+         예약된 알림은 처리되지 않은 알림 목록을 얻어 취소할 수 있다. 알림 목록은 NSArray 객체의 형태로 제공되며, cancelLocalNotification 메서드를 사용하여 각각의 알림을 취소할 수 있다. cancelAllLocalNotification 메서드를 이용하여 모든 알림을 취소할수도 있다.
+         */
+        //        let oldNotifications = app.scheduledLocalNotifications
+        //        if oldNotifications!.count > 0 {
+        //            print("Scheduled Local Notification Exist!!")
+        //            app.cancelAllLocalNotifications()
+        //        }
+        
+        
+        
+        
+        /*
+         즉시 로컬 알림 호출하기
+         이미 예약된 알림의 fireDate속성을 무시하고 즉시 발생시킬 수도 있다.  아래는 현재 예약된 알림의 목록을 얻은후 이중 첫번째 알림을 즉시 화면에 표시한다.
+         
+         다만 즉시 로컬 알림을 호출하여도 취소하지 않는 이상 fireDate에 설정된 시간에 화면에 다시 표시된다.
+         */
+        let notifications = app.scheduledLocalNotifications
+        if notifications!.count > 0 {
+            app.presentLocalNotificationNow(notifications![0] as UILocalNotification)
+        }
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {

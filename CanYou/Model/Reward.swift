@@ -21,6 +21,11 @@ class Reward: Then {
     var price: Int?
     var purchased: Bool
     
+    init(){
+        self.userId = 0
+        self.id = 1
+        self.purchased = false
+    }
     
     init(userId: Int){
         self.id = 1

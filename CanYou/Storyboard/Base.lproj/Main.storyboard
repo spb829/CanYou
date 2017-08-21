@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WMK-ce-zhF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WMK-ce-zhF">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -253,7 +253,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QLf-uE-w3P">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" ambiguous="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLf-uE-w3P">
                                 <rect key="frame" x="8" y="244" width="359" height="413"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7nl-T3-Ua2">
@@ -750,7 +750,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="랜덤 알람 설정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GD-2q-Q1b">
-                                                    <rect key="frame" x="16" y="11" width="97.5" height="21.5"/>
+                                                    <rect key="frame" x="16" y="11" width="294" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -764,6 +764,7 @@
                                                 <constraint firstItem="N0v-xB-XTU" firstAttribute="top" secondItem="Xe5-4V-nVs" secondAttribute="top" constant="5" id="BRI-Hs-5Ix"/>
                                                 <constraint firstItem="0GD-2q-Q1b" firstAttribute="leading" secondItem="Xe5-4V-nVs" secondAttribute="leadingMargin" constant="8" id="Cpx-3Y-MVL"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="0GD-2q-Q1b" secondAttribute="bottom" constant="3" id="FG2-zJ-h9t"/>
+                                                <constraint firstItem="N0v-xB-XTU" firstAttribute="leading" secondItem="0GD-2q-Q1b" secondAttribute="trailing" constant="8" id="G6q-4v-LOr"/>
                                                 <constraint firstItem="0GD-2q-Q1b" firstAttribute="top" secondItem="Xe5-4V-nVs" secondAttribute="topMargin" constant="3" id="OQ5-pS-6aX"/>
                                                 <constraint firstAttribute="bottom" secondItem="N0v-xB-XTU" secondAttribute="bottom" constant="5" id="Vzy-EE-don"/>
                                             </constraints>
@@ -1394,7 +1395,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.77009792060000004" blue="0.18074931390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.78796887397766113" green="0.85429519414901733" blue="0.35354050993919373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="9mp-1l-Uw9" firstAttribute="bottom" secondItem="qyh-7T-GCa" secondAttribute="bottom" constant="8" id="3hV-N8-HFA"/>
                             <constraint firstItem="9mp-1l-Uw9" firstAttribute="trailing" secondItem="qyh-7T-GCa" secondAttribute="trailing" constant="16" id="92m-oN-Tm8"/>
@@ -1402,6 +1403,9 @@
                         <viewLayoutGuide key="safeArea" id="9mp-1l-Uw9"/>
                     </view>
                     <navigationItem key="navigationItem" title="CanYou" id="caT-9f-Msv"/>
+                    <connections>
+                        <outlet property="view" destination="2UD-fz-Ozc" id="nnV-HB-bbz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fB9-lx-wVD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1538,6 +1542,9 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="rui-uc-3I3" secondAttribute="trailing" id="y2d-i8-CeW"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="FNz-Yq-fYj" kind="show" id="mfO-D5-lf8"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -1584,7 +1591,7 @@
         <!--New Reward-->
         <scene sceneID="btj-v5-hWJ">
             <objects>
-                <viewController id="FNz-Yq-fYj" sceneMemberID="viewController">
+                <viewController id="FNz-Yq-fYj" customClass="RewardNewViewController" customModule="CanYou" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fgV-LB-x8f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1639,7 +1646,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fL0-CW-6aI"/>
                     </view>
-                    <navigationItem key="navigationItem" title="New Reward" id="K5H-KU-6q3"/>
+                    <navigationItem key="navigationItem" title="New Reward" id="zwG-x8-NQM">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="eeC-YB-w2G">
+                            <connections>
+                                <action selector="saveTapped:" destination="FNz-Yq-fYj" id="gad-pT-aFp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="contentTextField" destination="I3f-Ub-URA" id="RSW-pr-UYR"/>
+                        <outlet property="priceTextField" destination="yWd-Hq-W2P" id="P20-Z6-MpF"/>
+                        <outlet property="rewardImageView" destination="188-vP-JU3" id="lt3-IQ-gkr"/>
+                        <outlet property="titleTextField" destination="TXW-Qg-g4a" id="YWw-Wc-UCh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="osT-5m-mB6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

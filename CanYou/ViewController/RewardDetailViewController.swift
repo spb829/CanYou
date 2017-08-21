@@ -20,6 +20,7 @@ class RewardDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        applyColor()
     }
     
     override func viewWillAppear(_ animated: Bool) {

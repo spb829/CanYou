@@ -11,16 +11,17 @@ import Then
 
 class RootContainerViewController: UIViewController {
     let scrollView = UIScrollView().then {
-        $0.backgroundColor = UIColor.clear
+//        $0.backgroundColor = UIColor.clear
         $0.isPagingEnabled = true
         $0.showsHorizontalScrollIndicator = false
         $0.showsVerticalScrollIndicator = false
     }
     let pageControl = UIPageControl().then {
-        $0.backgroundColor = UIColor.clear
+//        $0.backgroundColor = UIColor.clear
         $0.currentPage = 0
     }
     
+//    @IBOutlet var view: UIView!
     var cardViews = [PageContainerView]()
     var cardIndex: Int = 0
     
@@ -69,9 +70,10 @@ class RootContainerViewController: UIViewController {
     }()
     
     override func viewDidLoad() {
-        print("viewDidLoad")
+//        print("viewDidLoad")
         super.viewDidLoad()
 //        dashBoardViewController.startTimer()
+        applyColor()
         initViews()
     }
     
@@ -124,10 +126,14 @@ class RootContainerViewController: UIViewController {
         }
     }
     
+    func reloadData() {
+        rewardViewController.tableView.reloadData()
+    }
+    
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
-        print("viewWillLayoutSubviews")
+//        print("viewWillLayoutSubviews")
         
         let size = self.view.frame.size
         let barHeight = UIApplication.shared.statusBarFrame.height
@@ -169,6 +175,7 @@ class RootContainerViewController: UIViewController {
 //        self.rewardViewController.tableView.reloadData()
         self.scrollView.contentOffset = CGPoint(x: size.width, y: 0)
         self.scrollView.contentSize = CGSize(width: size.width * 3, height: size.height)
+        reloadData()
     }
     
 }

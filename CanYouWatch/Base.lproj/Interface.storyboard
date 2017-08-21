@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13178.6" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1mh-Az-CZt">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13168.3" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1mh-Az-CZt">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13045"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13042.2"/>
     </dependencies>
     <scenes>
         <!--Stop Watch Interface Controller-->
@@ -42,6 +42,7 @@
                     <connections>
                         <outlet property="dayLabel" destination="tsX-yy-j17" id="5xM-Pu-SHL"/>
                         <outlet property="stopTimer" destination="gTG-71-sQA" id="jKP-uO-BZI"/>
+                        <segue destination="1mh-Az-CZt" kind="relationship" relationship="nextPage" id="OoH-kh-Qkb"/>
                     </connections>
                 </controller>
             </objects>
@@ -52,7 +53,7 @@
             <objects>
                 <controller id="1mh-Az-CZt" customClass="DashBoardInterfaceController" customModule="CanYouWatch_Extension">
                     <items>
-                        <group width="1" height="129" alignment="left" backgroundImage="Test0" contentMode="scaleAspectFit" animationDuration="1.2" id="tfb-2v-of4">
+                        <group width="1" height="129" alignment="left" backgroundImage="Test0" contentMode="scaleAspectFit" initiallyAnimated="NO" id="tfb-2v-of4">
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </group>
                         <group width="1" alignment="left" id="jS9-cZ-Q7h">

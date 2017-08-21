@@ -42,6 +42,9 @@
 		077E8EE21F4562560057DDC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 077E8EE11F4562560057DDC3 /* Assets.xcassets */; };
 		077E8EE71F4562560057DDC3 /* CanYouWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 077E8ECA1F4562550057DDC3 /* CanYouWatch.app */; };
 		077EEB0D1F3F070900555921 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077EEB0C1F3F070900555921 /* User.swift */; };
+		078A6EB91F4AAAE1002F5CA5 /* RewardNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A6EB81F4AAAE1002F5CA5 /* RewardNewViewController.swift */; };
+		078A6EBB1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A6EBA1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift */; };
+		078A6EBD1F4AC710002F5CA5 /* ColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A6EBC1F4AC710002F5CA5 /* ColorController.swift */; };
 		07A35BE51F405BCB00482782 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A35BE41F405BCB00482782 /* DashBoardViewController.swift */; };
 		07A3692A1F41D110000E2152 /* RootContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A369291F41D110000E2152 /* RootContainerViewController.swift */; };
 		07AEE9031F3C42C300D20151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE9021F3C42C300D20151 /* AppDelegate.swift */; };
@@ -155,6 +158,9 @@
 		077E8EE31F4562560057DDC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		077E8EE41F4562560057DDC3 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		077EEB0C1F3F070900555921 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		078A6EB81F4AAAE1002F5CA5 /* RewardNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardNewViewController.swift; sourceTree = "<group>"; };
+		078A6EBA1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UYNotificationDelegate.swift; sourceTree = "<group>"; };
+		078A6EBC1F4AC710002F5CA5 /* ColorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorController.swift; sourceTree = "<group>"; };
 		07A35BE41F405BCB00482782 /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DashBoardViewController.swift; path = CanYou/ViewController/DashBoardViewController.swift; sourceTree = SOURCE_ROOT; };
 		07A369291F41D110000E2152 /* RootContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContainerViewController.swift; sourceTree = "<group>"; };
 		07AEE8FF1F3C42C300D20151 /* CanYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -362,6 +368,7 @@
 				076B7AA01F42FC6900C68F05 /* BadgeViewController.swift */,
 				07783FC71F47329F0081FB17 /* BadgeDetailViewController.swift */,
 				076B7AA21F42FD2900C68F05 /* RewardViewController.swift */,
+				078A6EB81F4AAAE1002F5CA5 /* RewardNewViewController.swift */,
 				07783FC91F4732E30081FB17 /* RewardDetailViewController.swift */,
 				076C2F021F4053FB00579914 /* CigaretteDailyViewController.swift */,
 				076C2EFE1F4053AD00579914 /* WelcomeViewController.swift */,
@@ -375,6 +382,8 @@
 			children = (
 				0718D7551F4591F5000956E8 /* TimerController.swift */,
 				07671BBB1F3F797300DD4E24 /* DataController.swift */,
+				078A6EBA1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift */,
+				078A6EBC1F4AC710002F5CA5 /* ColorController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -776,6 +785,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07671BB61F3F750A00DD4E24 /* Setting.swift in Sources */,
+				078A6EBD1F4AC710002F5CA5 /* ColorController.swift in Sources */,
 				076C2EFF1F4053AD00579914 /* WelcomeViewController.swift in Sources */,
 				077EEB0D1F3F070900555921 /* User.swift in Sources */,
 				07671BAA1F3F722100DD4E24 /* Badge.swift in Sources */,
@@ -787,6 +797,7 @@
 				076C2EFB1F4045C800579914 /* MemoStore.swift in Sources */,
 				07D0C3931F48EB1400FE64EC /* BadgeTableViewCell.swift in Sources */,
 				076C2EFD1F404B4200579914 /* SettingStore.swift in Sources */,
+				078A6EB91F4AAAE1002F5CA5 /* RewardNewViewController.swift in Sources */,
 				076C2F011F4053C100579914 /* CanYouAnimationViewController.swift in Sources */,
 				07783FCA1F4732E30081FB17 /* RewardDetailViewController.swift in Sources */,
 				076C2EF91F403D4C00579914 /* SmokeStore.swift in Sources */,
@@ -804,6 +815,7 @@
 				07671BAE1F3F73B700DD4E24 /* BadgeUser.swift in Sources */,
 				076C2F051F40543800579914 /* SettingTableViewController.swift in Sources */,
 				07671BBC1F3F797300DD4E24 /* DataController.swift in Sources */,
+				078A6EBB1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift in Sources */,
 				07DB35371F48F445007E9515 /* RewardTableViewCell.swift in Sources */,
 				07AEE9031F3C42C300D20151 /* AppDelegate.swift in Sources */,
 				076C2EF71F4033C100579914 /* HealthInfoStore.swift in Sources */,

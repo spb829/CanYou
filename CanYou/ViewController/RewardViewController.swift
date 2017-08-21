@@ -16,6 +16,7 @@ class RewardViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        applyColor()
     }
     
     override func didReceiveMemoryWarning() {
@@ -25,18 +26,18 @@ class RewardViewController: UIViewController, UITableViewDelegate, UITableViewDa
     // MARK: - Table view data source
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        print("numberofsectinos")
+//        print("numberofsectinos")
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("rows")
+//        print("rows")
         return rewardStore.items.count + 1
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print("cells")
+//        print("cells")
         if indexPath.row == rewardStore.items.count {
             let cell = tableView.dequeueReusableCell(withIdentifier: "PlusTableViewCell", for: indexPath) as! PlusTableViewCell
             return cell

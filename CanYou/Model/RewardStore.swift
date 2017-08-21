@@ -76,5 +76,7 @@ struct RewardStore{
         return items.filter({$0.purchased == purchased})
     }
     
-    
+    mutating func add(_ item: Reward) {
+        self.items.append(item)
+    }
 }

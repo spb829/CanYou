@@ -17,6 +17,7 @@ class BadgeDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        applyColor()
     }
 
     override func didReceiveMemoryWarning() {

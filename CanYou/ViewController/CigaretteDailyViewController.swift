@@ -15,7 +15,7 @@ class CigaretteDailyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        applyColor()
     }
     
     @IBAction func startTapped(_ sender: UIButton) {

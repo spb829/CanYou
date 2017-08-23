@@ -8,11 +8,10 @@
 
 import UIKit
 
-class CanYouAnimationViewController: UIViewController {
+class CanYouAnimationViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        applyColor()
     }
 
     override func didReceiveMemoryWarning() {

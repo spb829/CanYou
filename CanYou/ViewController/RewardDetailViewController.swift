@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RewardDetailViewController: UIViewController {
+class RewardDetailViewController: BaseViewController {
 //    var dataController = DataController.sharedDataController
     var rewardStore = DataController.sharedDataController.rewardStore
     var reward: Reward?
@@ -20,7 +20,6 @@ class RewardDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        applyColor()
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -8,14 +8,13 @@
 
 import UIKit
 
-class CigaretteDailyViewController: UIViewController {
+class CigaretteDailyViewController: BaseViewController {
 
     @IBOutlet var cigaretteDaily: UITextField!
     var dataController = DataController.sharedDataController
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        applyColor()
     }
     
     @IBAction func startTapped(_ sender: UIButton) {

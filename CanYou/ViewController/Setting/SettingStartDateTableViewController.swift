@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingStartDateTableViewController: UITableViewController {
+class SettingStartDateTableViewController: BaseTableViewController {
     var currentUser = DataController.sharedDataController.currentUser
     
     @IBOutlet var nameTextField: UITextField!

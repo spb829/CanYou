@@ -9,7 +9,7 @@
 
 import UIKit
 
-class BadgeDetailViewController: UIViewController {
+class BadgeDetailViewController: BaseViewController {
     var badgeStore = DataController.sharedDataController.badgeStore
     var badge: Badge?
     @IBOutlet var badgeImageView: UIImageView!
@@ -17,7 +17,6 @@ class BadgeDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        applyColor()
     }
 
     override func didReceiveMemoryWarning() {

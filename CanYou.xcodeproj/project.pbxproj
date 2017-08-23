@@ -116,6 +116,8 @@
 		07415F0D1F4D925500B82597 /* Reward.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07415F0C1F4D925500B82597 /* Reward.storyboard */; };
 		07415F0F1F4D929300B82597 /* Badge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07415F0E1F4D929300B82597 /* Badge.storyboard */; };
 		07415F111F4D92BC00B82597 /* DashBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07415F101F4D92BC00B82597 /* DashBoard.storyboard */; };
+		07415F131F4D947100B82597 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07415F121F4D947100B82597 /* BaseTableViewController.swift */; };
+		07415F151F4D948200B82597 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07415F141F4D948200B82597 /* BaseViewController.swift */; };
 		075860D11F41908300E974F8 /* PageContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075860D01F41908300E974F8 /* PageContainerView.swift */; };
 		07671BAA1F3F722100DD4E24 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BA91F3F722100DD4E24 /* Badge.swift */; };
 		07671BAC1F3F731600DD4E24 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BAB1F3F731600DD4E24 /* Reward.swift */; };
@@ -336,6 +338,8 @@
 		07415F0C1F4D925500B82597 /* Reward.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reward.storyboard; sourceTree = "<group>"; };
 		07415F0E1F4D929300B82597 /* Badge.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Badge.storyboard; sourceTree = "<group>"; };
 		07415F101F4D92BC00B82597 /* DashBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashBoard.storyboard; sourceTree = "<group>"; };
+		07415F121F4D947100B82597 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		07415F141F4D948200B82597 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		075860D01F41908300E974F8 /* PageContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContainerView.swift; sourceTree = "<group>"; };
 		07671BA91F3F722100DD4E24 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		07671BAB1F3F731600DD4E24 /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
@@ -462,6 +466,15 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
+		07415F161F4D948800B82597 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				07415F121F4D947100B82597 /* BaseTableViewController.swift */,
+				07415F141F4D948200B82597 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		07764A521F45F5430086105F /* InterfaceController */ = {
 			isa = PBXGroup;
 			children = (
@@ -493,6 +506,13 @@
 				077E8EE41F4562560057DDC3 /* PushNotificationPayload.apns */,
 			);
 			path = "CanYouWatch Extension";
+			sourceTree = "<group>";
+		};
+		07935A811F4DAE7400D983F0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 		07AEE8F61F3C42C200D20151 = {
@@ -591,6 +611,7 @@
 		07AEE9351F3C46E700D20151 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				07415F161F4D948800B82597 /* Base */,
 				07415F031F4D88A000B82597 /* Setting */,
 				07A369291F41D110000E2152 /* RootContainerViewController.swift */,
 				076C2F001F4053C100579914 /* CanYouAnimationViewController.swift */,
@@ -612,6 +633,7 @@
 				0718D7551F4591F5000956E8 /* TimerController.swift */,
 				07671BBB1F3F797300DD4E24 /* DataController.swift */,
 				078A6EBA1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift */,
+				07935A811F4DAE7400D983F0 /* Extension */,
 				078A6EBC1F4AC710002F5CA5 /* ColorController.swift */,
 			);
 			path = Controller;
@@ -1242,6 +1264,7 @@
 				076C2EFB1F4045C800579914 /* MemoStore.swift in Sources */,
 				07D0C3931F48EB1400FE64EC /* BadgeTableViewCell.swift in Sources */,
 				07415F071F4D89CD00B82597 /* SettingStartDateTableViewController.swift in Sources */,
+				07415F151F4D948200B82597 /* BaseViewController.swift in Sources */,
 				076C2EFD1F404B4200579914 /* SettingStore.swift in Sources */,
 				078A6EB91F4AAAE1002F5CA5 /* RewardNewViewController.swift in Sources */,
 				076C2F011F4053C100579914 /* CanYouAnimationViewController.swift in Sources */,
@@ -1251,6 +1274,7 @@
 				076C2EF91F403D4C00579914 /* SmokeStore.swift in Sources */,
 				0718D7561F4591F5000956E8 /* TimerController.swift in Sources */,
 				076C2EF51F40332A00579914 /* BadgeStore.swift in Sources */,
+				07415F131F4D947100B82597 /* BaseTableViewController.swift in Sources */,
 				07A3692A1F41D110000E2152 /* RootContainerViewController.swift in Sources */,
 				07671BBA1F3F769500DD4E24 /* UserStore.swift in Sources */,
 				07A35BE51F405BCB00482782 /* DashBoardViewController.swift in Sources */,

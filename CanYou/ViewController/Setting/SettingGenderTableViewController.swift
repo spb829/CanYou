@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingGenderTableViewController: UITableViewController {
+class SettingGenderTableViewController: BaseTableViewController {
     var currentUser = DataController.sharedDataController.currentUser
     
     @IBOutlet var maleCell: UITableViewCell!

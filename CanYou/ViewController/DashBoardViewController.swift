@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DashBoardViewController: UIViewController {
+class DashBoardViewController: BaseViewController {
     @IBOutlet var timeLabel: UILabel!
     @IBOutlet var dayLabel: UILabel!
     
@@ -19,7 +19,6 @@ class DashBoardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        applySubColor()
         startTimer()
     }
     

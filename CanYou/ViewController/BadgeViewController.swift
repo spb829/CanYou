@@ -8,14 +8,13 @@
 
 import UIKit
 
-class BadgeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class BadgeViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     var dataController = DataController.sharedDataController
     var badgeStore = DataController.sharedDataController.badgeStore
     @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        applySubColor()
     }
 
     override func didReceiveMemoryWarning() {

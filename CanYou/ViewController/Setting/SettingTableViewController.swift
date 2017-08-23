@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingTableViewController: UITableViewController {
+class SettingTableViewController: BaseTableViewController {
     var dataController = DataController.sharedDataController
     var currentUser = DataController.sharedDataController.currentUser
     
@@ -22,7 +22,6 @@ class SettingTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        applyColor()
     }
 
     override func didReceiveMemoryWarning() {

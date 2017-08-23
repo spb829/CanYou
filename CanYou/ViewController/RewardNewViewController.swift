@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RewardNewViewController: UIViewController {
+class RewardNewViewController: BaseViewController {
     @IBOutlet var rewardImageView: UIImageView!
     @IBOutlet var titleTextField: UITextField!
     @IBOutlet var contentTextField: UITextField!
@@ -18,7 +18,6 @@ class RewardNewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        applyColor()
     }
 
     override func didReceiveMemoryWarning() {

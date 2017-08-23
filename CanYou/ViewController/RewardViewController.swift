@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RewardViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
+class RewardViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource  {
     var dataController = DataController.sharedDataController
     var rewardStore = DataController.sharedDataController.rewardStore
     @IBOutlet var tableView: UITableView!
@@ -16,7 +16,6 @@ class RewardViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        applySubColor()
     }
     
     override func didReceiveMemoryWarning() {

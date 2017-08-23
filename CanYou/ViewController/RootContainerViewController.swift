@@ -9,7 +9,7 @@
 import UIKit
 import Then
 
-class RootContainerViewController: UIViewController {
+class RootContainerViewController: BaseViewController {
     let scrollView = UIScrollView().then {
 //        $0.backgroundColor = UIColor.clear
         $0.isPagingEnabled = true
@@ -21,7 +21,6 @@ class RootContainerViewController: UIViewController {
         $0.currentPage = 0
     }
     
-//    @IBOutlet var view: UIView!
     var cardViews = [PageContainerView]()
     var cardIndex: Int = 0
     
@@ -72,8 +71,6 @@ class RootContainerViewController: UIViewController {
     override func viewDidLoad() {
 //        print("viewDidLoad")
         super.viewDidLoad()
-//        dashBoardViewController.startTimer()
-        applyColor()
         
         initViews()
     }

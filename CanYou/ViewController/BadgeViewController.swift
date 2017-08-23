@@ -15,7 +15,7 @@ class BadgeViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        applyColor()
+        applySubColor()
     }
 
     override func didReceiveMemoryWarning() {

@@ -16,7 +16,7 @@ class RewardViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        applyColor()
+        applySubColor()
     }
     
     override func didReceiveMemoryWarning() {

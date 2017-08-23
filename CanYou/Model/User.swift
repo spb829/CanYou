@@ -25,5 +25,4 @@ class User: Then {
         self.id = 0
     }
     
-    
 }

@@ -27,7 +27,7 @@ class RootContainerViewController: UIViewController {
     
     private lazy var dashBoardViewController: DashBoardViewController = {
         // Load Storyboard
-        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let storyboard = UIStoryboard(name: "DashBoard", bundle: Bundle.main)
         
         // Instantiate View Controller
         var viewController = storyboard.instantiateViewController(withIdentifier: "DashBoardViewController") as! DashBoardViewController
@@ -45,7 +45,7 @@ class RootContainerViewController: UIViewController {
     
     private lazy var badgeViewController: BadgeViewController = {
         // Load Storyboard
-        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let storyboard = UIStoryboard(name: "Badge", bundle: Bundle.main)
         
         // Instantiate View Controller
         var viewController = storyboard.instantiateViewController(withIdentifier: "BadgeViewController") as! BadgeViewController
@@ -58,7 +58,7 @@ class RootContainerViewController: UIViewController {
     
     private lazy var rewardViewController: RewardViewController = {
         // Load Storyboard
-        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let storyboard = UIStoryboard(name: "Reward", bundle: Bundle.main)
         
         // Instantiate View Controller
         var viewController = storyboard.instantiateViewController(withIdentifier: "RewardViewController") as! RewardViewController
@@ -74,6 +74,7 @@ class RootContainerViewController: UIViewController {
         super.viewDidLoad()
 //        dashBoardViewController.startTimer()
         applyColor()
+        
         initViews()
     }
     
@@ -91,7 +92,8 @@ class RootContainerViewController: UIViewController {
     func initCardViews() {
         for i in 0...2 {
             let cardView = PageContainerView().then {
-                $0.backgroundColor = UIColor(red: 255, green: 180, blue: 0, alpha: 1.0)
+//                $0.backgroundColor = UIColor(red: 255, green: 180, blue: 0, alpha: 1.0)
+                $0.backgroundColor = ColorController.shared.defaultBackgroundColor
             }
             
             switch i {

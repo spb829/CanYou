@@ -12,14 +12,13 @@ import Foundation
 
 class DashBoardInterfaceController: WKInterfaceController {
     @IBOutlet var group: WKInterfaceGroup!
-    let duration = 1.2
+    let duration = 5.0
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        print("1")
 
-        group.setBackgroundImageNamed("Test")
-        group.startAnimatingWithImages(in: NSMakeRange(0, 35), duration: self.duration, repeatCount: 1)
+        group.setBackgroundImageNamed("percent")
+        group.startAnimatingWithImages(in: NSMakeRange(0, 100), duration: self.duration, repeatCount: 30)
     }
     
     override func willActivate() {

@@ -19,7 +19,7 @@ class DashBoardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        applyColor()
+        applySubColor()
         startTimer()
     }
     

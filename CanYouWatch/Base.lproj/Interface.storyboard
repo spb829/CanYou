@@ -53,8 +53,8 @@
             <objects>
                 <controller id="1mh-Az-CZt" customClass="DashBoardInterfaceController" customModule="CanYouWatch_Extension">
                     <items>
-                        <group width="1" height="129" alignment="left" backgroundImage="Test0" contentMode="scaleAspectFit" initiallyAnimated="NO" id="tfb-2v-of4">
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <group width="1" height="129" alignment="left" backgroundImage="percent0" contentMode="scaleAspectFit" animationDuration="5" id="tfb-2v-of4">
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                         </group>
                         <group width="1" alignment="left" id="jS9-cZ-Q7h">
                             <items>

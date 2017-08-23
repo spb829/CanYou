@@ -18,7 +18,7 @@ class RewardNewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        applyColor()
+//        applyColor()
     }
 
     override func didReceiveMemoryWarning() {

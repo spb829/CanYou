@@ -37,7 +37,7 @@ class BaseViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        self.view.backgroundColor = UIColor.gradationBackground
+        self.view.backgroundColor = UIColor.gradationBackground
         addBackgroundView()
         self.hideKeyboardWhenTappedAround()
     }

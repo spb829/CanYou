@@ -11,7 +11,7 @@ import UIKit
 import Then
 
 class User: Then {
-    let id: Int
+    let id: Int = 0
     var name: String = ""
     var birth: Date = Date()
     var gender: String = "Male"
@@ -23,8 +23,6 @@ class User: Then {
     
     var randomAlarm: Bool = false
     
-    init(){
-        self.id = 0
-    }
+    init(){ }
     
 }

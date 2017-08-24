@@ -19,18 +19,18 @@ class Reward: Then {
     var content: String?
     
     var price: Int?
-    var purchased: Bool
+    var isPurchased: Bool = false
     
     init(){
         self.userId = 0
-        self.id = 1
-        self.purchased = false
+        RewardStore.idCount += 1
+        self.id = RewardStore.idCount
     }
     
     init(userId: Int){
-        self.id = 1
         self.userId = userId
-        self.purchased = false
+        RewardStore.idCount += 1
+        self.id = RewardStore.idCount
     }
     
     

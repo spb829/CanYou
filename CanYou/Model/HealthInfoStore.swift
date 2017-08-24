@@ -6,13 +6,12 @@
 //  Copyright © 2017년 Eric Park. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 struct HealthInfoStore{
     static let sharedHealthInfoStore = HealthInfoStore()
     
-    var idCount = 0
+    static var idCount = 0
     var items = [HealthInfo]()
     
     private init() {
@@ -31,7 +30,8 @@ struct HealthInfoStore{
         return items.filter({$0.name == name})
     }
     
-    @discardableResult func sortBy(time: Double) -> [HealthInfo] {
-        return items.sorted(by: {$0.time < $1.time})
+    @discardableResult mutating func sortBy(time: Double) -> [HealthInfo] {
+        items = items.sorted(by: {$0.time < $1.time})
+        return items
     }
 }

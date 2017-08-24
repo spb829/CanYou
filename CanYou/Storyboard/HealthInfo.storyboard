@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pF9-vU-ixB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pF9-vU-ixB">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13178.6"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,13 +19,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="IsL-B1-FbA">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="HealthInfoTableViewCell" id="IsL-B1-FbA" customClass="HealthInfoTableViewCell">
                                 <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IsL-B1-FbA" id="dmg-Ay-ozU">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="336" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="66l-Dr-lmK">
+                                            <rect key="frame" x="8" y="34" width="320" height="2"/>
+                                            <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </progressView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1X-ky-T2j">
+                                            <rect key="frame" x="8" y="5" width="320" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="66l-Dr-lmK" firstAttribute="leading" secondItem="dmg-Ay-ozU" secondAttribute="leadingMargin" id="39F-qL-5GP"/>
+                                        <constraint firstItem="r1X-ky-T2j" firstAttribute="top" secondItem="dmg-Ay-ozU" secondAttribute="top" constant="5" id="8v1-mK-UGR"/>
+                                        <constraint firstItem="66l-Dr-lmK" firstAttribute="bottom" secondItem="dmg-Ay-ozU" secondAttribute="bottomMargin" id="C52-27-Vut"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="66l-Dr-lmK" secondAttribute="trailing" id="DJn-t7-2ul"/>
+                                        <constraint firstAttribute="trailing" secondItem="r1X-ky-T2j" secondAttribute="trailing" constant="8" id="IYU-2j-4RP"/>
+                                        <constraint firstItem="r1X-ky-T2j" firstAttribute="leading" secondItem="dmg-Ay-ozU" secondAttribute="leading" constant="8" id="uhR-Or-d73"/>
+                                        <constraint firstItem="66l-Dr-lmK" firstAttribute="top" secondItem="r1X-ky-T2j" secondAttribute="bottom" constant="8" id="zbr-Cb-T9y"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="progressView" destination="66l-Dr-lmK" id="HIv-v2-DBe"/>
+                                    <outlet property="titleLabel" destination="r1X-ky-T2j" id="sFi-xp-hcH"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

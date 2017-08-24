@@ -12,19 +12,8 @@ import UIKit
 struct RewardStore{
     static let sharedRewardStore = RewardStore()
     
-    var idCount = 0
+    static var idCount = 0
     var items = [Reward]()
-    
-//    Reward Model
-//    let id: Int
-//    let userId: Int
-//
-//    var name: String?
-//    var image: UIImage?
-//    var content: String?
-//
-//    var price: Int?
-//    var purchased: Bool
     
     private init() {
         print("RewardStore init called")
@@ -73,8 +62,8 @@ struct RewardStore{
         return items.filter({$0.userId == userId})
     }
     
-    func filterBy(purchased: Bool) -> [Reward] {
-        return items.filter({$0.purchased == purchased})
+    func filterBy(isPurchased: Bool) -> [Reward] {
+        return items.filter({$0.isPurchased == isPurchased})
     }
     
     mutating func add(_ item: Reward) {

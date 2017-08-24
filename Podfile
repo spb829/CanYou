@@ -12,6 +12,7 @@ target 'CanYou' do
 
   # Pods for CanYou
   sharePods
+#  pod 'RealmSwift'
 
   target 'CanYouTests' do
     inherit! :search_paths

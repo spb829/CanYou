@@ -11,7 +11,7 @@ import UIKit
 
 struct UserStore{
     static let sharedUserStore = UserStore()
-    var idCount = 0
+    static var idCount = 0
     var items = [User]()
     
     private init() { }

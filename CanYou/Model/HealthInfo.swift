@@ -6,7 +6,6 @@
 //  Copyright © 2017년 Eric Park. All rights reserved.
 //
 
-import Foundation
 import UIKit
 import Then
 
@@ -17,9 +16,8 @@ class HealthInfo: Then {
     var time: Double = 0
     
     init(){
-        self.id = 1
+        HealthInfoStore.idCount += 1
+        self.id = HealthInfoStore.idCount
     }
-    
-    
 }
 

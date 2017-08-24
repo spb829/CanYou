@@ -43,4 +43,6 @@ class HealthInfoTableViewController: BaseTableViewController {
 
         return cell
     }
+    
+    
 }

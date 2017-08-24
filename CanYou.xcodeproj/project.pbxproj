@@ -162,6 +162,7 @@
 		07AEE91B1F3C42C300D20151 /* CanYouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE91A1F3C42C300D20151 /* CanYouTests.swift */; };
 		07AEE9261F3C42C300D20151 /* CanYouUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE9251F3C42C300D20151 /* CanYouUITests.swift */; };
 		07AFE0371F4F041C006B5C09 /* SettingNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AFE0361F4F041C006B5C09 /* SettingNavigationController.swift */; };
+		07B30B031F4F1F910063727D /* HealthInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B30B021F4F1F910063727D /* HealthInfoTableViewCell.swift */; };
 		07D0C3931F48EB1400FE64EC /* BadgeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D0C3921F48EB1400FE64EC /* BadgeTableViewCell.swift */; };
 		07DB35371F48F445007E9515 /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB35361F48F445007E9515 /* RewardTableViewCell.swift */; };
 		07DB353A1F48FBBB007E9515 /* PlusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB35381F48FBBB007E9515 /* PlusTableViewCell.swift */; };
@@ -399,6 +400,7 @@
 		07AEE9251F3C42C300D20151 /* CanYouUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanYouUITests.swift; sourceTree = "<group>"; };
 		07AEE9271F3C42C300D20151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07AFE0361F4F041C006B5C09 /* SettingNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingNavigationController.swift; sourceTree = "<group>"; };
+		07B30B021F4F1F910063727D /* HealthInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthInfoTableViewCell.swift; sourceTree = "<group>"; };
 		07D0C3921F48EB1400FE64EC /* BadgeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeTableViewCell.swift; sourceTree = "<group>"; };
 		07DB35361F48F445007E9515 /* RewardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
 		07DB35381F48FBBB007E9515 /* PlusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusTableViewCell.swift; sourceTree = "<group>"; };
@@ -572,7 +574,7 @@
 				07AEE90C1F3C42C300D20151 /* Assets.xcassets */,
 				07AEE9371F3C46F800D20151 /* Storyboard */,
 				07AEE9111F3C42C300D20151 /* Info.plist */,
-				07AEE9021F3C42C300D20151 /* AppDelegate.swift */,
+				07B30B011F4F1E620063727D /* Delegate */,
 			);
 			path = CanYou;
 			sourceTree = "<group>";
@@ -615,6 +617,7 @@
 		07AEE9341F3C46DF00D20151 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				07B30B021F4F1F910063727D /* HealthInfoTableViewCell.swift */,
 				07D0C3921F48EB1400FE64EC /* BadgeTableViewCell.swift */,
 				07DB35381F48FBBB007E9515 /* PlusTableViewCell.swift */,
 				07DB35361F48F445007E9515 /* RewardTableViewCell.swift */,
@@ -648,7 +651,6 @@
 			children = (
 				0718D7551F4591F5000956E8 /* TimerController.swift */,
 				07671BBB1F3F797300DD4E24 /* DataController.swift */,
-				078A6EBA1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -667,6 +669,15 @@
 				07AEE90E1F3C42C300D20151 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		07B30B011F4F1E620063727D /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				078A6EBA1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift */,
+				07AEE9021F3C42C300D20151 /* AppDelegate.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 		07DDEF841F4ADC7800559AEB /* percent */ = {
@@ -1292,6 +1303,7 @@
 				07415F071F4D89CD00B82597 /* SettingStartDateTableViewController.swift in Sources */,
 				07415F151F4D948200B82597 /* BaseViewController.swift in Sources */,
 				078A6EB91F4AAAE1002F5CA5 /* RewardNewViewController.swift in Sources */,
+				07B30B031F4F1F910063727D /* HealthInfoTableViewCell.swift in Sources */,
 				076C2F011F4053C100579914 /* CanYouAnimationViewController.swift in Sources */,
 				07783FCA1F4732E30081FB17 /* RewardDetailViewController.swift in Sources */,
 				07415F021F4D889400B82597 /* SettingGenderTableViewController.swift in Sources */,

@@ -6,7 +6,6 @@
 //  Copyright © 2017년 Eric Park. All rights reserved.
 //
 
-import Foundation
 import UIKit
 import Then
 
@@ -16,7 +15,7 @@ enum ConditionType {
     case money
 }
 
-class Badge: Then {
+class Badge: Then {    
     let id: Int
     var name: String?
     var image: UIImage?
@@ -26,7 +25,8 @@ class Badge: Then {
     
     
     init(){
-        self.id = 1
+        BadgeStore.idCount += 1
+        self.id = BadgeStore.idCount
     }
     
     

@@ -6,14 +6,13 @@
 //  Copyright © 2017년 Eric Park. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 struct BadgeStore{
     static let sharedBadgeStore = BadgeStore()
-    
-    var idCount = 0
+    static var idCount = 0
     var items = [Badge]()
+    var doneItems = [BadgeUser]()
     
     private init() {
         

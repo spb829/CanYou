@@ -69,11 +69,14 @@ class RootContainerViewController: BaseViewController {
     }()
     
     override func viewDidLoad() {
-//        print("viewDidLoad")
         super.viewDidLoad()
-        
         initViews()
     }
+}
+
+
+// Init Views
+extension RootContainerViewController {
     
     func initViews() {
         initCardViews()
@@ -97,26 +100,22 @@ class RootContainerViewController: BaseViewController {
                 viewController.view.frame = cardView.view.bounds
                 viewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
                 viewController.didMove(toParentViewController: self)
-//                cardView.backgroundColor = UIColor.cyan
             case 1:
                 let viewController = badgeViewController
                 cardView.view.addSubview(viewController.view)
                 viewController.view.frame = cardView.view.bounds
                 viewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
                 viewController.didMove(toParentViewController: self)
-//                cardView.backgroundColor = UIColor.red
             case 2:
                 let viewController = rewardViewController
                 cardView.view.addSubview(viewController.view)
                 viewController.view.frame = cardView.view.bounds
                 viewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
                 viewController.didMove(toParentViewController: self)
-//                cardView.backgroundColor = UIColor.orange
             default:
                 break
             }
             
-//            rewardViewController.reloadInputViews()
             self.cardViews.append(cardView)
             self.scrollView.addSubview(cardView)
         }
@@ -130,15 +129,13 @@ class RootContainerViewController: BaseViewController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
-//        print("viewWillLayoutSubviews")
-        
         let size = self.view.frame.size
         let barHeight = UIApplication.shared.statusBarFrame.height
         
         self.scrollView.frame = CGRect(x: 0, y: barHeight + 16, width: size.width, height: size.height - 16 - 80)
         self.pageControl.frame = CGRect(x: 0 , y: barHeight + 16 + size.height - 16 - 80, width: size.width, height: 20)
         
-        updateCardLayout(0)
+        updateCardLayout(cardIndex)
     }
     
     override func didReceiveMemoryWarning() {

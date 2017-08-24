@@ -79,4 +79,10 @@ class RewardViewController: UIViewController, UITableViewDelegate, UITableViewDa
             }
         }
     }
+    
+    @IBAction func toggleTapped(_ sender: UIButton) {
+        let range = NSMakeRange(0, self.tableView.numberOfSections)
+        let sections = NSIndexSet(indexesIn: range)
+        self.tableView.reloadSections(sections as IndexSet, with: .automatic)
+    }
 }

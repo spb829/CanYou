@@ -11,6 +11,9 @@ import UIKit
 class BadgeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var dataController = DataController.sharedDataController
     var badgeStore = DataController.sharedDataController.badgeStore
+    
+    var isDoneList = false
+    
     @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -64,4 +67,11 @@ class BadgeViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
     }
 
+    @IBAction func toggleTapped(_ sender: UIButton) {
+        isDoneList = !isDoneList
+        
+        let range = NSMakeRange(0, self.tableView.numberOfSections)
+        let sections = NSIndexSet(indexesIn: range)
+        self.tableView.reloadSections(sections as IndexSet, with: .right)
+    }
 }

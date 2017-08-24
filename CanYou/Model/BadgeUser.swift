@@ -11,15 +11,11 @@ import UIKit
 import Then
 
 class BadgeUser: Then {
-    let id: Int
-    let userId: Int
     let badgeId: Int
     
     var date: Date?
     
-    init(badgeId: Int, userId: Int){
-        self.id = 1
-        self.userId = userId
+    init(_ badgeId: Int){
         self.badgeId = badgeId
     }
     

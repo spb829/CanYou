@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -23,7 +23,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h27-Qw-lur">
                                 <rect key="frame" x="16" y="60" width="343" height="65"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nosmoking" translatesAutoresizingMaskIntoConstraints="NO" id="e1W-x3-zQf">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge-24hours" translatesAutoresizingMaskIntoConstraints="NO" id="e1W-x3-zQf">
                                         <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="e1W-x3-zQf" secondAttribute="height" multiplier="1:1" id="3lG-TZ-KQ2"/>
@@ -112,7 +112,6 @@
                                                 <constraint firstItem="b1g-0u-6s9" firstAttribute="top" secondItem="qSM-ll-47s" secondAttribute="topMargin" id="yRa-pT-5ng"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.94839698080000001" green="0.90851837400000002" blue="0.5255805254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="badgeImageView" destination="N1h-xb-t1m" id="wZA-H1-mmU"/>
                                             <outlet property="contentLabel" destination="Rq0-cd-31l" id="Mxo-1C-3pX"/>
@@ -129,7 +128,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="PsO-5i-hcf" firstAttribute="top" secondItem="OuB-Td-aCj" secondAttribute="top" constant="8" id="B5N-0K-dWb"/>
                             <constraint firstItem="PsO-5i-hcf" firstAttribute="leading" secondItem="OuB-Td-aCj" secondAttribute="leading" constant="16" id="Goc-fD-gft"/>
@@ -199,7 +198,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="badge-24hours" width="200" height="200"/>
         <image name="noimage" width="150" height="150"/>
-        <image name="nosmoking" width="800" height="800"/>
     </resources>
 </document>

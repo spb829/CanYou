@@ -13,8 +13,8 @@ class PageContainerView: UIView {
         $0.layer.cornerRadius = 10
 //        $0.layer.borderWidth = 1
 //        $0.layer.borderColor = UIColor.black.cgColor
-        
-        $0.layer.backgroundColor = ColorController.shared.highlightBackgroundColor.cgColor
+        $0.backgroundColor = UIColor.white
+        $0.clipsToBounds = true
     }
     
     /*
@@ -28,7 +28,6 @@ class PageContainerView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.addSubview(view)
-        self.layer.backgroundColor = ColorController.shared.defaultBackgroundColor.cgColor
     }
     
     required init?(coder aDecoder: NSCoder) {

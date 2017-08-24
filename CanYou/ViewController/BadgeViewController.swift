@@ -8,13 +8,14 @@
 
 import UIKit
 
-class BadgeViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
+class BadgeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var dataController = DataController.sharedDataController
     var badgeStore = DataController.sharedDataController.badgeStore
     @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,10 +42,14 @@ class BadgeViewController: BaseViewController, UITableViewDelegate, UITableViewD
         cell.contentLabel.text = item.content!
         
         if let image = item.image {
-            cell.imageView?.image = image
+            cell.badgeImageView?.image = image
         }
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

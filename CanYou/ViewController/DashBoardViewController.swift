@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DashBoardViewController: BaseViewController {
+class DashBoardViewController: UIViewController {
     @IBOutlet var timeLabel: UILabel!
     @IBOutlet var dayLabel: UILabel!
     

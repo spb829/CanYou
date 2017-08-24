@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RewardViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource  {
+class RewardViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     var dataController = DataController.sharedDataController
     var rewardStore = DataController.sharedDataController.rewardStore
     @IBOutlet var tableView: UITableView!
@@ -51,7 +51,15 @@ class RewardViewController: BaseViewController, UITableViewDelegate, UITableView
         cell.cansLabel.text = "\(reward.price ?? 0) Cans"
         cell.contentLabel.text = reward.content!
         
+        if let image = reward.image {
+            cell.rewardImageView.image = image
+        }
+        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

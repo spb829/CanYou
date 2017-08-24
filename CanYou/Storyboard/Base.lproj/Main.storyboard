@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WMK-ce-zhF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WMK-ce-zhF">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -122,16 +122,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tpt-l1-pJb">
-                                <rect key="frame" x="0.0" y="319" width="375" height="30"/>
+                                <rect key="frame" x="60" y="318.5" width="255" height="30"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="20" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vBR-bl-p2i">
-                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="20" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vBR-bl-p2i">
+                                        <rect key="frame" x="0.0" y="0.0" width="127.5" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="개비" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knf-hs-VSP">
-                                        <rect key="frame" x="187.5" y="5" width="187.5" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="개비" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knf-hs-VSP">
+                                        <rect key="frame" x="127.5" y="5" width="127.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -149,11 +150,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="tb9-2A-7Fo" firstAttribute="leading" secondItem="5rr-ni-19c" secondAttribute="leading" id="2PH-FN-Npw"/>
-                            <constraint firstAttribute="trailing" secondItem="Tpt-l1-pJb" secondAttribute="trailing" id="3fn-VG-DnI"/>
+                            <constraint firstAttribute="trailing" secondItem="Tpt-l1-pJb" secondAttribute="trailing" constant="60" id="3fn-VG-DnI"/>
                             <constraint firstItem="Tpt-l1-pJb" firstAttribute="centerX" secondItem="45Q-OP-5NL" secondAttribute="centerX" id="F8v-4U-41J"/>
                             <constraint firstItem="Tpt-l1-pJb" firstAttribute="centerY" secondItem="45Q-OP-5NL" secondAttribute="centerY" id="G9p-xW-xJw"/>
                             <constraint firstItem="fPc-W7-0U1" firstAttribute="trailing" secondItem="5rr-ni-19c" secondAttribute="trailing" id="HXP-S2-BHU"/>
-                            <constraint firstItem="Tpt-l1-pJb" firstAttribute="leading" secondItem="5rr-ni-19c" secondAttribute="leading" id="Nq3-q7-wko"/>
+                            <constraint firstItem="Tpt-l1-pJb" firstAttribute="leading" secondItem="5rr-ni-19c" secondAttribute="leading" constant="60" id="Nq3-q7-wko"/>
                             <constraint firstItem="5rr-ni-19c" firstAttribute="bottom" secondItem="fPc-W7-0U1" secondAttribute="bottom" constant="40" id="TgK-WI-xox"/>
                             <constraint firstItem="5rr-ni-19c" firstAttribute="trailing" secondItem="tb9-2A-7Fo" secondAttribute="trailing" id="h07-yi-dNa"/>
                             <constraint firstItem="tb9-2A-7Fo" firstAttribute="top" secondItem="5rr-ni-19c" secondAttribute="top" constant="121" id="mYn-kf-ays"/>
@@ -182,9 +183,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyh-7T-GCa">
-                                <rect key="frame" x="310" y="629" width="49" height="30"/>
-                                <state key="normal" title="Setting"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyh-7T-GCa">
+                                <rect key="frame" x="329" y="629" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="9iG-a8-Rg2"/>
+                                    <constraint firstAttribute="height" constant="30" id="jmC-A7-ylk"/>
+                                </constraints>
+                                <state key="normal" image="settings2"/>
                                 <connections>
                                     <segue destination="kWI-4i-kyL" kind="show" id="7jh-QD-Fsv"/>
                                 </connections>
@@ -204,7 +209,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fB9-lx-wVD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3703" y="122"/>
+            <point key="canvasLocation" x="3701.5999999999999" y="121.88905547226388"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mFK-3D-yEB">
@@ -225,4 +230,7 @@
             <point key="canvasLocation" x="2777.5999999999999" y="121.4392803598201"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="settings2" width="1000" height="1000"/>
+    </resources>
 </document>

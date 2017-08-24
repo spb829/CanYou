@@ -9,13 +9,26 @@
 import UIKit
 
 class BaseViewController: UIViewController {
-    let colorController = ColorController.shared
-    
     var overlayView: UIView?
     var activityIndicator: UIActivityIndicatorView?
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
+//    override var preferredStatusBarStyle: UIStatusBarStyle {
+//        return .lightContent
+//    }
+    
+    func addBackgroundView() {
+        // screen width and height:
+        let width = UIScreen.main.bounds.size.width
+        let height = UIScreen.main.bounds.size.height
+        
+        let imageViewBackground = UIImageView(frame: CGRect(x: 0, y: 0, width: width, height: height))
+        imageViewBackground.image = UIImage(named: "Gradation2")
+        
+        // you can change the content mode:
+        imageViewBackground.contentMode = UIViewContentMode.scaleAspectFill
+        
+        self.view.addSubview(imageViewBackground)
+        self.view.sendSubview(toBack: imageViewBackground)
     }
     
     override func viewDidLoad() {
@@ -24,7 +37,9 @@ class BaseViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.view.backgroundColor = colorController.gradationBackgroundColor
+//        self.view.backgroundColor = UIColor.gradationBackground
+        addBackgroundView()
+        self.hideKeyboardWhenTappedAround()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -80,9 +95,17 @@ class BaseViewController: UIViewController {
         } else {
             
         }
-        
     }
     
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

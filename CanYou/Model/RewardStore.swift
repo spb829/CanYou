@@ -31,6 +31,7 @@ struct RewardStore{
         // 초기 데이터
         items.append(Reward(userId: 0).then {
             $0.name = "애플워치 사기"
+            $0.image = UIImage(named: "applewatch")
             $0.content = "삽시다"
             $0.price = 2000
         })

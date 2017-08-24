@@ -88,10 +88,7 @@ class RootContainerViewController: BaseViewController {
     
     func initCardViews() {
         for i in 0...2 {
-            let cardView = PageContainerView().then {
-//                $0.backgroundColor = UIColor(red: 255, green: 180, blue: 0, alpha: 1.0)
-                $0.backgroundColor = ColorController.shared.defaultBackgroundColor
-            }
+            let cardView = PageContainerView()
             
             switch i {
             case 0:

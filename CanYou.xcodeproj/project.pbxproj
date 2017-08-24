@@ -154,7 +154,7 @@
 		077EEB0D1F3F070900555921 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077EEB0C1F3F070900555921 /* User.swift */; };
 		078A6EB91F4AAAE1002F5CA5 /* RewardNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A6EB81F4AAAE1002F5CA5 /* RewardNewViewController.swift */; };
 		078A6EBB1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A6EBA1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift */; };
-		078A6EBD1F4AC710002F5CA5 /* ColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A6EBC1F4AC710002F5CA5 /* ColorController.swift */; };
+		078A6EBD1F4AC710002F5CA5 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A6EBC1F4AC710002F5CA5 /* ColorExtension.swift */; };
 		07A35BE51F405BCB00482782 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A35BE41F405BCB00482782 /* DashBoardViewController.swift */; };
 		07A3692A1F41D110000E2152 /* RootContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A369291F41D110000E2152 /* RootContainerViewController.swift */; };
 		07AEE9031F3C42C300D20151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE9021F3C42C300D20151 /* AppDelegate.swift */; };
@@ -379,7 +379,7 @@
 		077EEB0C1F3F070900555921 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		078A6EB81F4AAAE1002F5CA5 /* RewardNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardNewViewController.swift; sourceTree = "<group>"; };
 		078A6EBA1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UYNotificationDelegate.swift; sourceTree = "<group>"; };
-		078A6EBC1F4AC710002F5CA5 /* ColorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorController.swift; sourceTree = "<group>"; };
+		078A6EBC1F4AC710002F5CA5 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		07A35BE41F405BCB00482782 /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DashBoardViewController.swift; path = CanYou/ViewController/DashBoardViewController.swift; sourceTree = SOURCE_ROOT; };
 		07A369291F41D110000E2152 /* RootContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContainerViewController.swift; sourceTree = "<group>"; };
 		07AEE8FF1F3C42C300D20151 /* CanYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -511,8 +511,10 @@
 		07935A811F4DAE7400D983F0 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				078A6EBC1F4AC710002F5CA5 /* ColorExtension.swift */,
 			);
 			name = Extension;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		07AEE8F61F3C42C200D20151 = {
@@ -544,6 +546,7 @@
 		07AEE9011F3C42C300D20151 /* CanYou */ = {
 			isa = PBXGroup;
 			children = (
+				07935A811F4DAE7400D983F0 /* Extension */,
 				07AEE9331F3C46D800D20151 /* Model */,
 				07AEE9341F3C46DF00D20151 /* View */,
 				07AEE9351F3C46E700D20151 /* ViewController */,
@@ -633,8 +636,6 @@
 				0718D7551F4591F5000956E8 /* TimerController.swift */,
 				07671BBB1F3F797300DD4E24 /* DataController.swift */,
 				078A6EBA1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift */,
-				07935A811F4DAE7400D983F0 /* Extension */,
-				078A6EBC1F4AC710002F5CA5 /* ColorController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1250,7 +1251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07671BB61F3F750A00DD4E24 /* Setting.swift in Sources */,
-				078A6EBD1F4AC710002F5CA5 /* ColorController.swift in Sources */,
+				078A6EBD1F4AC710002F5CA5 /* ColorExtension.swift in Sources */,
 				076C2EFF1F4053AD00579914 /* WelcomeViewController.swift in Sources */,
 				07415F001F4D6AD700B82597 /* SettingNameTableViewController.swift in Sources */,
 				07415F091F4D89E400B82597 /* SettingVersionTableViewController.swift in Sources */,

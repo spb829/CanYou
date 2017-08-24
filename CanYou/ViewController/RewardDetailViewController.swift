@@ -17,7 +17,6 @@ class RewardDetailViewController: BaseViewController {
     @IBOutlet var contentLabel: UILabel!
     @IBOutlet var cansLabel: UILabel!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -45,8 +44,5 @@ class RewardDetailViewController: BaseViewController {
     }
     
     @IBAction func deleteTapped(_ sender: UIButton) {
-    }
-    
-    @IBAction func saveTapped(_ sender: UIBarButtonItem) {
     }
 }

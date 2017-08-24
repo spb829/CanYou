@@ -18,6 +18,18 @@ class CigaretteDailyViewController: BaseViewController {
     }
     
     @IBAction func startTapped(_ sender: UIButton) {
+        let text: String = cigaretteDaily.text ?? ""
+        if text.isEmpty {
+            let sheet = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
+            sheet.message = "Input numbers!"
+            let okAction = UIAlertAction(title: "Confirm", style: .default, handler: nil)
+            sheet.addAction(okAction)
+            present(sheet, animated: true, completion: nil)
+            return
+        }
+        
+        dataController.currentUser.cigaretteDaily = Int(text)!
+        
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let nvc = storyboard.instantiateViewController(withIdentifier: "NavigationController") as! UINavigationController
         

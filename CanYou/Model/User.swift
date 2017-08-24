@@ -14,12 +14,14 @@ class User: Then {
     let id: Int
     var name: String = ""
     var birth: Date = Date()
-    var gender: String = "남"
+    var gender: String = "Male"
     var startDate: Date = Date()
     
-    var cigaretteDaily: Int = 1
+    var cigaretteDaily: Int = 20
     var cigarettePrice: Int = 4500
     var canValue: Int = 0
+    
+    var randomAlarm: Bool = false
     
     init(){
         self.id = 0

@@ -124,6 +124,7 @@ class RootContainerViewController: BaseViewController {
     
     func reloadData() {
         rewardViewController.tableView.reloadData()
+        badgeViewController.tableView.reloadData()
     }
     
     override func viewWillLayoutSubviews() {

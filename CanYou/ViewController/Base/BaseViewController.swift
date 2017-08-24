@@ -9,12 +9,6 @@
 import UIKit
 
 class BaseViewController: UIViewController {
-    var overlayView: UIView?
-    var activityIndicator: UIActivityIndicatorView?
-    
-//    override var preferredStatusBarStyle: UIStatusBarStyle {
-//        return .lightContent
-//    }
     
     func addBackgroundView() {
         // screen width and height:
@@ -22,7 +16,7 @@ class BaseViewController: UIViewController {
         let height = UIScreen.main.bounds.size.height
         
         let imageViewBackground = UIImageView(frame: CGRect(x: 0, y: 0, width: width, height: height))
-        imageViewBackground.image = UIImage(named: "Gradation2")
+        imageViewBackground.image = UIImage(named: "Gradation")
         
         // you can change the content mode:
         imageViewBackground.contentMode = UIViewContentMode.scaleAspectFill
@@ -37,52 +31,17 @@ class BaseViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.view.backgroundColor = UIColor.gradationBackground
-        addBackgroundView()
+//        self.view.backgroundColor = UIColor.gradationBackground
+        self.addBackgroundView()
         self.hideKeyboardWhenTappedAround()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        print("BaseViewController viewWillDisappear")
-        
-        stopLoading()
+//        print("BaseViewController viewWillDisappear")
     }
     
-    func startLoading() {
-        UIApplication.shared.isNetworkActivityIndicatorVisible = true
-        
-        overlayView = UIView(frame: view.frame)
-        activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .white)
-        
-        guard let overlayView = self.overlayView, let indicator = self.activityIndicator else { return }
-        
-        overlayView.backgroundColor = UIColor.black.withAlphaComponent(0.5)
-        
-        indicator.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
-        indicator.center = CGPoint(x: (overlayView.bounds.width)/2, y: (overlayView.bounds.height)/2)
-        
-        overlayView.addSubview(indicator)
-        indicator.startAnimating()
-        
-        view.addSubview(overlayView)
-    }
-    
-    func stopLoading() {
-        UIApplication.shared.isNetworkActivityIndicatorVisible = false
-        
-        guard let overlayView = self.overlayView, let indicator = self.activityIndicator else { return }
-        
-        UIView.animate(withDuration: 0.2, animations: {
-            overlayView.alpha = 0
-        }) { (_) in
-            indicator.stopAnimating()
-            indicator.removeFromSuperview()
-            overlayView.removeFromSuperview()
-        }
-    }
-    
-    func changeBgColorBasedOnTime() {
+    func changeColor() {
         
         let date = Date()
         let currentHour = Calendar.current.component(.hour, from: date)

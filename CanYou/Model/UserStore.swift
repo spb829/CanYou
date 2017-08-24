@@ -29,7 +29,6 @@ struct UserStore{
     }
     
     @discardableResult mutating func createUser() -> User{
-//        let user = User(random: true)
         let user = User()
         
         items.append(user)

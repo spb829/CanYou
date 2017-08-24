@@ -12,9 +12,11 @@ class SettingNameTableViewController: BaseTableViewController {
     var currentUser = DataController.sharedDataController.currentUser
 
     @IBOutlet var nameTextField: UITextField!
+    @IBOutlet var saveButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.nameTextField.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,5 +36,31 @@ class SettingNameTableViewController: BaseTableViewController {
         } else {
             print("wrong")
         }
+    }
+}
+
+extension SettingNameTableViewController: UITextFieldDelegate {
+    
+    // MARK: UITextFieldDelegate
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        // Disable the Save button while editing.
+        saveButton.isEnabled = false
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // Hide the keyboard.
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        updateSaveButtonState()
+    }
+    
+    // MARK: Private Methods
+    private func updateSaveButtonState() {
+        // Disable the Save button if the text field is empty.
+        let text = nameTextField.text ?? ""
+        saveButton.isEnabled = !text.isEmpty
     }
 }

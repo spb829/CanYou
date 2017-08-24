@@ -9,10 +9,10 @@
 import UIKit
 import CoreData
 import UserNotifications
+import WatchConnectivity
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
     var window: UIWindow?
     let notificationDelegate = UYLNotificationDelegate()
     let center = UNUserNotificationCenter.current()
@@ -37,6 +37,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //                // Notifications not allowed
         //            }
         //        }
+        
+        if (WCSession.isSupported()) {
+            let session = WCSession.default
+            session.delegate = self
+            session.activate()
+            
+            if session.isPaired != true {
+                print("Apple Watch is not paired")
+            }
+            
+            if session.isWatchAppInstalled != true {
+                print("WatchKit app is not installed")
+            }
+        } else {
+            print("WatchConnectivity is not supported on this device")
+        }
         
         return true
     }
@@ -137,6 +153,46 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-    
 }
 
+
+extension AppDelegate: WCSessionDelegate {
+    // MARK : WCSessionDelegate
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+//        var receivedData: [String:String] = session.receivedApplicationContext as! [String:String]
+        
+//        func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+//        session.receivedApplicationContext = [string:::any]
+//        session.reply
+//
+//        var replyValues = Dictionary<String, AnyObject>()
+//
+//        let viewController = self.window!.rootViewController as! ViewController
+//
+//        switch message["command"] as! String {
+//        case "start" :
+//            viewController.startPlay()
+//            replyValues["status"] = "Playing"
+//        case "stop" :
+//            viewController.stopPlay()
+//            replyValues["status"] = "Stopped"
+//        case "volume" :
+//            let level = message["level"] as! Float
+//            viewController.adjustVolume(level)
+//            replyValues["status"] = "Vol = \(level)"
+//        default:
+//            break
+//        }
+//        replyHandler(replyValues)
+        
+        
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        
+    }
+}

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WMK-ce-zhF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WMK-ce-zhF">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -162,6 +162,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5rr-ni-19c"/>
                     </view>
+                    <connections>
+                        <outlet property="cigaretteDaily" destination="vBR-bl-p2i" id="hag-0m-JWg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iLQ-SC-WZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -210,6 +213,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fB9-lx-wVD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3701.5999999999999" y="121.88905547226388"/>
+        </scene>
+        <!--DashBoard-->
+        <scene sceneID="YKQ-UJ-S9S">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DashBoard" id="qn3-5B-6gu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kfc-QZ-IqO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4295" y="-166"/>
+        </scene>
+        <!--Badge-->
+        <scene sceneID="MC5-bu-dYM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Badge" id="ECP-Oo-jBU" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ger-Z1-J2Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4294" y="-83"/>
+        </scene>
+        <!--Reward-->
+        <scene sceneID="ZpP-gg-7lD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Reward" id="lUo-Fh-M0N" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5vi-VP-TiJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4295" y="-2"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mFK-3D-yEB">

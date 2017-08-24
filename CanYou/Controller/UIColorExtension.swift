@@ -1,5 +1,5 @@
 //
-//  ColorExtension.swift
+//  UIColorExtension.swift
 //  CanYou
 //
 //  Created by Macbook Pro on 2017. 8. 23..
@@ -14,5 +14,5 @@ extension UIColor {
     static let customWhite = UIColor.init(red: 208.0/255.0, green: 255.0/255.0, blue: 179.0/255.0, alpha: 1.0)
     static let customRed = UIColor.init(red: 219.0/255.0, green: 65.0/255.0, blue: 43.0/255.0, alpha: 1.0)
     static let customYellow = UIColor.init(red: 242.0/255.0, green: 232.0/255.0, blue: 134.0/255.0, alpha: 1.0)
-    static let gradationBackground = UIColor(patternImage: UIImage(named: "Gradation2")!)
+    static let gradationBackground = UIColor(patternImage: UIImage(named: "Gradation")!)
 }

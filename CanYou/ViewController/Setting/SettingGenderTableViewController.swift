@@ -30,10 +30,10 @@ class SettingGenderTableViewController: BaseTableViewController {
     
     func setCheckmark() {
         switch currentUser.gender {
-        case "남":
+        case "Male":
             maleCell.accessoryType = .checkmark
             femaleCell.accessoryType = .none
-        case "여":
+        case "Female":
             maleCell.accessoryType = .none
             femaleCell.accessoryType = .checkmark
         default:
@@ -48,9 +48,9 @@ class SettingGenderTableViewController: BaseTableViewController {
         
         switch indexPath.row {
         case 0:
-            currentUser.gender = "남"
+            currentUser.gender = "Male"
         case 1:
-            currentUser.gender = "여"
+            currentUser.gender = "Female"
         default:
             break
         }

@@ -123,9 +123,6 @@
 		07671BAC1F3F731600DD4E24 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BAB1F3F731600DD4E24 /* Reward.swift */; };
 		07671BAE1F3F73B700DD4E24 /* BadgeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BAD1F3F73B700DD4E24 /* BadgeUser.swift */; };
 		07671BB01F3F746100DD4E24 /* HealthInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BAF1F3F746100DD4E24 /* HealthInfo.swift */; };
-		07671BB21F3F749B00DD4E24 /* Smoke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BB11F3F749B00DD4E24 /* Smoke.swift */; };
-		07671BB61F3F750A00DD4E24 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BB51F3F750A00DD4E24 /* Setting.swift */; };
-		07671BB81F3F75DF00DD4E24 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BB71F3F75DF00DD4E24 /* Memo.swift */; };
 		07671BBA1F3F769500DD4E24 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BB91F3F769500DD4E24 /* UserStore.swift */; };
 		07671BBC1F3F797300DD4E24 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BBB1F3F797300DD4E24 /* DataController.swift */; };
 		076B7AA11F42FC6A00C68F05 /* BadgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B7AA01F42FC6900C68F05 /* BadgeViewController.swift */; };
@@ -133,9 +130,6 @@
 		076C2EF31F402FC100579914 /* RewardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2EF21F402FC100579914 /* RewardStore.swift */; };
 		076C2EF51F40332A00579914 /* BadgeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2EF41F40332A00579914 /* BadgeStore.swift */; };
 		076C2EF71F4033C100579914 /* HealthInfoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2EF61F4033C100579914 /* HealthInfoStore.swift */; };
-		076C2EF91F403D4C00579914 /* SmokeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2EF81F403D4C00579914 /* SmokeStore.swift */; };
-		076C2EFB1F4045C800579914 /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2EFA1F4045C800579914 /* MemoStore.swift */; };
-		076C2EFD1F404B4200579914 /* SettingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2EFC1F404B4200579914 /* SettingStore.swift */; };
 		076C2EFF1F4053AD00579914 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2EFE1F4053AD00579914 /* WelcomeViewController.swift */; };
 		076C2F011F4053C100579914 /* CanYouAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2F001F4053C100579914 /* CanYouAnimationViewController.swift */; };
 		076C2F031F4053FB00579914 /* CigaretteDailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2F021F4053FB00579914 /* CigaretteDailyViewController.swift */; };
@@ -154,7 +148,7 @@
 		077EEB0D1F3F070900555921 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077EEB0C1F3F070900555921 /* User.swift */; };
 		078A6EB91F4AAAE1002F5CA5 /* RewardNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A6EB81F4AAAE1002F5CA5 /* RewardNewViewController.swift */; };
 		078A6EBB1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A6EBA1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift */; };
-		078A6EBD1F4AC710002F5CA5 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A6EBC1F4AC710002F5CA5 /* ColorExtension.swift */; };
+		078A6EBD1F4AC710002F5CA5 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A6EBC1F4AC710002F5CA5 /* UIColorExtension.swift */; };
 		07A35BE51F405BCB00482782 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A35BE41F405BCB00482782 /* DashBoardViewController.swift */; };
 		07A3692A1F41D110000E2152 /* RootContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A369291F41D110000E2152 /* RootContainerViewController.swift */; };
 		07AEE9031F3C42C300D20151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE9021F3C42C300D20151 /* AppDelegate.swift */; };
@@ -167,6 +161,8 @@
 		07D0C3931F48EB1400FE64EC /* BadgeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D0C3921F48EB1400FE64EC /* BadgeTableViewCell.swift */; };
 		07DB35371F48F445007E9515 /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB35361F48F445007E9515 /* RewardTableViewCell.swift */; };
 		07DB353A1F48FBBB007E9515 /* PlusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB35381F48FBBB007E9515 /* PlusTableViewCell.swift */; };
+		07F741541F4EB40F0068DB89 /* percent3.png in Resources */ = {isa = PBXBuildFile; fileRef = 07DDEF861F4ADCD800559AEB /* percent3.png */; };
+		07F741551F4EB40F0068DB89 /* percent28.png in Resources */ = {isa = PBXBuildFile; fileRef = 07DDEF851F4ADCD800559AEB /* percent28.png */; };
 		735E64F5C8A60F123E41F5BC /* Pods_CanYou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68EC1597700C0C088E5E9FE /* Pods_CanYou.framework */; };
 		C78FDA625A8333DE631DCB54 /* Pods_CanYouUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E59EA89B007D083A911E394 /* Pods_CanYouUITests.framework */; };
 		E87BC8024917941DA61B00F4 /* Pods_CanYouTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C6106EE8B9374A6041525E8 /* Pods_CanYouTests.framework */; };
@@ -345,9 +341,6 @@
 		07671BAB1F3F731600DD4E24 /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
 		07671BAD1F3F73B700DD4E24 /* BadgeUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeUser.swift; sourceTree = "<group>"; };
 		07671BAF1F3F746100DD4E24 /* HealthInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthInfo.swift; sourceTree = "<group>"; };
-		07671BB11F3F749B00DD4E24 /* Smoke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smoke.swift; sourceTree = "<group>"; };
-		07671BB51F3F750A00DD4E24 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
-		07671BB71F3F75DF00DD4E24 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		07671BB91F3F769500DD4E24 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		07671BBB1F3F797300DD4E24 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		076B7AA01F42FC6900C68F05 /* BadgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BadgeViewController.swift; path = CanYou/ViewController/BadgeViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -355,9 +348,6 @@
 		076C2EF21F402FC100579914 /* RewardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardStore.swift; sourceTree = "<group>"; };
 		076C2EF41F40332A00579914 /* BadgeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeStore.swift; sourceTree = "<group>"; };
 		076C2EF61F4033C100579914 /* HealthInfoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthInfoStore.swift; sourceTree = "<group>"; };
-		076C2EF81F403D4C00579914 /* SmokeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeStore.swift; sourceTree = "<group>"; };
-		076C2EFA1F4045C800579914 /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
-		076C2EFC1F404B4200579914 /* SettingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingStore.swift; sourceTree = "<group>"; };
 		076C2EFE1F4053AD00579914 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		076C2F001F4053C100579914 /* CanYouAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanYouAnimationViewController.swift; sourceTree = "<group>"; };
 		076C2F021F4053FB00579914 /* CigaretteDailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CigaretteDailyViewController.swift; sourceTree = "<group>"; };
@@ -379,7 +369,7 @@
 		077EEB0C1F3F070900555921 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		078A6EB81F4AAAE1002F5CA5 /* RewardNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardNewViewController.swift; sourceTree = "<group>"; };
 		078A6EBA1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UYNotificationDelegate.swift; sourceTree = "<group>"; };
-		078A6EBC1F4AC710002F5CA5 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		078A6EBC1F4AC710002F5CA5 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		07A35BE41F405BCB00482782 /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DashBoardViewController.swift; path = CanYou/ViewController/DashBoardViewController.swift; sourceTree = SOURCE_ROOT; };
 		07A369291F41D110000E2152 /* RootContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContainerViewController.swift; sourceTree = "<group>"; };
 		07AEE8FF1F3C42C300D20151 /* CanYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -511,7 +501,7 @@
 		07935A811F4DAE7400D983F0 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				078A6EBC1F4AC710002F5CA5 /* ColorExtension.swift */,
+				078A6EBC1F4AC710002F5CA5 /* UIColorExtension.swift */,
 			);
 			name = Extension;
 			path = Controller;
@@ -580,10 +570,6 @@
 		07AEE9331F3C46D800D20151 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				07671BB51F3F750A00DD4E24 /* Setting.swift */,
-				076C2EFC1F404B4200579914 /* SettingStore.swift */,
-				07671BB71F3F75DF00DD4E24 /* Memo.swift */,
-				076C2EFA1F4045C800579914 /* MemoStore.swift */,
 				07AEE9091F3C42C300D20151 /* CanYou.xcdatamodeld */,
 				077EEB0C1F3F070900555921 /* User.swift */,
 				07671BB91F3F769500DD4E24 /* UserStore.swift */,
@@ -592,8 +578,6 @@
 				07671BAD1F3F73B700DD4E24 /* BadgeUser.swift */,
 				07671BAF1F3F746100DD4E24 /* HealthInfo.swift */,
 				076C2EF61F4033C100579914 /* HealthInfoStore.swift */,
-				07671BB11F3F749B00DD4E24 /* Smoke.swift */,
-				076C2EF81F403D4C00579914 /* SmokeStore.swift */,
 				07671BA91F3F722100DD4E24 /* Badge.swift */,
 				076C2EF41F40332A00579914 /* BadgeStore.swift */,
 			);
@@ -942,6 +926,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F741541F4EB40F0068DB89 /* percent3.png in Resources */,
+				07F741551F4EB40F0068DB89 /* percent28.png in Resources */,
 				071DBB0E1F4AF6AF00D3BE0E /* percent50.png in Resources */,
 				071DBB371F4AF6CB00D3BE0E /* percent62.png in Resources */,
 				071DBACF1F4AF67400D3BE0E /* percent15.png in Resources */,
@@ -1250,36 +1236,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07671BB61F3F750A00DD4E24 /* Setting.swift in Sources */,
-				078A6EBD1F4AC710002F5CA5 /* ColorExtension.swift in Sources */,
+				078A6EBD1F4AC710002F5CA5 /* UIColorExtension.swift in Sources */,
 				076C2EFF1F4053AD00579914 /* WelcomeViewController.swift in Sources */,
 				07415F001F4D6AD700B82597 /* SettingNameTableViewController.swift in Sources */,
 				07415F091F4D89E400B82597 /* SettingVersionTableViewController.swift in Sources */,
 				077EEB0D1F3F070900555921 /* User.swift in Sources */,
 				07671BAA1F3F722100DD4E24 /* Badge.swift in Sources */,
 				07AEE90B1F3C42C300D20151 /* CanYou.xcdatamodeld in Sources */,
-				07671BB21F3F749B00DD4E24 /* Smoke.swift in Sources */,
 				076C2EF31F402FC100579914 /* RewardStore.swift in Sources */,
 				075860D11F41908300E974F8 /* PageContainerView.swift in Sources */,
 				07DB353A1F48FBBB007E9515 /* PlusTableViewCell.swift in Sources */,
-				076C2EFB1F4045C800579914 /* MemoStore.swift in Sources */,
 				07D0C3931F48EB1400FE64EC /* BadgeTableViewCell.swift in Sources */,
 				07415F071F4D89CD00B82597 /* SettingStartDateTableViewController.swift in Sources */,
 				07415F151F4D948200B82597 /* BaseViewController.swift in Sources */,
-				076C2EFD1F404B4200579914 /* SettingStore.swift in Sources */,
 				078A6EB91F4AAAE1002F5CA5 /* RewardNewViewController.swift in Sources */,
 				076C2F011F4053C100579914 /* CanYouAnimationViewController.swift in Sources */,
 				07783FCA1F4732E30081FB17 /* RewardDetailViewController.swift in Sources */,
 				07415F021F4D889400B82597 /* SettingGenderTableViewController.swift in Sources */,
 				07415F051F4D89BC00B82597 /* SettingBirthTableViewController.swift in Sources */,
-				076C2EF91F403D4C00579914 /* SmokeStore.swift in Sources */,
 				0718D7561F4591F5000956E8 /* TimerController.swift in Sources */,
 				076C2EF51F40332A00579914 /* BadgeStore.swift in Sources */,
 				07415F131F4D947100B82597 /* BaseTableViewController.swift in Sources */,
 				07A3692A1F41D110000E2152 /* RootContainerViewController.swift in Sources */,
 				07671BBA1F3F769500DD4E24 /* UserStore.swift in Sources */,
 				07A35BE51F405BCB00482782 /* DashBoardViewController.swift in Sources */,
-				07671BB81F3F75DF00DD4E24 /* Memo.swift in Sources */,
 				07671BAC1F3F731600DD4E24 /* Reward.swift in Sources */,
 				07671BB01F3F746100DD4E24 /* HealthInfo.swift in Sources */,
 				076C2F031F4053FB00579914 /* CigaretteDailyViewController.swift in Sources */,

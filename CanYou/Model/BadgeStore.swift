@@ -18,45 +18,45 @@ struct BadgeStore{
     private init() {
         
         items.append(Badge().then{
-            $0.name = "금연 1일"
+            $0.name = "24hours"
             $0.image = UIImage(named: "badge-24hours")
-            $0.content = "천리길도 한 걸음 부터 !"
+            $0.content = "Good start"
         })
         
         items.append(Badge().then{
-            $0.name = "금연 2일"
+            $0.name = "48hours"
             $0.image = UIImage(named: "badge-48hours")
-            $0.content = "좀 하네"
+            $0.content = "Nice"
         })
         
         items.append(Badge().then{
-            $0.name = "금연 3일"
+            $0.name = "72hours"
             $0.image = UIImage(named: "badge-72hours")
-            $0.content = "첫 번째 고비다!"
+            $0.content = "Keep it up !"
         })
         
         items.append(Badge().then{
-            $0.name = "금연 1주일"
+            $0.name = "A Week"
             $0.image = UIImage(named: "badge-7days")
-            $0.content = "1주일 달성!"
+            $0.content = "Getting better"
         })
         
         items.append(Badge().then{
-            $0.name = "만원 절약"
+            $0.name = "Money saved"
             $0.image = UIImage(named: "badge-10000won")
-            $0.content = "금연하여 만원을 절약했습니다!"
+            $0.content = "10,000 won saved!"
         })
         
         items.append(Badge().then{
-            $0.name = "100만원 절약"
+            $0.name = "Money saved"
             $0.image = UIImage(named: "badge-moneysave")
-            $0.content = "금연하여 100만원을 절약했습니다!"
+            $0.content = "100,000 won saved!"
         })
         
         items.append(Badge().then{
-            $0.name = "보상 1개 구매"
+            $0.name = "First reward"
             $0.image = UIImage(named: "badge-1reward")
-            $0.content = "보상을 받았어요~!"
+            $0.content = "Purchased first reward"
         })
     }
     

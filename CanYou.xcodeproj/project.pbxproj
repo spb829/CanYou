@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0713C4971F4EDD5A00D9D2ED /* SettingCigaretteDailyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713C4961F4EDD5A00D9D2ED /* SettingCigaretteDailyTableViewController.swift */; };
+		0713C4991F4EDE5600D9D2ED /* SettingCigarettePriceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713C4981F4EDE5600D9D2ED /* SettingCigarettePriceTableViewController.swift */; };
+		0713C49B1F4EDF0100D9D2ED /* SettingAlarmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713C49A1F4EDF0100D9D2ED /* SettingAlarmTableViewController.swift */; };
 		0718D7561F4591F5000956E8 /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0718D7551F4591F5000956E8 /* TimerController.swift */; };
 		071DBAB51F4AF65200D3BE0E /* percent1.png in Resources */ = {isa = PBXBuildFile; fileRef = 071DBAB21F4AF65200D3BE0E /* percent1.png */; };
 		071DBAB61F4AF65200D3BE0E /* percent0.png in Resources */ = {isa = PBXBuildFile; fileRef = 071DBAB31F4AF65200D3BE0E /* percent0.png */; };
@@ -158,11 +161,18 @@
 		07AEE9101F3C42C300D20151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AEE90E1F3C42C300D20151 /* LaunchScreen.storyboard */; };
 		07AEE91B1F3C42C300D20151 /* CanYouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE91A1F3C42C300D20151 /* CanYouTests.swift */; };
 		07AEE9261F3C42C300D20151 /* CanYouUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE9251F3C42C300D20151 /* CanYouUITests.swift */; };
+		07AFE0371F4F041C006B5C09 /* SettingNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AFE0361F4F041C006B5C09 /* SettingNavigationController.swift */; };
 		07D0C3931F48EB1400FE64EC /* BadgeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D0C3921F48EB1400FE64EC /* BadgeTableViewCell.swift */; };
 		07DB35371F48F445007E9515 /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB35361F48F445007E9515 /* RewardTableViewCell.swift */; };
 		07DB353A1F48FBBB007E9515 /* PlusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB35381F48FBBB007E9515 /* PlusTableViewCell.swift */; };
 		07F741541F4EB40F0068DB89 /* percent3.png in Resources */ = {isa = PBXBuildFile; fileRef = 07DDEF861F4ADCD800559AEB /* percent3.png */; };
 		07F741551F4EB40F0068DB89 /* percent28.png in Resources */ = {isa = PBXBuildFile; fileRef = 07DDEF851F4ADCD800559AEB /* percent28.png */; };
+		07F741571F4EB67F0068DB89 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F741561F4EB67F0068DB89 /* DataController.swift */; };
+		07F7415A1F4EBE1A0068DB89 /* HealthInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F741591F4EBE1A0068DB89 /* HealthInfo.swift */; };
+		07F7415C1F4EBFD20068DB89 /* HealthInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7415B1F4EBFD20068DB89 /* HealthInfoTableViewController.swift */; };
+		07F7415E1F4EC1120068DB89 /* SettingSection1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F7415D1F4EC1120068DB89 /* SettingSection1.storyboard */; };
+		07F741601F4ECF590068DB89 /* HealthInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F7415F1F4ECF590068DB89 /* HealthInfo.storyboard */; };
+		07F741621F4ECFA70068DB89 /* SettingSection2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F741611F4ECFA70068DB89 /* SettingSection2.storyboard */; };
 		735E64F5C8A60F123E41F5BC /* Pods_CanYou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68EC1597700C0C088E5E9FE /* Pods_CanYou.framework */; };
 		C78FDA625A8333DE631DCB54 /* Pods_CanYouUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E59EA89B007D083A911E394 /* Pods_CanYouUITests.framework */; };
 		E87BC8024917941DA61B00F4 /* Pods_CanYouTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C6106EE8B9374A6041525E8 /* Pods_CanYouTests.framework */; };
@@ -225,6 +235,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0713C4961F4EDD5A00D9D2ED /* SettingCigaretteDailyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCigaretteDailyTableViewController.swift; sourceTree = "<group>"; };
+		0713C4981F4EDE5600D9D2ED /* SettingCigarettePriceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCigarettePriceTableViewController.swift; sourceTree = "<group>"; };
+		0713C49A1F4EDF0100D9D2ED /* SettingAlarmTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingAlarmTableViewController.swift; sourceTree = "<group>"; };
 		0718D7551F4591F5000956E8 /* TimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
 		071DBAB21F4AF65200D3BE0E /* percent1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = percent1.png; sourceTree = "<group>"; };
 		071DBAB31F4AF65200D3BE0E /* percent0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = percent0.png; sourceTree = "<group>"; };
@@ -385,11 +398,18 @@
 		07AEE9211F3C42C300D20151 /* CanYouUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanYouUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AEE9251F3C42C300D20151 /* CanYouUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanYouUITests.swift; sourceTree = "<group>"; };
 		07AEE9271F3C42C300D20151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07AFE0361F4F041C006B5C09 /* SettingNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingNavigationController.swift; sourceTree = "<group>"; };
 		07D0C3921F48EB1400FE64EC /* BadgeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeTableViewCell.swift; sourceTree = "<group>"; };
 		07DB35361F48F445007E9515 /* RewardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
 		07DB35381F48FBBB007E9515 /* PlusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusTableViewCell.swift; sourceTree = "<group>"; };
 		07DDEF851F4ADCD800559AEB /* percent28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = percent28.png; sourceTree = "<group>"; };
 		07DDEF861F4ADCD800559AEB /* percent3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = percent3.png; sourceTree = "<group>"; };
+		07F741561F4EB67F0068DB89 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		07F741591F4EBE1A0068DB89 /* HealthInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthInfo.swift; sourceTree = "<group>"; };
+		07F7415B1F4EBFD20068DB89 /* HealthInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthInfoTableViewController.swift; sourceTree = "<group>"; };
+		07F7415D1F4EC1120068DB89 /* SettingSection1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingSection1.storyboard; sourceTree = "<group>"; };
+		07F7415F1F4ECF590068DB89 /* HealthInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HealthInfo.storyboard; sourceTree = "<group>"; };
+		07F741611F4ECFA70068DB89 /* SettingSection2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingSection2.storyboard; sourceTree = "<group>"; };
 		0CF4F5D980388B138AD363A2 /* Pods-CanYou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYou.release.xcconfig"; path = "Pods/Target Support Files/Pods-CanYou/Pods-CanYou.release.xcconfig"; sourceTree = "<group>"; };
 		314969725ABD038B2CCF0EAE /* Pods-CanYou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CanYou/Pods-CanYou.debug.xcconfig"; sourceTree = "<group>"; };
 		3B382BEF1EA30F19F7EA85B3 /* Pods-CanYouTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYouTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CanYouTests/Pods-CanYouTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -398,7 +418,9 @@
 		62E64C404BC64A87BB6D734A /* Pods-CanYouUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYouUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CanYouUITests/Pods-CanYouUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6C6106EE8B9374A6041525E8 /* Pods_CanYouTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanYouTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E59EA89B007D083A911E394 /* Pods_CanYouUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanYouUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E6D1B74B2C96D11D89D6095 /* Pods_CanYouWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanYouWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68EC1597700C0C088E5E9FE /* Pods_CanYou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanYou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0609F475F77A17246BB4998 /* Pods_CanYouWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanYouWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -446,11 +468,15 @@
 		07415F031F4D88A000B82597 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				07AFE0361F4F041C006B5C09 /* SettingNavigationController.swift */,
 				07415F011F4D889400B82597 /* SettingGenderTableViewController.swift */,
 				07415F041F4D89BC00B82597 /* SettingBirthTableViewController.swift */,
 				07415F061F4D89CD00B82597 /* SettingStartDateTableViewController.swift */,
 				07415F081F4D89E400B82597 /* SettingVersionTableViewController.swift */,
 				07415EFF1F4D6AD700B82597 /* SettingNameTableViewController.swift */,
+				0713C4961F4EDD5A00D9D2ED /* SettingCigaretteDailyTableViewController.swift */,
+				0713C4981F4EDE5600D9D2ED /* SettingCigarettePriceTableViewController.swift */,
+				0713C49A1F4EDF0100D9D2ED /* SettingAlarmTableViewController.swift */,
 				076C2F041F40543800579914 /* SettingTableViewController.swift */,
 			);
 			path = Setting;
@@ -490,6 +516,8 @@
 			children = (
 				07764A521F45F5430086105F /* InterfaceController */,
 				077E8EDD1F4562560057DDC3 /* ExtensionDelegate.swift */,
+				07F741561F4EB67F0068DB89 /* DataController.swift */,
+				07F741591F4EBE1A0068DB89 /* HealthInfo.swift */,
 				077E8EDF1F4562560057DDC3 /* NotificationController.swift */,
 				077E8EE11F4562560057DDC3 /* Assets.xcassets */,
 				077E8EE31F4562560057DDC3 /* Info.plist */,
@@ -610,6 +638,7 @@
 				07783FC91F4732E30081FB17 /* RewardDetailViewController.swift */,
 				076C2F021F4053FB00579914 /* CigaretteDailyViewController.swift */,
 				076C2EFE1F4053AD00579914 /* WelcomeViewController.swift */,
+				07F7415B1F4EBFD20068DB89 /* HealthInfoTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -628,6 +657,9 @@
 			isa = PBXGroup;
 			children = (
 				07415F0A1F4D900A00B82597 /* Setting.storyboard */,
+				07F7415D1F4EC1120068DB89 /* SettingSection1.storyboard */,
+				07F741611F4ECFA70068DB89 /* SettingSection2.storyboard */,
+				07F7415F1F4ECF590068DB89 /* HealthInfo.storyboard */,
 				07AEE9061F3C42C300D20151 /* Main.storyboard */,
 				07415F101F4D92BC00B82597 /* DashBoard.storyboard */,
 				07415F0E1F4D929300B82597 /* Badge.storyboard */,
@@ -764,6 +796,8 @@
 				A68EC1597700C0C088E5E9FE /* Pods_CanYou.framework */,
 				6C6106EE8B9374A6041525E8 /* Pods_CanYouTests.framework */,
 				8E59EA89B007D083A911E394 /* Pods_CanYouUITests.framework */,
+				8E6D1B74B2C96D11D89D6095 /* Pods_CanYouWatch_Extension.framework */,
+				D0609F475F77A17246BB4998 /* Pods_CanYouWatch.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1046,10 +1080,13 @@
 			files = (
 				07415F0D1F4D925500B82597 /* Reward.storyboard in Resources */,
 				07AEE9101F3C42C300D20151 /* LaunchScreen.storyboard in Resources */,
+				07F741621F4ECFA70068DB89 /* SettingSection2.storyboard in Resources */,
 				07AEE90D1F3C42C300D20151 /* Assets.xcassets in Resources */,
 				07AEE9081F3C42C300D20151 /* Main.storyboard in Resources */,
 				07415F111F4D92BC00B82597 /* DashBoard.storyboard in Resources */,
+				07F7415E1F4EC1120068DB89 /* SettingSection1.storyboard in Resources */,
 				07415F0F1F4D929300B82597 /* Badge.storyboard in Resources */,
+				07F741601F4ECF590068DB89 /* HealthInfo.storyboard in Resources */,
 				07415F0B1F4D900A00B82597 /* Setting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1225,10 +1262,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F741571F4EB67F0068DB89 /* DataController.swift in Sources */,
 				077E8EE01F4562560057DDC3 /* NotificationController.swift in Sources */,
 				077E8EDE1F4562560057DDC3 /* ExtensionDelegate.swift in Sources */,
 				07764A511F45F5380086105F /* DashBoardInterfaceController.swift in Sources */,
 				077E8EDC1F4562560057DDC3 /* StopWatchInterfaceController.swift in Sources */,
+				07F7415A1F4EBE1A0068DB89 /* HealthInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1237,8 +1276,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				078A6EBD1F4AC710002F5CA5 /* UIColorExtension.swift in Sources */,
+				0713C4991F4EDE5600D9D2ED /* SettingCigarettePriceTableViewController.swift in Sources */,
 				076C2EFF1F4053AD00579914 /* WelcomeViewController.swift in Sources */,
+				0713C49B1F4EDF0100D9D2ED /* SettingAlarmTableViewController.swift in Sources */,
 				07415F001F4D6AD700B82597 /* SettingNameTableViewController.swift in Sources */,
+				07AFE0371F4F041C006B5C09 /* SettingNavigationController.swift in Sources */,
 				07415F091F4D89E400B82597 /* SettingVersionTableViewController.swift in Sources */,
 				077EEB0D1F3F070900555921 /* User.swift in Sources */,
 				07671BAA1F3F722100DD4E24 /* Badge.swift in Sources */,
@@ -1259,6 +1301,7 @@
 				07415F131F4D947100B82597 /* BaseTableViewController.swift in Sources */,
 				07A3692A1F41D110000E2152 /* RootContainerViewController.swift in Sources */,
 				07671BBA1F3F769500DD4E24 /* UserStore.swift in Sources */,
+				07F7415C1F4EBFD20068DB89 /* HealthInfoTableViewController.swift in Sources */,
 				07A35BE51F405BCB00482782 /* DashBoardViewController.swift in Sources */,
 				07671BAC1F3F731600DD4E24 /* Reward.swift in Sources */,
 				07671BB01F3F746100DD4E24 /* HealthInfo.swift in Sources */,
@@ -1268,6 +1311,7 @@
 				07671BAE1F3F73B700DD4E24 /* BadgeUser.swift in Sources */,
 				076C2F051F40543800579914 /* SettingTableViewController.swift in Sources */,
 				07671BBC1F3F797300DD4E24 /* DataController.swift in Sources */,
+				0713C4971F4EDD5A00D9D2ED /* SettingCigaretteDailyTableViewController.swift in Sources */,
 				078A6EBB1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift in Sources */,
 				07DB35371F48F445007E9515 /* RewardTableViewCell.swift in Sources */,
 				07AEE9031F3C42C300D20151 /* AppDelegate.swift in Sources */,

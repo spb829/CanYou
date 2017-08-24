@@ -16,19 +16,21 @@ class DashBoardInterfaceController: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-
-        group.setBackgroundImageNamed("percent")
-        group.startAnimatingWithImages(in: NSMakeRange(0, 100), duration: self.duration, repeatCount: 1)
+        
     }
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        
+        group.setBackgroundImageNamed("percent")
+        group.startAnimatingWithImages(in: NSMakeRange(0, 35), duration: self.duration, repeatCount: 1)
     }
     
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+        group.setBackgroundImageNamed("percent0")
     }
     
 }

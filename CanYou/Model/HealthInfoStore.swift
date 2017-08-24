@@ -15,7 +15,9 @@ struct HealthInfoStore{
     var idCount = 0
     var items = [HealthInfo]()
     
-    private init() { }
+    private init() {
+        
+    }
     
     func findBy(id: Int) -> HealthInfo? {
         return items.filter({$0.id == id}).first
@@ -29,4 +31,7 @@ struct HealthInfoStore{
         return items.filter({$0.name == name})
     }
     
+    @discardableResult func sortBy(time: Double) -> [HealthInfo] {
+        return items.sorted(by: {$0.time < $1.time})
+    }
 }

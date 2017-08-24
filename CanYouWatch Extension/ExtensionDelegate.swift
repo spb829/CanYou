@@ -60,6 +60,5 @@ extension ExtensionDelegate: WCSessionDelegate {
         
     }
     
-    
 }
 

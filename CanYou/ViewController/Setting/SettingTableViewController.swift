@@ -16,10 +16,11 @@ class SettingTableViewController: BaseTableViewController {
     @IBOutlet var genderLabel: UILabel!
     @IBOutlet var birthLabel: UILabel!
     @IBOutlet var startdateLabel: UILabel!
-    @IBOutlet var randomLabel: UILabel!
-    @IBOutlet var passwordLabel: UILabel!
     @IBOutlet var versionLabel: UILabel!
-
+    @IBOutlet var alarmLabel: UILabel!
+    @IBOutlet var cigaretteDailyLabel: UILabel!
+    @IBOutlet var cigarettePriceLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -33,9 +34,26 @@ class SettingTableViewController: BaseTableViewController {
         
         nameLabel.text = currentUser.name
         genderLabel.text = currentUser.gender
-//        birthLabel.text = String(currentUser.birth)
-//        startdateLabel.text = currentUser.startDate
+        birthLabel.text = dataController.dateFormatter.string(from: currentUser.birth)
+        startdateLabel.text = dataController.dateFormatter.string(from: currentUser.startDate)
         versionLabel.text = dataController.version
-        
+        if currentUser.randomAlarm {
+            alarmLabel.text = "On"
+        } else {
+            alarmLabel.text = "Off"
+        }
+        cigaretteDailyLabel.text = String(currentUser.cigaretteDaily)
+//        cigarettePriceLabel.text = String(currentUser.cigarettePrice)
+    }
+    
+    @IBAction func closeButtonTapped(_ sender: UIBarButtonItem) {
+//        self.dismiss(animated: true, completion: nil)
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        transition.type = kCATransitionReveal
+        transition.subtype = kCATransitionFromBottom
+        navigationController?.view.layer.add(transition, forKey: nil)
+        _ = navigationController?.popViewController(animated: false)
     }
 }

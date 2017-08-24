@@ -11,7 +11,7 @@ import UIKit
 class SettingBirthTableViewController: BaseTableViewController {
     var currentUser = DataController.sharedDataController.currentUser
     
-    @IBOutlet var nameTextField: UITextField!
+    @IBOutlet var datePicker: UIDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,17 +23,11 @@ class SettingBirthTableViewController: BaseTableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        nameTextField.placeholder = currentUser.name
+        datePicker.date = currentUser.birth
     }
     
     @IBAction func saveTapped(_ sender: UIBarButtonItem) {
-        if let name = nameTextField.text {
-            currentUser.name = name
-            
-            self.navigationController?.popViewController(animated: true)
-        } else {
-            print("wrong")
-        }
+        currentUser.birth = datePicker.date
+        self.navigationController?.popViewController(animated: true)
     }
 }
-

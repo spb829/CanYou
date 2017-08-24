@@ -20,7 +20,7 @@ struct BadgeStore{
         items.append(Badge().then{
             $0.name = "24hours"
             $0.image = UIImage(named: "badge-24hours")
-            $0.content = "Good start"
+            $0.content = "Good start !"
         })
         
         items.append(Badge().then{

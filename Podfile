@@ -1,16 +1,17 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-# Uncomment the next line to define a global platform for your project
 platform :ios, '10.3'
+
+def sharePods
+    pod 'Then'
+end
 
 target 'CanYou' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for CanYou
-  pod 'Then'
-#  pod 'Hero'
-#  pod 'SnapKit', '~> 3.2.0'
+  sharePods
 
   target 'CanYouTests' do
     inherit! :search_paths
@@ -21,5 +22,12 @@ target 'CanYou' do
     inherit! :search_paths
     # Pods for testing
   end
-
+  
 end
+
+#target 'CanYouWatch Extension' do
+#    platform :watchos
+#    sharePods
+
+#end
+

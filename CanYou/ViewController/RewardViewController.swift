@@ -18,6 +18,12 @@ class RewardViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        cansLabel.text = "\(dataController.currentUser.canValue) Cans"
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

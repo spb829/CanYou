@@ -1,17 +1,16 @@
 //
-//  SettingStartDateTableViewController.swift
+//  SettingCigarettePriceTableViewController.swift
 //  CanYou
 //
-//  Created by Macbook Pro on 2017. 8. 23..
+//  Created by Macbook Pro on 2017. 8. 24..
 //  Copyright © 2017년 Eric Park. All rights reserved.
 //
 
 import UIKit
 
-class SettingStartDateTableViewController: BaseTableViewController {
+class SettingCigarettePriceTableViewController: BaseTableViewController {
     var currentUser = DataController.sharedDataController.currentUser
-    
-    @IBOutlet var datePicker: UIDatePicker!
+    @IBOutlet var textField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,13 +22,11 @@ class SettingStartDateTableViewController: BaseTableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        datePicker.date = currentUser.startDate
+        
     }
     
-    @IBAction func saveTapped(_ sender: UIBarButtonItem) {
-        currentUser.startDate = datePicker.date
-        self.navigationController?.popViewController(animated: true)
+    @IBAction func saveTapped(_ sender: UIBarButtonItem){
+        
     }
 }
-
 

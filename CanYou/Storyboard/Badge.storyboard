@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -29,13 +29,13 @@
                                             <constraint firstAttribute="width" secondItem="e1W-x3-zQf" secondAttribute="height" multiplier="1:1" id="3lG-TZ-KQ2"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="초보 금연자" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJI-mh-23M">
-                                        <rect key="frame" x="73" y="8" width="262" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJI-mh-23M">
+                                        <rect key="frame" x="73" y="8" width="262" height="20.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="금연 1일 성공!" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbp-xq-jSU">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good start !" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbp-xq-jSU">
                                         <rect key="frame" x="73" y="42.5" width="262" height="14.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                         <nil key="textColor"/>
@@ -56,12 +56,21 @@
                                     <constraint firstItem="jbp-xq-jSU" firstAttribute="leading" secondItem="e1W-x3-zQf" secondAttribute="trailing" constant="8" id="va6-G8-cs2"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최근에 달성한 목표" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsO-5i-hcf">
-                                <rect key="frame" x="16" y="28" width="343" height="24"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V1D-VA-k2x">
+                                <rect key="frame" x="16" y="28" width="343" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recent Badge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsO-5i-hcf">
+                                        <rect key="frame" x="0.0" y="0.0" width="122" height="30"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="At1-hz-Xto">
+                                        <rect key="frame" x="122" y="0.0" width="221" height="30"/>
+                                        <state key="normal" title="List"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ut-SY-B51" userLabel="LineView">
                                 <rect key="frame" x="8" y="133" width="359" height="2"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -130,14 +139,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="PsO-5i-hcf" firstAttribute="top" secondItem="OuB-Td-aCj" secondAttribute="top" constant="8" id="B5N-0K-dWb"/>
-                            <constraint firstItem="PsO-5i-hcf" firstAttribute="leading" secondItem="OuB-Td-aCj" secondAttribute="leading" constant="16" id="Goc-fD-gft"/>
+                            <constraint firstItem="V1D-VA-k2x" firstAttribute="leading" secondItem="OuB-Td-aCj" secondAttribute="leading" constant="16" id="1N3-Vf-Xig"/>
+                            <constraint firstItem="h27-Qw-lur" firstAttribute="top" secondItem="V1D-VA-k2x" secondAttribute="bottom" constant="2" id="4CM-b9-JeI"/>
+                            <constraint firstItem="OuB-Td-aCj" firstAttribute="trailing" secondItem="V1D-VA-k2x" secondAttribute="trailing" constant="16" id="7GI-XD-WQ9"/>
                             <constraint firstItem="2ut-SY-B51" firstAttribute="top" secondItem="h27-Qw-lur" secondAttribute="bottom" constant="8" id="NvT-0A-kWJ"/>
-                            <constraint firstItem="h27-Qw-lur" firstAttribute="top" secondItem="PsO-5i-hcf" secondAttribute="bottom" constant="8" id="QuY-Qh-D5m"/>
                             <constraint firstAttribute="trailing" secondItem="2ut-SY-B51" secondAttribute="trailing" constant="8" id="Xqc-px-mqw"/>
                             <constraint firstItem="OuB-Td-aCj" firstAttribute="bottom" secondItem="DOV-oH-yGK" secondAttribute="bottom" constant="16" id="Ycl-ZK-H6S"/>
                             <constraint firstItem="OuB-Td-aCj" firstAttribute="trailing" secondItem="DOV-oH-yGK" secondAttribute="trailing" constant="16" id="Z1V-pr-24i"/>
-                            <constraint firstItem="OuB-Td-aCj" firstAttribute="trailing" secondItem="PsO-5i-hcf" secondAttribute="trailing" constant="16" id="d4g-jW-SC2"/>
+                            <constraint firstItem="V1D-VA-k2x" firstAttribute="top" secondItem="OuB-Td-aCj" secondAttribute="top" constant="8" id="aAO-Lm-5F4"/>
                             <constraint firstItem="DOV-oH-yGK" firstAttribute="leading" secondItem="OuB-Td-aCj" secondAttribute="leading" constant="16" id="fc2-Sk-6v7"/>
                             <constraint firstItem="2ut-SY-B51" firstAttribute="leading" secondItem="wo7-ra-tnF" secondAttribute="leading" constant="8" id="k1G-Na-7Ak"/>
                             <constraint firstItem="OuB-Td-aCj" firstAttribute="trailing" secondItem="h27-Qw-lur" secondAttribute="trailing" constant="16" id="mML-hp-Dj2"/>

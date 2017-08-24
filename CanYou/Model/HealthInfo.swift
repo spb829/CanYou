@@ -12,9 +12,9 @@ import Then
 
 class HealthInfo: Then {
     let id: Int
-    var name: String?
+    var name: String = ""
     var image: UIImage?
-    var time: Int?
+    var time: Double = 0
     
     init(){
         self.id = 1

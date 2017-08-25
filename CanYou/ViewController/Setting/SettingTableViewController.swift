@@ -10,9 +10,6 @@ import UIKit
 
 class SettingTableViewController: BaseTableViewController {
     // MARK : - Properties
-    var dataController = DataController.sharedDataController
-    var currentUser = DataController.sharedDataController.currentUser
-    
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var genderLabel: UILabel!
     @IBOutlet var birthLabel: UILabel!
@@ -48,12 +45,8 @@ class SettingTableViewController: BaseTableViewController {
     }
     
     @IBAction func closeButtonTapped(_ sender: UIBarButtonItem) {
-//        self.dismiss(animated: true, completion: nil)
-        let transition = CATransition()
-        transition.duration = 0.5
-        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-        transition.type = kCATransitionReveal
-        transition.subtype = kCATransitionFromBottom
+        let transition = AnimationController.popDownTransition
+        
         navigationController?.view.layer.add(transition, forKey: nil)
         _ = navigationController?.popViewController(animated: false)
     }

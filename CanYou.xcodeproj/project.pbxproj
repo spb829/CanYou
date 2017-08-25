@@ -124,7 +124,6 @@
 		075860D11F41908300E974F8 /* PageContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075860D01F41908300E974F8 /* PageContainerView.swift */; };
 		07671BAA1F3F722100DD4E24 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BA91F3F722100DD4E24 /* Badge.swift */; };
 		07671BAC1F3F731600DD4E24 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BAB1F3F731600DD4E24 /* Reward.swift */; };
-		07671BAE1F3F73B700DD4E24 /* BadgeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BAD1F3F73B700DD4E24 /* BadgeUser.swift */; };
 		07671BB01F3F746100DD4E24 /* HealthInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BAF1F3F746100DD4E24 /* HealthInfo.swift */; };
 		07671BBA1F3F769500DD4E24 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BB91F3F769500DD4E24 /* UserStore.swift */; };
 		07671BBC1F3F797300DD4E24 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BBB1F3F797300DD4E24 /* DataController.swift */; };
@@ -152,15 +151,18 @@
 		078A6EBB1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A6EBA1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift */; };
 		078A6EBD1F4AC710002F5CA5 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A6EBC1F4AC710002F5CA5 /* UIColorExtension.swift */; };
 		07A3692A1F41D110000E2152 /* RootContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A369291F41D110000E2152 /* RootContainerViewController.swift */; };
+		07AC068C1F501E2500C5DC7A /* RealmResultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AC068B1F501E2500C5DC7A /* RealmResultsExtension.swift */; };
 		07AEE9031F3C42C300D20151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE9021F3C42C300D20151 /* AppDelegate.swift */; };
 		07AEE9081F3C42C300D20151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AEE9061F3C42C300D20151 /* Main.storyboard */; };
 		07AEE90D1F3C42C300D20151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07AEE90C1F3C42C300D20151 /* Assets.xcassets */; };
 		07AEE9101F3C42C300D20151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AEE90E1F3C42C300D20151 /* LaunchScreen.storyboard */; };
 		07AEE91B1F3C42C300D20151 /* CanYouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE91A1F3C42C300D20151 /* CanYouTests.swift */; };
 		07AEE9261F3C42C300D20151 /* CanYouUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE9251F3C42C300D20151 /* CanYouUITests.swift */; };
+		07B0F0001F502E5200215CAB /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B0EFFF1F502E5200215CAB /* AnimationController.swift */; };
 		07B30B031F4F1F910063727D /* HealthInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B30B021F4F1F910063727D /* HealthInfoTableViewCell.swift */; };
 		07B30B121F4FC8F70063727D /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B30B111F4FC8F70063727D /* DashBoardViewController.swift */; };
 		07B30B141F4FC9080063727D /* BadgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B30B131F4FC9070063727D /* BadgeViewController.swift */; };
+		07B30B171F4FF06C0063727D /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B30B161F4FF06B0063727D /* ImageController.swift */; };
 		07D0C3931F48EB1400FE64EC /* BadgeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D0C3921F48EB1400FE64EC /* BadgeTableViewCell.swift */; };
 		07DB35371F48F445007E9515 /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB35361F48F445007E9515 /* RewardTableViewCell.swift */; };
 		07DB353A1F48FBBB007E9515 /* PlusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB35381F48FBBB007E9515 /* PlusTableViewCell.swift */; };
@@ -351,7 +353,6 @@
 		075860D01F41908300E974F8 /* PageContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContainerView.swift; sourceTree = "<group>"; };
 		07671BA91F3F722100DD4E24 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		07671BAB1F3F731600DD4E24 /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
-		07671BAD1F3F73B700DD4E24 /* BadgeUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeUser.swift; sourceTree = "<group>"; };
 		07671BAF1F3F746100DD4E24 /* HealthInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthInfo.swift; sourceTree = "<group>"; };
 		07671BB91F3F769500DD4E24 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		07671BBB1F3F797300DD4E24 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -382,6 +383,7 @@
 		078A6EBA1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UYNotificationDelegate.swift; sourceTree = "<group>"; };
 		078A6EBC1F4AC710002F5CA5 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		07A369291F41D110000E2152 /* RootContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContainerViewController.swift; sourceTree = "<group>"; };
+		07AC068B1F501E2500C5DC7A /* RealmResultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmResultsExtension.swift; sourceTree = "<group>"; };
 		07AEE8FF1F3C42C300D20151 /* CanYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AEE9021F3C42C300D20151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07AEE9071F3C42C300D20151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -394,9 +396,11 @@
 		07AEE9211F3C42C300D20151 /* CanYouUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanYouUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AEE9251F3C42C300D20151 /* CanYouUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanYouUITests.swift; sourceTree = "<group>"; };
 		07AEE9271F3C42C300D20151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07B0EFFF1F502E5200215CAB /* AnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
 		07B30B021F4F1F910063727D /* HealthInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthInfoTableViewCell.swift; sourceTree = "<group>"; };
 		07B30B111F4FC8F70063727D /* DashBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
 		07B30B131F4FC9070063727D /* BadgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeViewController.swift; sourceTree = "<group>"; };
+		07B30B161F4FF06B0063727D /* ImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
 		07D0C3921F48EB1400FE64EC /* BadgeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeTableViewCell.swift; sourceTree = "<group>"; };
 		07DB35361F48F445007E9515 /* RewardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
 		07DB35381F48FBBB007E9515 /* PlusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusTableViewCell.swift; sourceTree = "<group>"; };
@@ -526,6 +530,7 @@
 		07935A811F4DAE7400D983F0 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				07AC068B1F501E2500C5DC7A /* RealmResultsExtension.swift */,
 				078A6EBC1F4AC710002F5CA5 /* UIColorExtension.swift */,
 			);
 			name = Extension;
@@ -569,7 +574,7 @@
 				07B30B0F1F4FC6A40063727D /* Resource */,
 				07AEE9371F3C46F800D20151 /* Storyboard */,
 				07B30B011F4F1E620063727D /* Delegate */,
-				07B30B101F4FC6B40063727D /* SupportingFiles */,
+				07B30B151F4FD6D60063727D /* SupportingFile */,
 			);
 			path = CanYou;
 			sourceTree = "<group>";
@@ -628,6 +633,8 @@
 		07AEE9361F3C46EE00D20151 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				07B0EFFF1F502E5200215CAB /* AnimationController.swift */,
+				07B30B161F4FF06B0063727D /* ImageController.swift */,
 				0718D7551F4591F5000956E8 /* TimerController.swift */,
 				07671BBB1F3F797300DD4E24 /* DataController.swift */,
 			);
@@ -745,7 +752,6 @@
 			children = (
 				077EEB0C1F3F070900555921 /* User.swift */,
 				07671BAB1F3F731600DD4E24 /* Reward.swift */,
-				07671BAD1F3F73B700DD4E24 /* BadgeUser.swift */,
 				07671BAF1F3F746100DD4E24 /* HealthInfo.swift */,
 				07671BA91F3F722100DD4E24 /* Badge.swift */,
 			);
@@ -770,12 +776,12 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		07B30B101F4FC6B40063727D /* SupportingFiles */ = {
+		07B30B151F4FD6D60063727D /* SupportingFile */ = {
 			isa = PBXGroup;
 			children = (
 				07AEE9111F3C42C300D20151 /* Info.plist */,
 			);
-			path = SupportingFiles;
+			name = SupportingFile;
 			sourceTree = "<group>";
 		};
 		07DDEF841F4ADC7800559AEB /* percent */ = {
@@ -1391,6 +1397,7 @@
 				078A6EBD1F4AC710002F5CA5 /* UIColorExtension.swift in Sources */,
 				0713C4991F4EDE5600D9D2ED /* SettingCigarettePriceTableViewController.swift in Sources */,
 				076C2EFF1F4053AD00579914 /* WelcomeViewController.swift in Sources */,
+				07B0F0001F502E5200215CAB /* AnimationController.swift in Sources */,
 				0713C49B1F4EDF0100D9D2ED /* SettingAlarmTableViewController.swift in Sources */,
 				07415F001F4D6AD700B82597 /* SettingNameTableViewController.swift in Sources */,
 				07415F091F4D89E400B82597 /* SettingVersionTableViewController.swift in Sources */,
@@ -1406,6 +1413,7 @@
 				078A6EB91F4AAAE1002F5CA5 /* RewardNewViewController.swift in Sources */,
 				07B30B031F4F1F910063727D /* HealthInfoTableViewCell.swift in Sources */,
 				076C2F011F4053C100579914 /* CanYouAnimationViewController.swift in Sources */,
+				07AC068C1F501E2500C5DC7A /* RealmResultsExtension.swift in Sources */,
 				07783FCA1F4732E30081FB17 /* RewardDetailViewController.swift in Sources */,
 				07415F021F4D889400B82597 /* SettingGenderTableViewController.swift in Sources */,
 				07415F051F4D89BC00B82597 /* SettingBirthTableViewController.swift in Sources */,
@@ -1420,9 +1428,9 @@
 				07671BB01F3F746100DD4E24 /* HealthInfo.swift in Sources */,
 				076C2F031F4053FB00579914 /* CigaretteDailyViewController.swift in Sources */,
 				076B7AA31F42FD2900C68F05 /* RewardViewController.swift in Sources */,
-				07671BAE1F3F73B700DD4E24 /* BadgeUser.swift in Sources */,
 				076C2F051F40543800579914 /* SettingTableViewController.swift in Sources */,
 				07671BBC1F3F797300DD4E24 /* DataController.swift in Sources */,
+				07B30B171F4FF06C0063727D /* ImageController.swift in Sources */,
 				0713C4971F4EDD5A00D9D2ED /* SettingCigaretteDailyTableViewController.swift in Sources */,
 				078A6EBB1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift in Sources */,
 				07DB35371F48F445007E9515 /* RewardTableViewCell.swift in Sources */,

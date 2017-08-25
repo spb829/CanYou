@@ -10,7 +10,6 @@ import UIKit
 
 class SettingCigaretteDailyTableViewController: BaseTableViewController {
     // MARK : - Properties
-    var currentUser = DataController.sharedDataController.currentUser
     @IBOutlet var textField: UITextField!
 
     override func viewDidLoad() {
@@ -23,10 +22,16 @@ class SettingCigaretteDailyTableViewController: BaseTableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        textField.placeholder = String(currentUser.cigaretteDaily)
     }
     
     @IBAction func saveTapped(_ sender: UIBarButtonItem){
         
+        try! realm.write {
+            if let value = Int(textField.text ?? "0") {
+                currentUser.cigaretteDaily = value
+            }
+        }
+        self.navigationController?.popViewController(animated: true)
     }
 }

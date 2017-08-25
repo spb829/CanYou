@@ -10,7 +10,6 @@ import UIKit
 
 class HealthInfoTableViewController: BaseTableViewController {
     // MARK : - Properties
-    var healthStore = DataController.sharedDataController.healthInfoStore
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +26,7 @@ class HealthInfoTableViewController: BaseTableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return healthStore.items.count
+        return HealthInfoStore.items.count
     }
 
     

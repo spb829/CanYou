@@ -14,9 +14,7 @@ class DashBoardViewController: UIViewController {
     @IBOutlet var dayLabel: UILabel!
     
     var timer: Timer?
-    var timerController = TimerController.sharedTimerController
-    
-    var dataController = DataController.sharedDataController
+    var timerController = TimerController.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()

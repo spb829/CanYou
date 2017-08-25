@@ -10,8 +10,8 @@ import UIKit
 
 class SettingAlarmTableViewController: BaseTableViewController {
     // MARK : - Properties
-    var currentUser = DataController.sharedDataController.currentUser
     @IBOutlet var alarmSwitch: UISwitch!
+    @IBOutlet var randomAlarmSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,11 +24,40 @@ class SettingAlarmTableViewController: BaseTableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        alarmSwitch.isOn = currentUser.randomAlarm
+        randomAlarmSwitch.isOn = currentUser.randomAlarm
+        alarmSwitch.isOn = currentUser.alarm
     }
     
-    @IBAction func switchValueChanged(_ sender: UISwitch) {
-        currentUser.randomAlarm = alarmSwitch.isOn
+    @IBAction func alarmSwitchValueChanged(_ sender: UISwitch) {
+        try! realm.write {
+            currentUser.alarm = sender.isOn
+        }
+        
+        // alarm on, off
+        switch sender.isOn {
+        case true:
+            randomAlarmSwitch.isEnabled = true
+            // alarm on!
+        case false:
+            randomAlarmSwitch.isEnabled = false
+            // all alarm off !
+        }
+    }
+    
+    @IBAction func randomAlarmSwitchValueChanged(_ sender: UISwitch) {
+        try! realm.write {
+            currentUser.randomAlarm = sender.isOn
+        }
+        
+        // random alarm on, off
+        switch sender.isOn {
+        case true:
+            break
+            // random alarm on!
+        case false:
+            break
+            // random alarm off !
+        }
     }
 }
 

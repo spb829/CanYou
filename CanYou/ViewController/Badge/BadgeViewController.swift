@@ -10,9 +10,7 @@ import UIKit
 
 class BadgeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     // MARK : - Properties
-    var dataController = DataController.sharedDataController
-    var badgeStore = DataController.sharedDataController.badgeStore
-    
+    var dataController = DataController.shared
     var isDoneList = false
     
     @IBOutlet var tableView: UITableView!
@@ -33,17 +31,28 @@ class BadgeViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return badgeStore.items.count
+        switch isDoneList {
+        case true:
+            return BadgeStore.doneItems.count
+        case false:
+            return BadgeStore.toDoItems.count
+        }
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BadgeTableViewCell", for: indexPath) as! BadgeTableViewCell
+        let item: Badge
         
-        let item = badgeStore.items[indexPath.row]
+        switch isDoneList {
+        case true:
+            item = BadgeStore.doneItems[indexPath.row]
+        case false:
+            item = BadgeStore.toDoItems[indexPath.row]
+        }
         
-        cell.titleLabel.text = item.name!
-        cell.contentLabel.text = item.content!
+        cell.titleLabel.text = item.name
+        cell.contentLabel.text = item.content
         
         if let image = item.image {
             cell.badgeImageView?.image = image
@@ -60,7 +69,15 @@ class BadgeViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.prepare(for: segue, sender: sender)
         if segue.identifier == "goToBadgeDetail" {
             if let row = tableView.indexPathForSelectedRow?.row {
-                let item = badgeStore.items[row]
+                let item: Badge
+                
+                switch isDoneList {
+                case true:
+                    item = BadgeStore.doneItems[row]
+                case false:
+                    item = BadgeStore.toDoItems[row]
+                }
+                
                 let vc = segue.destination as! BadgeDetailViewController
                 
                 vc.badge = item

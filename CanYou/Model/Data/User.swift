@@ -7,22 +7,34 @@
 //
 
 import Foundation
-import UIKit
-import Then
+import RealmSwift
 
-class User: Then {
-    let id: Int = 0
-    var name: String = ""
-    var birth: Date = Date()
-    var gender: String = "Male"
-    var startDate: Date = Date()
+class User: RealmSwift.Object {
+    // PrimaryKey
+    @objc dynamic var id: String = UUID().uuidString
     
-    var cigaretteDaily: Int = 20
-    var cigarettePrice: Int = 4500
-    var canValue: Int = 0
+    // Properties
+    @objc dynamic var name: String = ""
+    @objc dynamic var birth: Date = Date()
+    @objc dynamic var gender: String = "Male"
+    @objc dynamic var startDate: Date = Date()
     
-    var randomAlarm: Bool = false
+    @objc dynamic var cigaretteDaily: Int = 20
+    @objc dynamic var cigarettePrice: Int = 4500
     
-    init(){ }
+    @objc dynamic var canValue: Int = 0
     
+    @objc dynamic var alarm: Bool = false
+    @objc dynamic var randomAlarm: Bool = false
+    
+    // Realationships
+    let rewards = List<Reward>()
+    let badges = List<Badge>()
+    
+    let recentBadge: Badge? = nil
+    
+    
+    override static func primaryKey() -> String? {
+        return "id"
+    }
 }

@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import RealmSwift
 
 class BaseViewController: UIViewController {
+    let realm = try! Realm()
+    var currentUser = DataController.shared.currentUser
+    var dataController = DataController.shared
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -32,6 +36,8 @@ class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Realm Browser file URL
+//        print(Realm.Configuration.defaultConfiguration.fileURL!)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -51,7 +57,5 @@ class BaseViewController: UIViewController {
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
-    
-
     
 }

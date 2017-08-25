@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
-                            <tableViewSection headerTitle="Random alarm" id="ZAL-e8-C7V">
+                            <tableViewSection headerTitle="Alarm" id="ZAL-e8-C7V">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="jr6-P0-C5n" userLabel="설정">
                                         <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
@@ -28,7 +28,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEV-Xs-xbi">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEV-Xs-xbi">
                                                     <rect key="frame" x="16" y="11" width="294" height="22"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                     <nil key="textColor"/>
@@ -37,7 +37,7 @@
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3MO-wd-1My">
                                                     <rect key="frame" x="318" y="5" width="51" height="34"/>
                                                     <connections>
-                                                        <action selector="switchValueChanged:" destination="JCX-HK-xjW" eventType="valueChanged" id="W9M-iO-ERz"/>
+                                                        <action selector="alarmSwitchValueChanged:" destination="JCX-HK-xjW" eventType="valueChanged" id="U4k-rM-yRo"/>
                                                     </connections>
                                                 </switch>
                                             </subviews>
@@ -52,6 +52,37 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="aAA-XE-QG9" userLabel="설정">
+                                        <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aAA-XE-QG9" id="YzD-v8-WLN">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random alarm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJi-Ar-jTn">
+                                                    <rect key="frame" x="16" y="11" width="294" height="22"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lwr-uC-LA0">
+                                                    <rect key="frame" x="318" y="5" width="51" height="34"/>
+                                                    <connections>
+                                                        <action selector="randomAlarmSwitchValueChanged:" destination="JCX-HK-xjW" eventType="valueChanged" id="hW3-nq-Yjt"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="FJi-Ar-jTn" secondAttribute="bottom" constant="3" id="EQg-Ay-kiv"/>
+                                                <constraint firstItem="Lwr-uC-LA0" firstAttribute="leading" secondItem="FJi-Ar-jTn" secondAttribute="trailing" constant="8" id="Sti-Od-TTk"/>
+                                                <constraint firstAttribute="bottom" secondItem="Lwr-uC-LA0" secondAttribute="bottom" constant="5" id="Sww-dE-azU"/>
+                                                <constraint firstAttribute="trailing" secondItem="Lwr-uC-LA0" secondAttribute="trailing" constant="8" id="VdG-cw-632"/>
+                                                <constraint firstItem="Lwr-uC-LA0" firstAttribute="top" secondItem="YzD-v8-WLN" secondAttribute="top" constant="5" id="Z8Z-ck-H5n"/>
+                                                <constraint firstItem="FJi-Ar-jTn" firstAttribute="leading" secondItem="YzD-v8-WLN" secondAttribute="leadingMargin" constant="8" id="cf1-jm-gNl"/>
+                                                <constraint firstItem="FJi-Ar-jTn" firstAttribute="top" secondItem="YzD-v8-WLN" secondAttribute="topMargin" constant="3" id="m7e-I2-a9U"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -63,6 +94,7 @@
                     <navigationItem key="navigationItem" id="qc1-uu-mHa"/>
                     <connections>
                         <outlet property="alarmSwitch" destination="3MO-wd-1My" id="6mT-i4-ADt"/>
+                        <outlet property="randomAlarmSwitch" destination="Lwr-uC-LA0" id="WPH-Ic-f79"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tBF-YF-lV7" userLabel="First Responder" sceneMemberID="firstResponder"/>

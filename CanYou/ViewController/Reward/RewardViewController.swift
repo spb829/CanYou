@@ -8,10 +8,9 @@
 
 import UIKit
 
-class RewardViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
+class RewardViewController: UIViewController {
     // MARK : - Properties
-    var dataController = DataController.sharedDataController
-    var rewardStore = DataController.sharedDataController.rewardStore
+    var dataController = DataController.shared
     @IBOutlet var tableView: UITableView!
     @IBOutlet var cansLabel: UILabel!
     
@@ -28,35 +27,31 @@ class RewardViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    // MARK: - Table view data source
-    
+}
+
+// MARK: - Table view data source
+extension RewardViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-//        print("numberofsectinos")
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        print("rows")
-        return rewardStore.items.count + 1
+        return RewardStore.items.count + 1
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        print("cells")
-        if indexPath.row == rewardStore.items.count {
+        if indexPath.row == RewardStore.items.count {
             let cell = tableView.dequeueReusableCell(withIdentifier: "PlusTableViewCell", for: indexPath) as! PlusTableViewCell
             return cell
         }
         
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "RewardTableViewCell", for: indexPath) as! RewardTableViewCell
         
-        let reward = rewardStore.items[indexPath.row]
+        let reward = RewardStore.items[indexPath.row]
         
-        cell.titleLabel.text = reward.name!
-        cell.cansLabel.text = "\(reward.price ?? 0) Cans"
-        cell.contentLabel.text = reward.content!
+        cell.titleLabel.text = reward.name
+        cell.cansLabel.text = "\(reward.price) Cans"
+        cell.contentLabel.text = reward.content
         
         if let image = reward.image {
             cell.rewardImageView.image = image
@@ -69,21 +64,24 @@ class RewardViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
+    @IBAction func toggleTapped(_ sender: UIButton) {
+        let range = NSMakeRange(0, self.tableView.numberOfSections)
+        let sections = NSIndexSet(indexesIn: range)
+        self.tableView.reloadSections(sections as IndexSet, with: .automatic)
+    }
+}
+
+// MARK: - Navigation
+extension RewardViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         if segue.identifier == "goToRewardDetail" {
             if let row = tableView.indexPathForSelectedRow?.row {
-                let item = rewardStore.items[row]
+                let item = RewardStore.items[row]
                 let vc = segue.destination as! RewardDetailViewController
                 
                 vc.reward = item
             }
         }
-    }
-    
-    @IBAction func toggleTapped(_ sender: UIButton) {
-        let range = NSMakeRange(0, self.tableView.numberOfSections)
-        let sections = NSIndexSet(indexesIn: range)
-        self.tableView.reloadSections(sections as IndexSet, with: .automatic)
     }
 }

@@ -11,7 +11,6 @@ import UIKit
 class CigaretteDailyViewController: BaseViewController {
     // MARK : - Properties
     @IBOutlet var cigaretteDaily: UITextField!
-    var dataController = DataController.sharedDataController
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +26,9 @@ class CigaretteDailyViewController: BaseViewController {
             present(sheet, animated: true, completion: nil)
             return
         }
-        
-        dataController.currentUser.cigaretteDaily = Int(text)!
+        try! realm.write {
+            dataController.currentUser.cigaretteDaily = Int(text)!
+        }
         
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let nvc = storyboard.instantiateViewController(withIdentifier: "NavigationController") as! UINavigationController

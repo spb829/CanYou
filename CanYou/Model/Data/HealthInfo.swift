@@ -8,16 +8,18 @@
 
 import UIKit
 import Then
+import RealmSwift
 
-class HealthInfo: Then {
-    let id: Int
-    var name: String = ""
-    var image: UIImage?
-    var time: Double = 0
+class HealthInfo: RealmSwift.Object {
+    // PrimaryKey
+    @objc dynamic var id: String = UUID().uuidString
     
-    init(){
-        HealthInfoStore.idCount += 1
-        self.id = HealthInfoStore.idCount
+    // Properties
+    @objc dynamic var name: String = ""
+    @objc dynamic var time: Double = 0
+    
+    override static func primaryKey() -> String? {
+        return "id"
     }
 }
 

@@ -10,8 +10,6 @@ import UIKit
 
 class SettingStartDateTableViewController: BaseTableViewController {
     // MARK : - Properties
-    var currentUser = DataController.sharedDataController.currentUser
-    
     @IBOutlet var datePicker: UIDatePicker!
     
     override func viewDidLoad() {
@@ -28,7 +26,9 @@ class SettingStartDateTableViewController: BaseTableViewController {
     }
     
     @IBAction func saveTapped(_ sender: UIBarButtonItem) {
-        currentUser.startDate = datePicker.date
+        try! realm.write {
+            currentUser.startDate = datePicker.date
+        }
         self.navigationController?.popViewController(animated: true)
     }
 }

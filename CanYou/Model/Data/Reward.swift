@@ -7,31 +7,30 @@
 //
 
 import Foundation
-import UIKit
-import Then
+import RealmSwift
 
-class Reward: Then {
-    let id: Int
-    let userId: Int
+class Reward: RealmSwift.Object {
+    // PrimaryKey
+    @objc dynamic var id: String = UUID().uuidString
+    @objc dynamic var userId: Int = 0
     
-    var name: String?
-    var image: UIImage?
-    var content: String?
-    
-    var price: Int?
-    var isPurchased: Bool = false
-    
-    init(){
-        self.userId = 0
-        RewardStore.idCount += 1
-        self.id = RewardStore.idCount
+    // Properties
+    @objc dynamic var name: String = ""
+    @objc dynamic var imageData: Data? = Data()
+    var image: UIImage? {
+        get {
+            return ImageController.convertToImage(fromData: imageData)
+        }
+        set (originImage) {
+            imageData = ImageController.convertToData(fromImage: originImage)
+        }
     }
+    @objc dynamic var content: String = ""
     
-    init(userId: Int){
-        self.userId = userId
-        RewardStore.idCount += 1
-        self.id = RewardStore.idCount
+    @objc dynamic var price: Int = 0
+    @objc dynamic var isPurchased: Bool = false
+    
+    override static func primaryKey() -> String? {
+        return "id"
     }
-    
-    
 }

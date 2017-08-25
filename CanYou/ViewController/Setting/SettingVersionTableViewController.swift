@@ -10,8 +10,6 @@ import UIKit
 
 class SettingVersionTableViewController: BaseTableViewController {
     // MARK : - Properties
-    var currentUser = DataController.sharedDataController.currentUser
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

@@ -10,8 +10,6 @@ import UIKit
 
 class SettingNameTableViewController: BaseTableViewController {
     // MARK : - Properties
-    var currentUser = DataController.sharedDataController.currentUser
-
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var saveButton: UIBarButtonItem!
     
@@ -31,7 +29,9 @@ class SettingNameTableViewController: BaseTableViewController {
     
     @IBAction func saveTapped(_ sender: UIBarButtonItem) {
         if let name = nameTextField.text {
-            currentUser.name = name
+            try! realm.write {
+                currentUser.name = name
+            }
             
             self.navigationController?.popViewController(animated: true)
         } else {

@@ -9,15 +9,12 @@
 import UIKit
 
 class SettingGenderTableViewController: BaseTableViewController {
-    // MARK : - Properties
-    var currentUser = DataController.sharedDataController.currentUser
-    
+    // MARK : - Properties    
     @IBOutlet var maleCell: UITableViewCell!
     @IBOutlet var femaleCell: UITableViewCell!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -44,16 +41,17 @@ class SettingGenderTableViewController: BaseTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        super.tableView(tableView, didSelectRowAt: indexPath)
         
-        tableView.deselectRow(at: indexPath, animated: true)
-        
-        switch indexPath.row {
-        case 0:
-            currentUser.gender = "Male"
-        case 1:
-            currentUser.gender = "Female"
-        default:
-            break
+        try! realm.write {
+            switch indexPath.row {
+            case 0:
+                currentUser.gender = "Male"
+            case 1:
+                currentUser.gender = "Female"
+            default:
+                break
+            }
         }
         
         setCheckmark()

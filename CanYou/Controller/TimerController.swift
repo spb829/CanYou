@@ -9,8 +9,8 @@
 import Foundation
 
 struct TimerController {
-    static let sharedTimerController = TimerController()
-    let dataController = DataController.sharedDataController
+    static let shared = TimerController()
+    let dataController = DataController.shared
     var timer: Timer = Timer()
     
     var startDate: Date

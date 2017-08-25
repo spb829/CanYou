@@ -10,7 +10,6 @@ import UIKit
 
 class RewardDetailViewController: BaseViewController {
 	// MARK : - Properties
-    var rewardStore = DataController.sharedDataController.rewardStore
     var reward: Reward?
 
     @IBOutlet var rewardImageView: UIImageView!
@@ -32,7 +31,7 @@ class RewardDetailViewController: BaseViewController {
         }
         
         contentLabel.text = reward.content
-        cansLabel.text = "\(reward.price ?? 0) Cans"
+        cansLabel.text = "\(reward.price) Cans"
         self.navigationItem.title = reward.name
     }
 

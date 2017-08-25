@@ -15,8 +15,6 @@ class RewardNewViewController: BaseViewController {
     @IBOutlet var contentTextField: UITextField!
     @IBOutlet var priceTextField: UITextField!
     
-    var rewardStore = DataController.sharedDataController.rewardStore
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -55,14 +53,16 @@ class RewardNewViewController: BaseViewController {
         let item = Reward().then {
             $0.name = title
             $0.content = content
-            $0.price = Int(price)
+            if let intPrice = Int(price){
+                $0.price = intPrice
+            }
             
             if let image = self.rewardImageView.image {
                 $0.image = image
             }
         }
         
-        rewardStore.add(item)
+        RewardStore.addItem(item)
         
         return true
     }

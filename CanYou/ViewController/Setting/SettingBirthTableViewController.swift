@@ -9,9 +9,7 @@
 import UIKit
 
 class SettingBirthTableViewController: BaseTableViewController {
-    // MARK : - Properties
-    var currentUser = DataController.sharedDataController.currentUser
-    
+    // MARK : - Properties    
     @IBOutlet var datePicker: UIDatePicker!
     
     override func viewDidLoad() {
@@ -28,7 +26,9 @@ class SettingBirthTableViewController: BaseTableViewController {
     }
     
     @IBAction func saveTapped(_ sender: UIBarButtonItem) {
-        currentUser.birth = datePicker.date
+        try! realm.write {
+            currentUser.birth = datePicker.date
+        }
         self.navigationController?.popViewController(animated: true)
     }
 }

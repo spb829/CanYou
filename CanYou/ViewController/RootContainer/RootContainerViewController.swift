@@ -179,11 +179,7 @@ extension RootContainerViewController {
         vc.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: vc, action: #selector(vc.closeButtonTapped(_:)))
         vc.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: vc, action: nil)
         
-        let transition = CATransition()
-        transition.duration = 0.5
-        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-        transition.type = kCATransitionMoveIn
-        transition.subtype = kCATransitionFromTop
+        let transition = AnimationController.popUpTransition
         
         navigationController?.view.layer.add(transition, forKey: nil)
         navigationController?.pushViewController(vc, animated: false)

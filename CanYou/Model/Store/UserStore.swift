@@ -8,33 +8,26 @@
 
 import Foundation
 import UIKit
+import RealmSwift
 
 struct UserStore{
-    static let sharedUserStore = UserStore()
-    static var idCount = 0
-    var items = [User]()
+    static let realm = try! Realm()
     
-    private init() { }
-    
-    func findBy(id: Int) -> User? {
-        return items.filter({$0.id == id}).first
+    static func initUser() {
+        try! realm.write {
+            let user = User()
+            
+            realm.add(user)
+        }
     }
     
-    func findBy(name: String) -> User? {
-        return items.filter({$0.name == name}).first
-    }
-    
-    func filterBy(name: String) -> [User] {
-        return items.filter({$0.name == name})
-    }
-    
-    @discardableResult mutating func createUser() -> User{
-        let user = User()
+    static func currentUser() -> User? {
+        guard let user = realm.objects(User.self).first else {
+            initUser()
+            return realm.objects(User.self).first
+        }
         
-        items.append(user)
         return user
     }
-    
-    
 }
 

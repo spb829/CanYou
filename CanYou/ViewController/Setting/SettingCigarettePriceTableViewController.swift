@@ -10,7 +10,6 @@ import UIKit
 
 class SettingCigarettePriceTableViewController: BaseTableViewController {
     // MARK : - Properties
-    var currentUser = DataController.sharedDataController.currentUser
     @IBOutlet var textField: UITextField!
     
     override func viewDidLoad() {
@@ -23,11 +22,15 @@ class SettingCigarettePriceTableViewController: BaseTableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        textField.placeholder = String(currentUser.cigarettePrice)
     }
     
     @IBAction func saveTapped(_ sender: UIBarButtonItem){
-        
+        try! realm.write {
+            if let value = Int(textField.text ?? "0") {
+                currentUser.cigarettePrice = value
+            }
+        }
     }
 }
 

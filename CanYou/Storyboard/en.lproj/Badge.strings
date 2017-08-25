@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; normalTitle = "List"; ObjectID = "At1-hz-Xto"; */
+"At1-hz-Xto.normalTitle" = "List";
+
+/* Class = "UILabel"; text = "Content"; ObjectID = "Kib-vl-yEC"; */
+"Kib-vl-yEC.text" = "Content";
+
+/* Class = "UILabel"; text = "Recent Badge"; ObjectID = "PsO-5i-hcf"; */
+"PsO-5i-hcf.text" = "Recent Badge";
+
+/* Class = "UILabel"; text = "Content"; ObjectID = "Rq0-cd-31l"; */
+"Rq0-cd-31l.text" = "Content";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "b1g-0u-6s9"; */
+"b1g-0u-6s9.text" = "Title";
+
+/* Class = "UILabel"; text = "24hours"; ObjectID = "eJI-mh-23M"; */
+"eJI-mh-23M.text" = "24hours";
+
+/* Class = "UILabel"; text = "Good start !"; ObjectID = "jbp-xq-jSU"; */
+"jbp-xq-jSU.text" = "Good start !";

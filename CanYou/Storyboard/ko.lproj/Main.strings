@@ -1,0 +1,33 @@
+
+/* Class = "UILabel"; text = "Welcome!"; ObjectID = "9U6-9M-lDO"; */
+"9U6-9M-lDO.text" = "Welcome!";
+
+/* Class = "UILabel"; text = "금연이라는 어려운 결심을 하셨군요 !\n시작이 반이라는 말이 있잖아요?"; ObjectID = "LaS-Ig-LNo"; */
+"LaS-Ig-LNo.text" = "금연이라는 어려운 결심을 하셨군요 !\n시작이 반이라는 말이 있잖아요?";
+
+/* Class = "UINavigationItem"; title = "CanYou"; ObjectID = "caT-9f-Msv"; */
+"caT-9f-Msv.title" = "CanYou";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "fPc-W7-0U1"; */
+"fPc-W7-0U1.normalTitle" = "Start";
+
+/* Class = "UILabel"; text = "개비"; ObjectID = "knf-hs-VSP"; */
+"knf-hs-VSP.text" = "개비";
+
+/* Class = "UILabel"; text = "You Can !"; ObjectID = "q2n-hE-3uZ"; */
+"q2n-hE-3uZ.text" = "You Can !";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "r5A-dp-puL"; */
+"r5A-dp-puL.normalTitle" = "Start";
+
+/* Class = "UILabel"; text = "Can You ?"; ObjectID = "rar-D8-AQc"; */
+"rar-D8-AQc.text" = "Can You ?";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "t7S-rX-f3F"; */
+"t7S-rX-f3F.normalTitle" = "Start";
+
+/* Class = "UILabel"; text = "하루 흡연량이 어떻게 되시나요?"; ObjectID = "tb9-2A-7Fo"; */
+"tb9-2A-7Fo.text" = "하루 흡연량이 어떻게 되시나요?";
+
+/* Class = "UITextField"; placeholder = "20"; ObjectID = "vBR-bl-p2i"; */
+"vBR-bl-p2i.placeholder" = "20";

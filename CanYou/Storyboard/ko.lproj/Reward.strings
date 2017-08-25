@@ -1,0 +1,42 @@
+
+/* Class = "UILabel"; text = "Reward"; ObjectID = "0Ju-vk-uRR"; */
+"0Ju-vk-uRR.text" = "Reward";
+
+/* Class = "UINavigationItem"; title = "New Reward"; ObjectID = "4sM-ft-07K"; */
+"4sM-ft-07K.title" = "New Reward";
+
+/* Class = "UIButton"; normalTitle = "Buy"; ObjectID = "5ks-NU-ZSg"; */
+"5ks-NU-ZSg.normalTitle" = "Buy";
+
+/* Class = "UILabel"; text = "10 Cans"; ObjectID = "IuS-iv-O1O"; */
+"IuS-iv-O1O.text" = "10 Cans";
+
+/* Class = "UILabel"; text = "Cans"; ObjectID = "Jbo-1r-bNf"; */
+"Jbo-1r-bNf.text" = "Cans";
+
+/* Class = "UILabel"; text = "Content"; ObjectID = "M5I-Le-MKb"; */
+"M5I-Le-MKb.text" = "Content";
+
+/* Class = "UIButton"; normalTitle = "Delete"; ObjectID = "RmQ-fg-rOm"; */
+"RmQ-fg-rOm.normalTitle" = "Delete";
+
+/* Class = "UITextField"; placeholder = "Price"; ObjectID = "Uhd-3S-8Ay"; */
+"Uhd-3S-8Ay.placeholder" = "Price";
+
+/* Class = "UITextField"; placeholder = "Title"; ObjectID = "UlO-I0-yOR"; */
+"UlO-I0-yOR.placeholder" = "Title";
+
+/* Class = "UILabel"; text = "10 Cans"; ObjectID = "emW-8h-WKo"; */
+"emW-8h-WKo.text" = "10 Cans";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "fcC-Of-xjw"; */
+"fcC-Of-xjw.text" = "Title";
+
+/* Class = "UILabel"; text = "Content"; ObjectID = "ozH-kA-ePR"; */
+"ozH-kA-ePR.text" = "Content";
+
+/* Class = "UITextField"; placeholder = "Content"; ObjectID = "rEm-bl-GhQ"; */
+"rEm-bl-GhQ.placeholder" = "Content";
+
+/* Class = "UILabel"; text = "50 Cans"; ObjectID = "roY-3V-ZHq"; */
+"roY-3V-ZHq.text" = "50 Cans";

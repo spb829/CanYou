@@ -115,10 +115,6 @@
 		07415F051F4D89BC00B82597 /* SettingBirthTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07415F041F4D89BC00B82597 /* SettingBirthTableViewController.swift */; };
 		07415F071F4D89CD00B82597 /* SettingStartDateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07415F061F4D89CD00B82597 /* SettingStartDateTableViewController.swift */; };
 		07415F091F4D89E400B82597 /* SettingVersionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07415F081F4D89E400B82597 /* SettingVersionTableViewController.swift */; };
-		07415F0B1F4D900A00B82597 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07415F0A1F4D900A00B82597 /* Setting.storyboard */; };
-		07415F0D1F4D925500B82597 /* Reward.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07415F0C1F4D925500B82597 /* Reward.storyboard */; };
-		07415F0F1F4D929300B82597 /* Badge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07415F0E1F4D929300B82597 /* Badge.storyboard */; };
-		07415F111F4D92BC00B82597 /* DashBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07415F101F4D92BC00B82597 /* DashBoard.storyboard */; };
 		07415F131F4D947100B82597 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07415F121F4D947100B82597 /* BaseTableViewController.swift */; };
 		07415F151F4D948200B82597 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07415F141F4D948200B82597 /* BaseViewController.swift */; };
 		075860D11F41908300E974F8 /* PageContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075860D01F41908300E974F8 /* PageContainerView.swift */; };
@@ -159,6 +155,13 @@
 		07AEE91B1F3C42C300D20151 /* CanYouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE91A1F3C42C300D20151 /* CanYouTests.swift */; };
 		07AEE9261F3C42C300D20151 /* CanYouUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE9251F3C42C300D20151 /* CanYouUITests.swift */; };
 		07B0F0001F502E5200215CAB /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B0EFFF1F502E5200215CAB /* AnimationController.swift */; };
+		07B0F0041F5047C000215CAB /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B0F0061F5047C000215CAB /* Setting.storyboard */; };
+		07B0F00B1F5047CB00215CAB /* SettingSection1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B0F00D1F5047CB00215CAB /* SettingSection1.storyboard */; };
+		07B0F0121F5047D400215CAB /* SettingSection2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B0F0141F5047D400215CAB /* SettingSection2.storyboard */; };
+		07B0F0191F5047DB00215CAB /* HealthInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B0F01B1F5047DB00215CAB /* HealthInfo.storyboard */; };
+		07B0F0201F5047EF00215CAB /* DashBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B0F0221F5047EF00215CAB /* DashBoard.storyboard */; };
+		07B0F0271F5047F500215CAB /* Badge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B0F0291F5047F500215CAB /* Badge.storyboard */; };
+		07B0F02E1F5047FD00215CAB /* Reward.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B0F0301F5047FD00215CAB /* Reward.storyboard */; };
 		07B30B031F4F1F910063727D /* HealthInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B30B021F4F1F910063727D /* HealthInfoTableViewCell.swift */; };
 		07B30B121F4FC8F70063727D /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B30B111F4FC8F70063727D /* DashBoardViewController.swift */; };
 		07B30B141F4FC9080063727D /* BadgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B30B131F4FC9070063727D /* BadgeViewController.swift */; };
@@ -171,9 +174,6 @@
 		07F741571F4EB67F0068DB89 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F741561F4EB67F0068DB89 /* DataController.swift */; };
 		07F7415A1F4EBE1A0068DB89 /* HealthInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F741591F4EBE1A0068DB89 /* HealthInfo.swift */; };
 		07F7415C1F4EBFD20068DB89 /* HealthInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7415B1F4EBFD20068DB89 /* HealthInfoTableViewController.swift */; };
-		07F7415E1F4EC1120068DB89 /* SettingSection1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F7415D1F4EC1120068DB89 /* SettingSection1.storyboard */; };
-		07F741601F4ECF590068DB89 /* HealthInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F7415F1F4ECF590068DB89 /* HealthInfo.storyboard */; };
-		07F741621F4ECFA70068DB89 /* SettingSection2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F741611F4ECFA70068DB89 /* SettingSection2.storyboard */; };
 		735E64F5C8A60F123E41F5BC /* Pods_CanYou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68EC1597700C0C088E5E9FE /* Pods_CanYou.framework */; };
 		C78FDA625A8333DE631DCB54 /* Pods_CanYouUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E59EA89B007D083A911E394 /* Pods_CanYouUITests.framework */; };
 		E87BC8024917941DA61B00F4 /* Pods_CanYouTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C6106EE8B9374A6041525E8 /* Pods_CanYouTests.framework */; };
@@ -344,10 +344,6 @@
 		07415F041F4D89BC00B82597 /* SettingBirthTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingBirthTableViewController.swift; sourceTree = "<group>"; };
 		07415F061F4D89CD00B82597 /* SettingStartDateTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingStartDateTableViewController.swift; sourceTree = "<group>"; };
 		07415F081F4D89E400B82597 /* SettingVersionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVersionTableViewController.swift; sourceTree = "<group>"; };
-		07415F0A1F4D900A00B82597 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
-		07415F0C1F4D925500B82597 /* Reward.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reward.storyboard; sourceTree = "<group>"; };
-		07415F0E1F4D929300B82597 /* Badge.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Badge.storyboard; sourceTree = "<group>"; };
-		07415F101F4D92BC00B82597 /* DashBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashBoard.storyboard; sourceTree = "<group>"; };
 		07415F121F4D947100B82597 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		07415F141F4D948200B82597 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		075860D01F41908300E974F8 /* PageContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContainerView.swift; sourceTree = "<group>"; };
@@ -397,6 +393,30 @@
 		07AEE9251F3C42C300D20151 /* CanYouUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanYouUITests.swift; sourceTree = "<group>"; };
 		07AEE9271F3C42C300D20151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07B0EFFF1F502E5200215CAB /* AnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
+		07B0F0011F50478900215CAB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		07B0F0021F50478A00215CAB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		07B0F0031F50478A00215CAB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Interface.strings; sourceTree = "<group>"; };
+		07B0F0051F5047C000215CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Setting.storyboard; sourceTree = "<group>"; };
+		07B0F0081F5047C300215CAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Setting.strings; sourceTree = "<group>"; };
+		07B0F00A1F5047C400215CAB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Setting.strings; sourceTree = "<group>"; };
+		07B0F00C1F5047CB00215CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SettingSection1.storyboard; sourceTree = "<group>"; };
+		07B0F00F1F5047CD00215CAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SettingSection1.strings; sourceTree = "<group>"; };
+		07B0F0111F5047CE00215CAB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/SettingSection1.strings; sourceTree = "<group>"; };
+		07B0F0131F5047D400215CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SettingSection2.storyboard; sourceTree = "<group>"; };
+		07B0F0161F5047D600215CAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SettingSection2.strings; sourceTree = "<group>"; };
+		07B0F0181F5047D600215CAB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/SettingSection2.strings; sourceTree = "<group>"; };
+		07B0F01A1F5047DB00215CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HealthInfo.storyboard; sourceTree = "<group>"; };
+		07B0F01D1F5047DD00215CAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/HealthInfo.strings; sourceTree = "<group>"; };
+		07B0F01F1F5047DE00215CAB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/HealthInfo.strings; sourceTree = "<group>"; };
+		07B0F0211F5047EF00215CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DashBoard.storyboard; sourceTree = "<group>"; };
+		07B0F0241F5047F000215CAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DashBoard.strings; sourceTree = "<group>"; };
+		07B0F0261F5047F100215CAB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/DashBoard.strings; sourceTree = "<group>"; };
+		07B0F0281F5047F500215CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Badge.storyboard; sourceTree = "<group>"; };
+		07B0F02B1F5047F700215CAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Badge.strings; sourceTree = "<group>"; };
+		07B0F02D1F5047F800215CAB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Badge.strings; sourceTree = "<group>"; };
+		07B0F02F1F5047FD00215CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Reward.storyboard; sourceTree = "<group>"; };
+		07B0F0321F5047FE00215CAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Reward.strings; sourceTree = "<group>"; };
+		07B0F0341F5047FF00215CAB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Reward.strings; sourceTree = "<group>"; };
 		07B30B021F4F1F910063727D /* HealthInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthInfoTableViewCell.swift; sourceTree = "<group>"; };
 		07B30B111F4FC8F70063727D /* DashBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
 		07B30B131F4FC9070063727D /* BadgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeViewController.swift; sourceTree = "<group>"; };
@@ -409,9 +429,6 @@
 		07F741561F4EB67F0068DB89 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		07F741591F4EBE1A0068DB89 /* HealthInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthInfo.swift; sourceTree = "<group>"; };
 		07F7415B1F4EBFD20068DB89 /* HealthInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthInfoTableViewController.swift; sourceTree = "<group>"; };
-		07F7415D1F4EC1120068DB89 /* SettingSection1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingSection1.storyboard; sourceTree = "<group>"; };
-		07F7415F1F4ECF590068DB89 /* HealthInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HealthInfo.storyboard; sourceTree = "<group>"; };
-		07F741611F4ECFA70068DB89 /* SettingSection2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingSection2.storyboard; sourceTree = "<group>"; };
 		0CF4F5D980388B138AD363A2 /* Pods-CanYou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYou.release.xcconfig"; path = "Pods/Target Support Files/Pods-CanYou/Pods-CanYou.release.xcconfig"; sourceTree = "<group>"; };
 		314969725ABD038B2CCF0EAE /* Pods-CanYou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CanYou/Pods-CanYou.debug.xcconfig"; sourceTree = "<group>"; };
 		3B382BEF1EA30F19F7EA85B3 /* Pods-CanYouTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYouTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CanYouTests/Pods-CanYouTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -645,11 +662,11 @@
 			isa = PBXGroup;
 			children = (
 				07B30B0E1F4FC66A0063727D /* Setting */,
-				07F7415F1F4ECF590068DB89 /* HealthInfo.storyboard */,
+				07B0F01B1F5047DB00215CAB /* HealthInfo.storyboard */,
 				07AEE9061F3C42C300D20151 /* Main.storyboard */,
-				07415F101F4D92BC00B82597 /* DashBoard.storyboard */,
-				07415F0E1F4D929300B82597 /* Badge.storyboard */,
-				07415F0C1F4D925500B82597 /* Reward.storyboard */,
+				07B0F0221F5047EF00215CAB /* DashBoard.storyboard */,
+				07B0F0291F5047F500215CAB /* Badge.storyboard */,
+				07B0F0301F5047FD00215CAB /* Reward.storyboard */,
 				07AEE90E1F3C42C300D20151 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
@@ -761,9 +778,9 @@
 		07B30B0E1F4FC66A0063727D /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				07415F0A1F4D900A00B82597 /* Setting.storyboard */,
-				07F7415D1F4EC1120068DB89 /* SettingSection1.storyboard */,
-				07F741611F4ECFA70068DB89 /* SettingSection2.storyboard */,
+				07B0F0061F5047C000215CAB /* Setting.storyboard */,
+				07B0F00D1F5047CB00215CAB /* SettingSection1.storyboard */,
+				07B0F0141F5047D400215CAB /* SettingSection2.storyboard */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -1055,6 +1072,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 07AEE8F61F3C42C200D20151;
 			productRefGroup = 07AEE9001F3C42C300D20151 /* Products */;
@@ -1193,16 +1211,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07415F0D1F4D925500B82597 /* Reward.storyboard in Resources */,
+				07B0F02E1F5047FD00215CAB /* Reward.storyboard in Resources */,
 				07AEE9101F3C42C300D20151 /* LaunchScreen.storyboard in Resources */,
-				07F741621F4ECFA70068DB89 /* SettingSection2.storyboard in Resources */,
+				07B0F0121F5047D400215CAB /* SettingSection2.storyboard in Resources */,
 				07AEE90D1F3C42C300D20151 /* Assets.xcassets in Resources */,
 				07AEE9081F3C42C300D20151 /* Main.storyboard in Resources */,
-				07415F111F4D92BC00B82597 /* DashBoard.storyboard in Resources */,
-				07F7415E1F4EC1120068DB89 /* SettingSection1.storyboard in Resources */,
-				07415F0F1F4D929300B82597 /* Badge.storyboard in Resources */,
-				07F741601F4ECF590068DB89 /* HealthInfo.storyboard in Resources */,
-				07415F0B1F4D900A00B82597 /* Setting.storyboard in Resources */,
+				07B0F0201F5047EF00215CAB /* DashBoard.storyboard in Resources */,
+				07B0F00B1F5047CB00215CAB /* SettingSection1.storyboard in Resources */,
+				07B0F0271F5047F500215CAB /* Badge.storyboard in Resources */,
+				07B0F0191F5047DB00215CAB /* HealthInfo.storyboard in Resources */,
+				07B0F0041F5047C000215CAB /* Setting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1486,6 +1504,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				077E8ECD1F4562550057DDC3 /* Base */,
+				07B0F0031F50478A00215CAB /* ko */,
 			);
 			name = Interface.storyboard;
 			sourceTree = "<group>";
@@ -1494,6 +1513,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				07AEE9071F3C42C300D20151 /* Base */,
+				07B0F0011F50478900215CAB /* ko */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1502,8 +1522,79 @@
 			isa = PBXVariantGroup;
 			children = (
 				07AEE90F1F3C42C300D20151 /* Base */,
+				07B0F0021F50478A00215CAB /* ko */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		07B0F0061F5047C000215CAB /* Setting.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07B0F0051F5047C000215CAB /* Base */,
+				07B0F0081F5047C300215CAB /* en */,
+				07B0F00A1F5047C400215CAB /* ko */,
+			);
+			name = Setting.storyboard;
+			sourceTree = "<group>";
+		};
+		07B0F00D1F5047CB00215CAB /* SettingSection1.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07B0F00C1F5047CB00215CAB /* Base */,
+				07B0F00F1F5047CD00215CAB /* en */,
+				07B0F0111F5047CE00215CAB /* ko */,
+			);
+			name = SettingSection1.storyboard;
+			sourceTree = "<group>";
+		};
+		07B0F0141F5047D400215CAB /* SettingSection2.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07B0F0131F5047D400215CAB /* Base */,
+				07B0F0161F5047D600215CAB /* en */,
+				07B0F0181F5047D600215CAB /* ko */,
+			);
+			name = SettingSection2.storyboard;
+			sourceTree = "<group>";
+		};
+		07B0F01B1F5047DB00215CAB /* HealthInfo.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07B0F01A1F5047DB00215CAB /* Base */,
+				07B0F01D1F5047DD00215CAB /* en */,
+				07B0F01F1F5047DE00215CAB /* ko */,
+			);
+			name = HealthInfo.storyboard;
+			sourceTree = "<group>";
+		};
+		07B0F0221F5047EF00215CAB /* DashBoard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07B0F0211F5047EF00215CAB /* Base */,
+				07B0F0241F5047F000215CAB /* en */,
+				07B0F0261F5047F100215CAB /* ko */,
+			);
+			name = DashBoard.storyboard;
+			sourceTree = "<group>";
+		};
+		07B0F0291F5047F500215CAB /* Badge.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07B0F0281F5047F500215CAB /* Base */,
+				07B0F02B1F5047F700215CAB /* en */,
+				07B0F02D1F5047F800215CAB /* ko */,
+			);
+			name = Badge.storyboard;
+			sourceTree = "<group>";
+		};
+		07B0F0301F5047FD00215CAB /* Reward.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07B0F02F1F5047FD00215CAB /* Base */,
+				07B0F0321F5047FE00215CAB /* en */,
+				07B0F0341F5047FF00215CAB /* ko */,
+			);
+			name = Reward.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1583,6 +1674,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1640,6 +1732,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

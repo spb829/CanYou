@@ -1,0 +1,21 @@
+
+/* Class = "UITableViewSection"; headerTitle = "Start date"; ObjectID = "0Nk-7M-tA4"; */
+"0Nk-7M-tA4.headerTitle" = "Start date";
+
+/* Class = "UILabel"; text = "Male"; ObjectID = "2Qj-04-d6z"; */
+"2Qj-04-d6z.text" = "Male";
+
+/* Class = "UILabel"; text = "Female"; ObjectID = "7P2-tY-cC9"; */
+"7P2-tY-cC9.text" = "Female";
+
+/* Class = "UITextField"; placeholder = "박현민"; ObjectID = "Hq9-uN-ZGq"; */
+"Hq9-uN-ZGq.placeholder" = "박현민";
+
+/* Class = "UITableViewSection"; headerTitle = "Name"; ObjectID = "hYj-ex-rmq"; */
+"hYj-ex-rmq.headerTitle" = "Name";
+
+/* Class = "UITableViewSection"; headerTitle = "Gender"; ObjectID = "nQ5-jW-rmQ"; */
+"nQ5-jW-rmQ.headerTitle" = "Gender";
+
+/* Class = "UITableViewSection"; headerTitle = "Birthdate"; ObjectID = "u31-pG-SBo"; */
+"u31-pG-SBo.headerTitle" = "Birthdate";

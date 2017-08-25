@@ -1,0 +1,15 @@
+
+/* Class = "WKInterfaceMenuItem"; title = "Start1"; ObjectID = "C14-A4-sVs"; */
+"C14-A4-sVs.title" = "Start1";
+
+/* Class = "WKInterfaceLabel"; text = "Alert Label"; ObjectID = "IdU-wH-bcW"; */
+"IdU-wH-bcW.text" = "Alert Label";
+
+/* Class = "WKInterfaceMenuItem"; title = "Stop"; ObjectID = "eyX-gf-1K1"; */
+"eyX-gf-1K1.title" = "Stop";
+
+/* Class = "WKInterfaceLabel"; text = "체온이 정상으로 돌아옵니다."; ObjectID = "n3s-WF-3Xf"; */
+"n3s-WF-3Xf.text" = "체온이 정상으로 돌아옵니다.";
+
+/* Class = "WKInterfaceLabel"; text = "금연을 시작하세요!"; ObjectID = "tsX-yy-j17"; */
+"tsX-yy-j17.text" = "금연을 시작하세요!";

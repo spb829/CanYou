@@ -53,7 +53,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             print("WatchConnectivity is not supported on this device")
         }
-        
         return true
     }
     

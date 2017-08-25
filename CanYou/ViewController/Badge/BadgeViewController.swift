@@ -8,12 +8,13 @@
 
 import UIKit
 
-class BadgeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class BadgeViewController: UIViewController {
     // MARK : - Properties
     var dataController = DataController.shared
     var isDoneList = false
     
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var listButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,9 @@ class BadgeViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     // MARK: - Table view data source
+}
+
+extension BadgeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -38,7 +42,6 @@ class BadgeViewController: UIViewController, UITableViewDelegate, UITableViewDat
             return BadgeStore.toDoItems.count
         }
     }
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BadgeTableViewCell", for: indexPath) as! BadgeTableViewCell
@@ -87,6 +90,13 @@ class BadgeViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     @IBAction func toggleTapped(_ sender: UIButton) {
         isDoneList = !isDoneList
+        
+        switch isDoneList {
+        case true:
+            listButton.titleLabel?.text = "Not achieved List"
+        case false:
+            listButton.titleLabel?.text = "Achieved List"
+        }
         
         let range = NSMakeRange(0, self.tableView.numberOfSections)
         let sections = NSIndexSet(indexesIn: range)

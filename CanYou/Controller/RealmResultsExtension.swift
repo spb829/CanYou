@@ -12,7 +12,6 @@ import RealmSwift
 extension Results {
     
     // MARK: - Realm's Results extension
-    
     func toArray() -> [T] {
         var array = [T]()
         for result in self {
@@ -23,6 +22,7 @@ extension Results {
 }
 
 extension List {
+    // MARK: - List extension toArray
     func toArray() -> [T] {
         var array = [T]()
         for e in self {

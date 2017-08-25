@@ -33,8 +33,8 @@ class RewardNewViewController: BaseViewController {
     
     @IBAction func saveTapped(_ sender: Any) {
         if checkText() {
-           
            // save 작업 수행
+            
             self.navigationController?.popViewController(animated: true)
         } else {
             // message 띄우기

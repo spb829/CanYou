@@ -10,10 +10,10 @@ import UIKit
 
 class PageContainerView: UIView {
     var view = UIView().then {
-        $0.layer.cornerRadius = 10
 //        $0.layer.borderWidth = 1
 //        $0.layer.borderColor = UIColor.black.cgColor
         $0.backgroundColor = UIColor.white
+        $0.layer.cornerRadius = 10
         $0.clipsToBounds = true
     }
     

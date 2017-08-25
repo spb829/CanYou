@@ -144,7 +144,6 @@
 		077E8EE71F4562560057DDC3 /* CanYouWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 077E8ECA1F4562550057DDC3 /* CanYouWatch.app */; };
 		077EEB0D1F3F070900555921 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077EEB0C1F3F070900555921 /* User.swift */; };
 		078A6EB91F4AAAE1002F5CA5 /* RewardNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A6EB81F4AAAE1002F5CA5 /* RewardNewViewController.swift */; };
-		078A6EBB1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A6EBA1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift */; };
 		078A6EBD1F4AC710002F5CA5 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A6EBC1F4AC710002F5CA5 /* UIColorExtension.swift */; };
 		07A3692A1F41D110000E2152 /* RootContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A369291F41D110000E2152 /* RootContainerViewController.swift */; };
 		07AC068C1F501E2500C5DC7A /* RealmResultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AC068B1F501E2500C5DC7A /* RealmResultsExtension.swift */; };
@@ -162,6 +161,8 @@
 		07B0F0201F5047EF00215CAB /* DashBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B0F0221F5047EF00215CAB /* DashBoard.storyboard */; };
 		07B0F0271F5047F500215CAB /* Badge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B0F0291F5047F500215CAB /* Badge.storyboard */; };
 		07B0F02E1F5047FD00215CAB /* Reward.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B0F0301F5047FD00215CAB /* Reward.storyboard */; };
+		07B0F0361F5053BA00215CAB /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B0F0351F5053BA00215CAB /* DateExtension.swift */; };
+		07B0F0381F50567100215CAB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B0F0371F50567100215CAB /* NotificationController.swift */; };
 		07B30B031F4F1F910063727D /* HealthInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B30B021F4F1F910063727D /* HealthInfoTableViewCell.swift */; };
 		07B30B121F4FC8F70063727D /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B30B111F4FC8F70063727D /* DashBoardViewController.swift */; };
 		07B30B141F4FC9080063727D /* BadgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B30B131F4FC9070063727D /* BadgeViewController.swift */; };
@@ -376,7 +377,6 @@
 		077E8EE41F4562560057DDC3 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		077EEB0C1F3F070900555921 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		078A6EB81F4AAAE1002F5CA5 /* RewardNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardNewViewController.swift; sourceTree = "<group>"; };
-		078A6EBA1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UYNotificationDelegate.swift; sourceTree = "<group>"; };
 		078A6EBC1F4AC710002F5CA5 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		07A369291F41D110000E2152 /* RootContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContainerViewController.swift; sourceTree = "<group>"; };
 		07AC068B1F501E2500C5DC7A /* RealmResultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmResultsExtension.swift; sourceTree = "<group>"; };
@@ -417,6 +417,8 @@
 		07B0F02F1F5047FD00215CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Reward.storyboard; sourceTree = "<group>"; };
 		07B0F0321F5047FE00215CAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Reward.strings; sourceTree = "<group>"; };
 		07B0F0341F5047FF00215CAB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Reward.strings; sourceTree = "<group>"; };
+		07B0F0351F5053BA00215CAB /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		07B0F0371F50567100215CAB /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		07B30B021F4F1F910063727D /* HealthInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthInfoTableViewCell.swift; sourceTree = "<group>"; };
 		07B30B111F4FC8F70063727D /* DashBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
 		07B30B131F4FC9070063727D /* BadgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeViewController.swift; sourceTree = "<group>"; };
@@ -547,6 +549,7 @@
 		07935A811F4DAE7400D983F0 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				07B0F0351F5053BA00215CAB /* DateExtension.swift */,
 				07AC068B1F501E2500C5DC7A /* RealmResultsExtension.swift */,
 				078A6EBC1F4AC710002F5CA5 /* UIColorExtension.swift */,
 			);
@@ -650,6 +653,7 @@
 		07AEE9361F3C46EE00D20151 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				07B0F0371F50567100215CAB /* NotificationController.swift */,
 				07B0EFFF1F502E5200215CAB /* AnimationController.swift */,
 				07B30B161F4FF06B0063727D /* ImageController.swift */,
 				0718D7551F4591F5000956E8 /* TimerController.swift */,
@@ -675,7 +679,6 @@
 		07B30B011F4F1E620063727D /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
-				078A6EBA1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift */,
 				07AEE9021F3C42C300D20151 /* AppDelegate.swift */,
 			);
 			path = Delegate;
@@ -1427,8 +1430,10 @@
 				07DB353A1F48FBBB007E9515 /* PlusTableViewCell.swift in Sources */,
 				07D0C3931F48EB1400FE64EC /* BadgeTableViewCell.swift in Sources */,
 				07415F071F4D89CD00B82597 /* SettingStartDateTableViewController.swift in Sources */,
+				07B0F0381F50567100215CAB /* NotificationController.swift in Sources */,
 				07415F151F4D948200B82597 /* BaseViewController.swift in Sources */,
 				078A6EB91F4AAAE1002F5CA5 /* RewardNewViewController.swift in Sources */,
+				07B0F0361F5053BA00215CAB /* DateExtension.swift in Sources */,
 				07B30B031F4F1F910063727D /* HealthInfoTableViewCell.swift in Sources */,
 				076C2F011F4053C100579914 /* CanYouAnimationViewController.swift in Sources */,
 				07AC068C1F501E2500C5DC7A /* RealmResultsExtension.swift in Sources */,
@@ -1450,7 +1455,6 @@
 				07671BBC1F3F797300DD4E24 /* DataController.swift in Sources */,
 				07B30B171F4FF06C0063727D /* ImageController.swift in Sources */,
 				0713C4971F4EDD5A00D9D2ED /* SettingCigaretteDailyTableViewController.swift in Sources */,
-				078A6EBB1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift in Sources */,
 				07DB35371F48F445007E9515 /* RewardTableViewCell.swift in Sources */,
 				07AEE9031F3C42C300D20151 /* AppDelegate.swift in Sources */,
 				076C2EF71F4033C100579914 /* HealthInfoStore.swift in Sources */,

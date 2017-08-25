@@ -13,6 +13,8 @@ class SettingAlarmTableViewController: BaseTableViewController {
     @IBOutlet var alarmSwitch: UISwitch!
     @IBOutlet var randomAlarmSwitch: UISwitch!
     
+    let notificationController = NotificationController.shared
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -38,9 +40,11 @@ class SettingAlarmTableViewController: BaseTableViewController {
         case true:
             randomAlarmSwitch.isEnabled = true
             // alarm on!
+            notificationController.updateNotifications()
         case false:
             randomAlarmSwitch.isEnabled = false
             // all alarm off !
+            notificationController.removeAllScheduledNotification()
         }
     }
     

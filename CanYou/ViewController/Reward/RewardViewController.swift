@@ -11,8 +11,11 @@ import UIKit
 class RewardViewController: UIViewController {
     // MARK : - Properties
     var dataController = DataController.shared
+    var isDoneList = false
+    
     @IBOutlet var tableView: UITableView!
     @IBOutlet var cansLabel: UILabel!
+    @IBOutlet var listButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,18 +39,32 @@ extension RewardViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return RewardStore.items.count + 1
+        switch isDoneList {
+        case true:
+            return RewardStore.doneItems.count + 1
+        case false:
+            return RewardStore.toDoItems.count + 1
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row == RewardStore.items.count {
+        let items: [Reward]
+        
+        switch isDoneList {
+        case true:
+            items = RewardStore.doneItems
+        case false:
+            items = RewardStore.toDoItems
+        }
+        
+        if indexPath.row == items.count {
             let cell = tableView.dequeueReusableCell(withIdentifier: "PlusTableViewCell", for: indexPath) as! PlusTableViewCell
             return cell
         }
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "RewardTableViewCell", for: indexPath) as! RewardTableViewCell
         
-        let reward = RewardStore.items[indexPath.row]
+        let reward = items[indexPath.row]
         
         cell.titleLabel.text = reward.name
         cell.cansLabel.text = "\(reward.price) Cans"
@@ -65,9 +82,18 @@ extension RewardViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     @IBAction func toggleTapped(_ sender: UIButton) {
+        isDoneList = !isDoneList
+        
+        switch isDoneList {
+        case true:
+            listButton.titleLabel?.text = "Not achieved List"
+        case false:
+            listButton.titleLabel?.text = "Achieved List"
+        }
+        
         let range = NSMakeRange(0, self.tableView.numberOfSections)
         let sections = NSIndexSet(indexesIn: range)
-        self.tableView.reloadSections(sections as IndexSet, with: .automatic)
+        self.tableView.reloadSections(sections as IndexSet, with: .right)
     }
 }
 

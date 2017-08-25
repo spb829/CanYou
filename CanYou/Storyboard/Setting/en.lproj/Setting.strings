@@ -11,8 +11,8 @@
 /* Class = "UILabel"; text = "Start Date"; ObjectID = "6hc-t4-OyW"; */
 "6hc-t4-OyW.text" = "Start Date";
 
-/* Class = "UILabel"; text = "20개비"; ObjectID = "DDw-BE-g5N"; */
-"DDw-BE-g5N.text" = "20개비";
+/* Class = "UILabel"; text = "20"; ObjectID = "DDw-BE-g5N"; */
+"DDw-BE-g5N.text" = "20";
 
 /* Class = "UILabel"; text = "Birthdate"; ObjectID = "ET8-Y5-Pe6"; */
 "ET8-Y5-Pe6.text" = "Birthdate";
@@ -27,7 +27,7 @@
 "RdZ-QD-qYh.text" = "Name";
 
 /* Class = "UILabel"; text = "Review app"; ObjectID = "SiZ-8P-g9T"; */
-"SiZ-8P-g9T.text" = "Review app";
+"SiZ-8P-g9T.text" = "Review this app";
 
 /* Class = "UILabel"; text = "2005. 08. 29"; ObjectID = "afN-ZJ-G8d"; */
 "afN-ZJ-G8d.text" = "2005. 08. 29";

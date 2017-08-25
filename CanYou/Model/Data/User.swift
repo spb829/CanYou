@@ -31,8 +31,32 @@ class User: RealmSwift.Object {
     let rewards = List<Reward>()
     let badges = List<Badge>()
     
-    let recentBadge: Badge? = nil
+    @objc dynamic var recentBadge: Badge? = nil
+    //    var recentHealthInfo: HealthInfo{
     
+    var cigarPrice: Double {
+        return Double(cigarettePrice) / 20.0
+    }
+    
+    var cigarPerTI: Double {
+        return (86400.0 / (Double)(cigaretteDaily))
+    }
+    
+    var cigarPricePerTI: Double {
+        return cigarPerTI * cigarPrice
+    }
+    
+    var savedMoney: Int {
+        if cigaretteDaily == 0 { return 0 }
+        
+        return Int(cigarPerTI * DataController.shared.timeInterval * cigarPrice)
+    }
+    
+    var savedCigarette: Int {
+        if cigaretteDaily == 0 { return 0 }
+        
+        return Int(cigarPerTI * DataController.shared.timeInterval)
+    }
     
     override static func primaryKey() -> String? {
         return "id"

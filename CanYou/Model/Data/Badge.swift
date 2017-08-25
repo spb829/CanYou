@@ -10,10 +10,15 @@ import Foundation
 import RealmSwift
 
 enum ConditionType: String {
-    case time = "time"
-    case cigarette = "cigarette"
-    case money = "money"
-    case reward = "reward"
+    case time
+    case cigarette
+    case money
+    case reward
+    
+    static let allValues = [time,
+                            cigarette,
+                            money,
+                            reward]
 }
 
 class Badge: RealmSwift.Object {
@@ -34,7 +39,7 @@ class Badge: RealmSwift.Object {
         get {
             return ConditionType(rawValue: condition)!
         }
-        set {
+        set (conditionType){
             condition = conditionType.rawValue
         }
     }
@@ -42,7 +47,7 @@ class Badge: RealmSwift.Object {
     @objc dynamic var isDone: Bool = false
     
     // Relationship
-    @objc dynamic var user: User?
+    @objc dynamic var user: User? = nil
     
     override static func primaryKey() -> String? {
         return "id"

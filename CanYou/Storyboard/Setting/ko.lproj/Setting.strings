@@ -1,33 +1,33 @@
 
 /* Class = "UILabel"; text = "Email to developer"; ObjectID = "2o4-1Q-7NF"; */
-"2o4-1Q-7NF.text" = "Email to developer";
+"2o4-1Q-7NF.text" = "문의 및 의견";
 
 /* Class = "UITableViewSection"; headerTitle = "Service"; ObjectID = "3Ut-Et-alm"; */
-"3Ut-Et-alm.headerTitle" = "Service";
+"3Ut-Et-alm.headerTitle" = "고객지원";
 
 /* Class = "UINavigationItem"; title = "Setting"; ObjectID = "4Bc-Ib-3hT"; */
-"4Bc-Ib-3hT.title" = "Setting";
+"4Bc-Ib-3hT.title" = "설정";
 
 /* Class = "UILabel"; text = "Start Date"; ObjectID = "6hc-t4-OyW"; */
-"6hc-t4-OyW.text" = "Start Date";
+"6hc-t4-OyW.text" = "금연시작일";
 
 /* Class = "UILabel"; text = "20개비"; ObjectID = "DDw-BE-g5N"; */
 "DDw-BE-g5N.text" = "20개비";
 
 /* Class = "UILabel"; text = "Birthdate"; ObjectID = "ET8-Y5-Pe6"; */
-"ET8-Y5-Pe6.text" = "Birthdate";
+"ET8-Y5-Pe6.text" = "생년월일";
 
 /* Class = "UITableViewSection"; headerTitle = "Personal Settings"; ObjectID = "Gji-ZA-x8W"; */
-"Gji-ZA-x8W.headerTitle" = "Personal Settings";
+"Gji-ZA-x8W.headerTitle" = "개인 설정";
 
 /* Class = "UILabel"; text = "Health Infomation"; ObjectID = "JVn-SF-3bj"; */
-"JVn-SF-3bj.text" = "Health Infomation";
+"JVn-SF-3bj.text" = "건강 정보";
 
 /* Class = "UILabel"; text = "Name"; ObjectID = "RdZ-QD-qYh"; */
-"RdZ-QD-qYh.text" = "Name";
+"RdZ-QD-qYh.text" = "이름";
 
 /* Class = "UILabel"; text = "Review app"; ObjectID = "SiZ-8P-g9T"; */
-"SiZ-8P-g9T.text" = "Review app";
+"SiZ-8P-g9T.text" = "리뷰하기";
 
 /* Class = "UILabel"; text = "2005. 08. 29"; ObjectID = "afN-ZJ-G8d"; */
 "afN-ZJ-G8d.text" = "2005. 08. 29";
@@ -39,37 +39,37 @@
 "bcd-ye-sb8.text" = "박현민";
 
 /* Class = "UILabel"; text = "Random alarm"; ObjectID = "d7H-ZZ-ubS"; */
-"d7H-ZZ-ubS.text" = "Random alarm";
+"d7H-ZZ-ubS.text" = "알람설정";
 
 /* Class = "UILabel"; text = "v1.0.0"; ObjectID = "fDp-xW-JSx"; */
 "fDp-xW-JSx.text" = "v1.0.0";
 
 /* Class = "UILabel"; text = "Version history"; ObjectID = "fW0-T3-pfd"; */
-"fW0-T3-pfd.text" = "Version history";
+"fW0-T3-pfd.text" = "버전 정보";
 
 /* Class = "UITableViewSection"; headerTitle = "Version history"; ObjectID = "hoJ-Yf-cuU"; */
-"hoJ-Yf-cuU.headerTitle" = "Version history";
+"hoJ-Yf-cuU.headerTitle" = "버전 정보";
 
 /* Class = "UILabel"; text = "Cigarette price(per)"; ObjectID = "pmT-6D-0iD"; */
-"pmT-6D-0iD.text" = "Cigarette price(per)";
+"pmT-6D-0iD.text" = "담배 가격 (1갑)";
 
 /* Class = "UILabel"; text = "Off"; ObjectID = "qLO-Dc-eEc"; */
-"qLO-Dc-eEc.text" = "Off";
+"qLO-Dc-eEc.text" = "끔";
 
 /* Class = "UILabel"; text = "₩4,500"; ObjectID = "sf5-td-c2e"; */
 "sf5-td-c2e.text" = "₩4,500";
 
 /* Class = "UILabel"; text = "Gender"; ObjectID = "usW-zg-PUc"; */
-"usW-zg-PUc.text" = "Gender";
+"usW-zg-PUc.text" = "성별";
 
 /* Class = "UILabel"; text = "Male"; ObjectID = "zQM-tp-oJe"; */
-"zQM-tp-oJe.text" = "Male";
+"zQM-tp-oJe.text" = "남";
 
 /* Class = "UILabel"; text = "1991. 08. 29"; ObjectID = "zVm-Lj-YQ5"; */
 "zVm-Lj-YQ5.text" = "1991. 08. 29";
 
 /* Class = "UITableViewSection"; headerTitle = "User Infomation"; ObjectID = "zoo-uU-I9o"; */
-"zoo-uU-I9o.headerTitle" = "User Infomation";
+"zoo-uU-I9o.headerTitle" = "사용자 정보";
 
 /* Class = "UILabel"; text = "Daily cigarette"; ObjectID = "zwC-Ht-eP1"; */
-"zwC-Ht-eP1.text" = "Daily cigarette";
+"zwC-Ht-eP1.text" = "하루 평균 흡연량";

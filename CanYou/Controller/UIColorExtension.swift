@@ -8,6 +8,7 @@
 
 import UIKit
 
+// MARK: - UIColor extension
 extension UIColor {
     static let defaultBackground = UIColor.init(red: 201.0/255.0, green: 218.0/255.0, blue: 90.0/255.0, alpha: 1.0)
     static let highlightBackground = UIColor.init(red: 235.0/255.0, green: 243.0/255.0, blue: 206.0/255.0, alpha: 1.0)

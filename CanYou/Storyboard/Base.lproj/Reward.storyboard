@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -20,12 +20,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reward" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ju-vk-uRR">
-                                <rect key="frame" x="16" y="28" width="265" height="24"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fuU-3k-knq">
+                                <rect key="frame" x="16" y="28" width="343" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reward" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ju-vk-uRR">
+                                        <rect key="frame" x="0.0" y="0.0" width="65.5" height="30"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjs-6l-CPX">
+                                        <rect key="frame" x="65.5" y="0.0" width="277.5" height="30"/>
+                                        <state key="normal" title="Not achieved List"/>
+                                        <connections>
+                                            <action selector="toggleTapped:" destination="y8V-yN-GqW" eventType="touchUpInside" id="4Ys-iB-6ZV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zFn-SR-c9C" userLabel="LineView">
                                 <rect key="frame" x="8" y="60" width="359" height="2"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -34,7 +46,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Bjw-nf-JHf">
-                                <rect key="frame" x="16" y="70" width="343" height="581"/>
+                                <rect key="frame" x="16" y="70" width="343" height="550.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.94839698080000001" green="0.90851837400000002" blue="0.5255805254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -145,10 +157,7 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50 Cans" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roY-3V-ZHq">
-                                <rect key="frame" x="289" y="37.5" width="70" height="14.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="fmO-WO-ozL"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="636.5" width="343" height="14.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -156,29 +165,31 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="fuU-3k-knq" firstAttribute="leading" secondItem="9Y0-h6-Um6" secondAttribute="leading" constant="16" id="28C-W9-rbk"/>
                             <constraint firstItem="Bjw-nf-JHf" firstAttribute="top" secondItem="zFn-SR-c9C" secondAttribute="bottom" constant="8" id="4yL-ai-IIj"/>
-                            <constraint firstItem="9Y0-h6-Um6" firstAttribute="trailing" secondItem="roY-3V-ZHq" secondAttribute="trailing" constant="16" id="7vx-IU-6Yq"/>
-                            <constraint firstItem="roY-3V-ZHq" firstAttribute="leading" secondItem="0Ju-vk-uRR" secondAttribute="trailing" constant="8" id="HsI-Zn-sqO"/>
+                            <constraint firstItem="fuU-3k-knq" firstAttribute="top" secondItem="9Y0-h6-Um6" secondAttribute="top" constant="8" id="Exw-mt-RpS"/>
+                            <constraint firstItem="roY-3V-ZHq" firstAttribute="leading" secondItem="9Y0-h6-Um6" secondAttribute="leading" constant="16" id="FCo-aL-uSa"/>
+                            <constraint firstItem="9Y0-h6-Um6" firstAttribute="trailing" secondItem="roY-3V-ZHq" secondAttribute="trailing" constant="16" id="Hm0-Gu-jhH"/>
                             <constraint firstItem="zFn-SR-c9C" firstAttribute="leading" secondItem="zOR-0P-Wyp" secondAttribute="leading" constant="8" id="IAP-XA-dDi"/>
-                            <constraint firstItem="9Y0-h6-Um6" firstAttribute="bottom" secondItem="Bjw-nf-JHf" secondAttribute="bottom" constant="16" id="ISo-fe-Ej6"/>
-                            <constraint firstItem="zFn-SR-c9C" firstAttribute="top" secondItem="0Ju-vk-uRR" secondAttribute="bottom" constant="8" id="Z8g-A7-JjY"/>
+                            <constraint firstItem="9Y0-h6-Um6" firstAttribute="trailing" secondItem="fuU-3k-knq" secondAttribute="trailing" constant="16" id="Mvy-m3-hlv"/>
+                            <constraint firstItem="9Y0-h6-Um6" firstAttribute="bottom" secondItem="roY-3V-ZHq" secondAttribute="bottom" constant="16" id="P8G-pf-Mto"/>
+                            <constraint firstItem="roY-3V-ZHq" firstAttribute="top" secondItem="Bjw-nf-JHf" secondAttribute="bottom" constant="16" id="bs8-1g-k5y"/>
                             <constraint firstItem="9Y0-h6-Um6" firstAttribute="trailing" secondItem="Bjw-nf-JHf" secondAttribute="trailing" constant="16" id="dXI-sv-jM4"/>
+                            <constraint firstItem="zFn-SR-c9C" firstAttribute="top" secondItem="fuU-3k-knq" secondAttribute="bottom" constant="2" id="inL-mT-FEh"/>
                             <constraint firstAttribute="trailing" secondItem="zFn-SR-c9C" secondAttribute="trailing" constant="8" id="kxM-QO-BMe"/>
-                            <constraint firstItem="0Ju-vk-uRR" firstAttribute="top" secondItem="9Y0-h6-Um6" secondAttribute="top" constant="8" id="nlK-s4-Sea"/>
                             <constraint firstItem="Bjw-nf-JHf" firstAttribute="leading" secondItem="9Y0-h6-Um6" secondAttribute="leading" constant="16" id="r6d-i0-LHi"/>
-                            <constraint firstItem="0Ju-vk-uRR" firstAttribute="leading" secondItem="9Y0-h6-Um6" secondAttribute="leading" constant="16" id="tEF-9y-B4w"/>
-                            <constraint firstItem="roY-3V-ZHq" firstAttribute="bottom" secondItem="0Ju-vk-uRR" secondAttribute="bottom" id="yzd-FQ-ySy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9Y0-h6-Um6"/>
                     </view>
                     <connections>
                         <outlet property="cansLabel" destination="roY-3V-ZHq" id="hyG-DO-cIr"/>
+                        <outlet property="listButton" destination="kjs-6l-CPX" id="PLU-h9-naL"/>
                         <outlet property="tableView" destination="Bjw-nf-JHf" id="XvU-GX-1eO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vkT-1h-jHP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4646" y="-595"/>
+            <point key="canvasLocation" x="4645.6000000000004" y="-595.05247376311854"/>
         </scene>
         <!--New Reward-->
         <scene sceneID="pJ9-V4-dtW">

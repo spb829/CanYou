@@ -12,7 +12,6 @@ import RealmSwift
 class Reward: RealmSwift.Object {
     // PrimaryKey
     @objc dynamic var id: String = UUID().uuidString
-    @objc dynamic var userId: Int = 0
     
     // Properties
     @objc dynamic var name: String = ""
@@ -28,7 +27,9 @@ class Reward: RealmSwift.Object {
     @objc dynamic var content: String = ""
     
     @objc dynamic var price: Int = 0
-    @objc dynamic var isPurchased: Bool = false
+    @objc dynamic var isDone: Bool = false
+    
+    @objc dynamic var user: User? = nil
     
     override static func primaryKey() -> String? {
         return "id"

@@ -35,7 +35,7 @@ class SettingTableViewController: BaseTableViewController {
         birthLabel.text = dataController.dateFormatter.string(from: currentUser.birth)
         startdateLabel.text = dataController.dateFormatter.string(from: currentUser.startDate)
         versionLabel.text = dataController.version
-        if currentUser.randomAlarm {
+        if currentUser.alarm {
             alarmLabel.text = "On"
         } else {
             alarmLabel.text = "Off"

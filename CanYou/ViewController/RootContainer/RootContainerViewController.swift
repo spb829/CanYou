@@ -24,6 +24,8 @@ class RootContainerViewController: BaseViewController {
     var cardViews = [PageContainerView]()
     var cardIndex: Int = 0
     
+    let notificationController = NotificationController.shared
+    
     private lazy var dashBoardViewController: DashBoardViewController = {
         // Load Storyboard
         let storyboard = UIStoryboard(name: "DashBoard", bundle: Bundle.main)
@@ -33,8 +35,6 @@ class RootContainerViewController: BaseViewController {
         
         // Add View Controller as Child View Controller
         self.addChildViewController(viewController)
-        
-        viewController.viewDidLoad()
         
         return viewController
     }()
@@ -68,6 +68,7 @@ class RootContainerViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initViews()
+        notificationController.updateNotifications()
     }
 }
 
@@ -237,4 +238,3 @@ extension RootContainerViewController {
         }
     }
 }
-

@@ -27,7 +27,9 @@ class CigaretteDailyViewController: BaseViewController {
             return
         }
         try! realm.write {
-            dataController.currentUser.cigaretteDaily = Int(text)!
+            let currentUser = dataController.currentUser
+            currentUser.cigaretteDaily = Int(text)!
+            currentUser.startDate = Date()
         }
         
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)

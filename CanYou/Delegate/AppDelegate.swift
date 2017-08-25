@@ -14,22 +14,18 @@ import WatchConnectivity
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
-    let notificationDelegate = UYLNotificationDelegate()
     let center = UNUserNotificationCenter.current()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        // custom delegate 설정
-        center.delegate = notificationDelegate
-        
-        let options: UNAuthorizationOptions = [.alert, .sound];
-        center.requestAuthorization(options: options) {
-            (granted, error) in
-            if !granted {
-                print("권한 얻기 실패")
-            }
-        }
+//        let options: UNAuthorizationOptions = [.alert, .sound];
+//        center.requestAuthorization(options: options) {
+//            (granted, error) in
+//            if !granted {
+//                print("권한 얻기 실패")
+//            }
+//        }
         
         // 권한설정 확인
         //        center.getNotificationSettings { (settings) in
@@ -66,21 +62,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
         
         // content
-        let content = UNMutableNotificationContent()
-        content.title = "Are you Smoking?"
-        content.body = "설마 담배피고 있나열"
-        content.sound = UNNotificationSound.default()
-        
-        // trigger
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
-        
-        let identifier = "UYLLocalNotification"
-        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
-        center.add(request, withCompletionHandler: { (error) in
-            if let error = error {
-                print("error: \(error)")
-            }
-        })
+//        let content = UNMutableNotificationContent()
+//        content.title = "Are you Smoking?"
+//        content.body = "설마 담배피고 있나열"
+//        content.sound = UNNotificationSound.default()
+//
+//        // trigger
+//        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
+//
+//        let identifier = "somenoti"
+//        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+//        center.add(request, withCompletionHandler: { (error) in
+//            if let error = error {
+//                print("error: \(error)")
+//            }
+//        })
         
         //        let date = Date(timeIntervalSinceNow: 3600)
         //        let triggerDate = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second,], from: date)

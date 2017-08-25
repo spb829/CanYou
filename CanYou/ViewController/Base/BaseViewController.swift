@@ -10,6 +10,11 @@ import UIKit
 
 class BaseViewController: UIViewController {
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    // MARK : Methods for Background
     func addBackgroundView() {
         // screen width and height:
         let width = UIScreen.main.bounds.size.width
@@ -18,7 +23,7 @@ class BaseViewController: UIViewController {
         let imageViewBackground = UIImageView(frame: CGRect(x: 0, y: 0, width: width, height: height))
         imageViewBackground.image = UIImage(named: "Gradation")
         
-        // you can change the content mode:
+        // change the content mode:
         imageViewBackground.contentMode = UIViewContentMode.scaleAspectFill
         
         self.view.addSubview(imageViewBackground)
@@ -31,30 +36,11 @@ class BaseViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        self.view.backgroundColor = UIColor.gradationBackground
         self.addBackgroundView()
         self.hideKeyboardWhenTappedAround()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-//        print("BaseViewController viewWillDisappear")
-    }
-    
-    func changeColor() {
-        
-        let date = Date()
-        let currentHour = Calendar.current.component(.hour, from: date)
-        if currentHour > 19 || currentHour < 6 { //Night
-            
-        } else if currentHour >= 6 && currentHour < 16{
-            
-        } else if currentHour >= 16 && currentHour <= 19 {
-            
-        } else {
-            
-        }
-    }
+    // MARK : Methods for Keyboard
     
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
@@ -66,8 +52,6 @@ class BaseViewController: UIViewController {
         view.endEditing(true)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
+
     
 }

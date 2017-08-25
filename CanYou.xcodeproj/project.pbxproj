@@ -156,7 +156,6 @@
 		07A3692A1F41D110000E2152 /* RootContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A369291F41D110000E2152 /* RootContainerViewController.swift */; };
 		07AEE9031F3C42C300D20151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE9021F3C42C300D20151 /* AppDelegate.swift */; };
 		07AEE9081F3C42C300D20151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AEE9061F3C42C300D20151 /* Main.storyboard */; };
-		07AEE90B1F3C42C300D20151 /* CanYou.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE9091F3C42C300D20151 /* CanYou.xcdatamodeld */; };
 		07AEE90D1F3C42C300D20151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07AEE90C1F3C42C300D20151 /* Assets.xcassets */; };
 		07AEE9101F3C42C300D20151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AEE90E1F3C42C300D20151 /* LaunchScreen.storyboard */; };
 		07AEE91B1F3C42C300D20151 /* CanYouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE91A1F3C42C300D20151 /* CanYouTests.swift */; };
@@ -357,7 +356,7 @@
 		07671BAF1F3F746100DD4E24 /* HealthInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthInfo.swift; sourceTree = "<group>"; };
 		07671BB91F3F769500DD4E24 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		07671BBB1F3F797300DD4E24 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		076B7AA01F42FC6900C68F05 /* BadgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BadgeViewController.swift; path = CanYou/ViewController/BadgeViewController.swift; sourceTree = SOURCE_ROOT; };
+		076B7AA01F42FC6900C68F05 /* BadgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BadgeViewController.swift; path = "CanYou/ViewController/New Group/BadgeViewController.swift"; sourceTree = SOURCE_ROOT; };
 		076B7AA21F42FD2900C68F05 /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
 		076C2EF21F402FC100579914 /* RewardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardStore.swift; sourceTree = "<group>"; };
 		076C2EF41F40332A00579914 /* BadgeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeStore.swift; sourceTree = "<group>"; };
@@ -384,12 +383,11 @@
 		078A6EB81F4AAAE1002F5CA5 /* RewardNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardNewViewController.swift; sourceTree = "<group>"; };
 		078A6EBA1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UYNotificationDelegate.swift; sourceTree = "<group>"; };
 		078A6EBC1F4AC710002F5CA5 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
-		07A35BE41F405BCB00482782 /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DashBoardViewController.swift; path = CanYou/ViewController/DashBoardViewController.swift; sourceTree = SOURCE_ROOT; };
+		07A35BE41F405BCB00482782 /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DashBoardViewController.swift; path = "CanYou/ViewController/New Group/DashBoardViewController.swift"; sourceTree = SOURCE_ROOT; };
 		07A369291F41D110000E2152 /* RootContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContainerViewController.swift; sourceTree = "<group>"; };
 		07AEE8FF1F3C42C300D20151 /* CanYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AEE9021F3C42C300D20151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07AEE9071F3C42C300D20151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		07AEE90A1F3C42C300D20151 /* CanYou.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CanYou.xcdatamodel; sourceTree = "<group>"; };
 		07AEE90C1F3C42C300D20151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07AEE90F1F3C42C300D20151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07AEE9111F3C42C300D20151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -571,10 +569,10 @@
 				07AEE9341F3C46DF00D20151 /* View */,
 				07AEE9351F3C46E700D20151 /* ViewController */,
 				07AEE9361F3C46EE00D20151 /* Controller */,
-				07AEE90C1F3C42C300D20151 /* Assets.xcassets */,
+				07B30B0F1F4FC6A40063727D /* Resource */,
 				07AEE9371F3C46F800D20151 /* Storyboard */,
-				07AEE9111F3C42C300D20151 /* Info.plist */,
 				07B30B011F4F1E620063727D /* Delegate */,
+				07B30B101F4FC6B40063727D /* SupportingFiles */,
 			);
 			path = CanYou;
 			sourceTree = "<group>";
@@ -600,16 +598,8 @@
 		07AEE9331F3C46D800D20151 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				07AEE9091F3C42C300D20151 /* CanYou.xcdatamodeld */,
-				077EEB0C1F3F070900555921 /* User.swift */,
-				07671BB91F3F769500DD4E24 /* UserStore.swift */,
-				07671BAB1F3F731600DD4E24 /* Reward.swift */,
-				076C2EF21F402FC100579914 /* RewardStore.swift */,
-				07671BAD1F3F73B700DD4E24 /* BadgeUser.swift */,
-				07671BAF1F3F746100DD4E24 /* HealthInfo.swift */,
-				076C2EF61F4033C100579914 /* HealthInfoStore.swift */,
-				07671BA91F3F722100DD4E24 /* Badge.swift */,
-				076C2EF41F40332A00579914 /* BadgeStore.swift */,
+				07B30B0D1F4FC6490063727D /* Data */,
+				07B30B0C1F4FC63D0063727D /* Store */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -617,11 +607,8 @@
 		07AEE9341F3C46DF00D20151 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				07B30B021F4F1F910063727D /* HealthInfoTableViewCell.swift */,
-				07D0C3921F48EB1400FE64EC /* BadgeTableViewCell.swift */,
-				07DB35381F48FBBB007E9515 /* PlusTableViewCell.swift */,
-				07DB35361F48F445007E9515 /* RewardTableViewCell.swift */,
-				075860D01F41908300E974F8 /* PageContainerView.swift */,
+				07B30B041F4FC5CD0063727D /* TableViewCell */,
+				07B30B051F4FC5D90063727D /* View */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -631,17 +618,12 @@
 			children = (
 				07415F161F4D948800B82597 /* Base */,
 				07415F031F4D88A000B82597 /* Setting */,
-				07A369291F41D110000E2152 /* RootContainerViewController.swift */,
-				076C2F001F4053C100579914 /* CanYouAnimationViewController.swift */,
-				07A35BE41F405BCB00482782 /* DashBoardViewController.swift */,
-				076B7AA01F42FC6900C68F05 /* BadgeViewController.swift */,
-				07783FC71F47329F0081FB17 /* BadgeDetailViewController.swift */,
-				076B7AA21F42FD2900C68F05 /* RewardViewController.swift */,
-				078A6EB81F4AAAE1002F5CA5 /* RewardNewViewController.swift */,
-				07783FC91F4732E30081FB17 /* RewardDetailViewController.swift */,
-				076C2F021F4053FB00579914 /* CigaretteDailyViewController.swift */,
-				076C2EFE1F4053AD00579914 /* WelcomeViewController.swift */,
-				07F7415B1F4EBFD20068DB89 /* HealthInfoTableViewController.swift */,
+				07B30B0B1F4FC62C0063727D /* RootContainer */,
+				07B30B091F4FC61F0063727D /* First */,
+				07B30B081F4FC6150063727D /* DashBoard */,
+				07B30B071F4FC6100063727D /* Badge */,
+				07B30B061F4FC6080063727D /* Reward */,
+				07B30B0A1F4FC6260063727D /* HealthInfo */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -658,9 +640,7 @@
 		07AEE9371F3C46F800D20151 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				07415F0A1F4D900A00B82597 /* Setting.storyboard */,
-				07F7415D1F4EC1120068DB89 /* SettingSection1.storyboard */,
-				07F741611F4ECFA70068DB89 /* SettingSection2.storyboard */,
+				07B30B0E1F4FC66A0063727D /* Setting */,
 				07F7415F1F4ECF590068DB89 /* HealthInfo.storyboard */,
 				07AEE9061F3C42C300D20151 /* Main.storyboard */,
 				07415F101F4D92BC00B82597 /* DashBoard.storyboard */,
@@ -678,6 +658,127 @@
 				07AEE9021F3C42C300D20151 /* AppDelegate.swift */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		07B30B041F4FC5CD0063727D /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				07B30B021F4F1F910063727D /* HealthInfoTableViewCell.swift */,
+				07D0C3921F48EB1400FE64EC /* BadgeTableViewCell.swift */,
+				07DB35381F48FBBB007E9515 /* PlusTableViewCell.swift */,
+				07DB35361F48F445007E9515 /* RewardTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		07B30B051F4FC5D90063727D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				075860D01F41908300E974F8 /* PageContainerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		07B30B061F4FC6080063727D /* Reward */ = {
+			isa = PBXGroup;
+			children = (
+				076B7AA21F42FD2900C68F05 /* RewardViewController.swift */,
+				078A6EB81F4AAAE1002F5CA5 /* RewardNewViewController.swift */,
+				07783FC91F4732E30081FB17 /* RewardDetailViewController.swift */,
+			);
+			path = Reward;
+			sourceTree = "<group>";
+		};
+		07B30B071F4FC6100063727D /* Badge */ = {
+			isa = PBXGroup;
+			children = (
+				076B7AA01F42FC6900C68F05 /* BadgeViewController.swift */,
+				07783FC71F47329F0081FB17 /* BadgeDetailViewController.swift */,
+			);
+			path = Badge;
+			sourceTree = "<group>";
+		};
+		07B30B081F4FC6150063727D /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				07A35BE41F405BCB00482782 /* DashBoardViewController.swift */,
+			);
+			path = DashBoard;
+			sourceTree = "<group>";
+		};
+		07B30B091F4FC61F0063727D /* First */ = {
+			isa = PBXGroup;
+			children = (
+				076C2F001F4053C100579914 /* CanYouAnimationViewController.swift */,
+				076C2F021F4053FB00579914 /* CigaretteDailyViewController.swift */,
+				076C2EFE1F4053AD00579914 /* WelcomeViewController.swift */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		07B30B0A1F4FC6260063727D /* HealthInfo */ = {
+			isa = PBXGroup;
+			children = (
+				07F7415B1F4EBFD20068DB89 /* HealthInfoTableViewController.swift */,
+			);
+			path = HealthInfo;
+			sourceTree = "<group>";
+		};
+		07B30B0B1F4FC62C0063727D /* RootContainer */ = {
+			isa = PBXGroup;
+			children = (
+				07A369291F41D110000E2152 /* RootContainerViewController.swift */,
+			);
+			path = RootContainer;
+			sourceTree = "<group>";
+		};
+		07B30B0C1F4FC63D0063727D /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				07671BB91F3F769500DD4E24 /* UserStore.swift */,
+				076C2EF21F402FC100579914 /* RewardStore.swift */,
+				076C2EF61F4033C100579914 /* HealthInfoStore.swift */,
+				076C2EF41F40332A00579914 /* BadgeStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		07B30B0D1F4FC6490063727D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				077EEB0C1F3F070900555921 /* User.swift */,
+				07671BAB1F3F731600DD4E24 /* Reward.swift */,
+				07671BAD1F3F73B700DD4E24 /* BadgeUser.swift */,
+				07671BAF1F3F746100DD4E24 /* HealthInfo.swift */,
+				07671BA91F3F722100DD4E24 /* Badge.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		07B30B0E1F4FC66A0063727D /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				07415F0A1F4D900A00B82597 /* Setting.storyboard */,
+				07F7415D1F4EC1120068DB89 /* SettingSection1.storyboard */,
+				07F741611F4ECFA70068DB89 /* SettingSection2.storyboard */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		07B30B0F1F4FC6A40063727D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				07AEE90C1F3C42C300D20151 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		07B30B101F4FC6B40063727D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				07AEE9111F3C42C300D20151 /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		07DDEF841F4ADC7800559AEB /* percent */ = {
@@ -1299,7 +1400,6 @@
 				07415F091F4D89E400B82597 /* SettingVersionTableViewController.swift in Sources */,
 				077EEB0D1F3F070900555921 /* User.swift in Sources */,
 				07671BAA1F3F722100DD4E24 /* Badge.swift in Sources */,
-				07AEE90B1F3C42C300D20151 /* CanYou.xcdatamodeld in Sources */,
 				076C2EF31F402FC100579914 /* RewardStore.swift in Sources */,
 				075860D11F41908300E974F8 /* PageContainerView.swift in Sources */,
 				07DB353A1F48FBBB007E9515 /* PlusTableViewCell.swift in Sources */,
@@ -1738,19 +1838,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		07AEE9091F3C42C300D20151 /* CanYou.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				07AEE90A1F3C42C300D20151 /* CanYou.xcdatamodel */,
-			);
-			currentVersion = 07AEE90A1F3C42C300D20151 /* CanYou.xcdatamodel */;
-			path = CanYou.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 07AEE8F71F3C42C200D20151 /* Project object */;
 }

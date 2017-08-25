@@ -9,6 +9,7 @@
 import UIKit
 
 class SettingNameTableViewController: BaseTableViewController {
+    // MARK : - Properties
     var currentUser = DataController.sharedDataController.currentUser
 
     @IBOutlet var nameTextField: UITextField!

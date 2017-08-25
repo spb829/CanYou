@@ -9,6 +9,7 @@
 import UIKit
 
 class SettingTableViewController: BaseTableViewController {
+    // MARK : - Properties
     var dataController = DataController.sharedDataController
     var currentUser = DataController.sharedDataController.currentUser
     

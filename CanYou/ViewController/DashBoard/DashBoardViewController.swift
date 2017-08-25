@@ -9,6 +9,7 @@
 import UIKit
 
 class DashBoardViewController: UIViewController {
+    // MARK : - Properties
     @IBOutlet var timeLabel: UILabel!
     @IBOutlet var dayLabel: UILabel!
     

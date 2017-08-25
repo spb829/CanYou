@@ -9,6 +9,7 @@
 import UIKit
 
 class BadgeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    // MARK : - Properties
     var dataController = DataController.sharedDataController
     var badgeStore = DataController.sharedDataController.badgeStore
     

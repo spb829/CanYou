@@ -9,7 +9,7 @@
 import UIKit
 
 class CigaretteDailyViewController: BaseViewController {
-
+    // MARK : - Properties
     @IBOutlet var cigaretteDaily: UITextField!
     var dataController = DataController.sharedDataController
     

@@ -9,6 +9,7 @@
 import UIKit
 
 class SettingCigarettePriceTableViewController: BaseTableViewController {
+    // MARK : - Properties
     var currentUser = DataController.sharedDataController.currentUser
     @IBOutlet var textField: UITextField!
     

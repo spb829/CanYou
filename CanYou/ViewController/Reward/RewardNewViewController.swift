@@ -9,6 +9,7 @@
 import UIKit
 
 class RewardNewViewController: BaseViewController {
+    // MARK : - Properties
     @IBOutlet var rewardImageView: UIImageView!
     @IBOutlet var titleTextField: UITextField!
     @IBOutlet var contentTextField: UITextField!
@@ -45,7 +46,6 @@ class RewardNewViewController: BaseViewController {
 
     func checkText() -> Bool {
         // 입력된 데이터 검사
-        
         guard let title = titleTextField.text,
         let content = contentTextField.text,
             let price = priceTextField.text else {

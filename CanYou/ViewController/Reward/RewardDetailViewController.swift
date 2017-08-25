@@ -9,7 +9,7 @@
 import UIKit
 
 class RewardDetailViewController: BaseViewController {
-//    var dataController = DataController.sharedDataController
+	// MARK : - Properties
     var rewardStore = DataController.sharedDataController.rewardStore
     var reward: Reward?
 

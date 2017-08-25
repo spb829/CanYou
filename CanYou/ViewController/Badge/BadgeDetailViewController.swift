@@ -10,6 +10,7 @@
 import UIKit
 
 class BadgeDetailViewController: BaseViewController {
+    // MARK : - Properties
     var badgeStore = DataController.sharedDataController.badgeStore
     var badge: Badge?
     @IBOutlet var badgeImageView: UIImageView!

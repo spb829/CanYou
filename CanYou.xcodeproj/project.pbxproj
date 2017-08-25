@@ -128,7 +128,6 @@
 		07671BB01F3F746100DD4E24 /* HealthInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BAF1F3F746100DD4E24 /* HealthInfo.swift */; };
 		07671BBA1F3F769500DD4E24 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BB91F3F769500DD4E24 /* UserStore.swift */; };
 		07671BBC1F3F797300DD4E24 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07671BBB1F3F797300DD4E24 /* DataController.swift */; };
-		076B7AA11F42FC6A00C68F05 /* BadgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B7AA01F42FC6900C68F05 /* BadgeViewController.swift */; };
 		076B7AA31F42FD2900C68F05 /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B7AA21F42FD2900C68F05 /* RewardViewController.swift */; };
 		076C2EF31F402FC100579914 /* RewardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2EF21F402FC100579914 /* RewardStore.swift */; };
 		076C2EF51F40332A00579914 /* BadgeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C2EF41F40332A00579914 /* BadgeStore.swift */; };
@@ -152,7 +151,6 @@
 		078A6EB91F4AAAE1002F5CA5 /* RewardNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A6EB81F4AAAE1002F5CA5 /* RewardNewViewController.swift */; };
 		078A6EBB1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A6EBA1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift */; };
 		078A6EBD1F4AC710002F5CA5 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A6EBC1F4AC710002F5CA5 /* UIColorExtension.swift */; };
-		07A35BE51F405BCB00482782 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A35BE41F405BCB00482782 /* DashBoardViewController.swift */; };
 		07A3692A1F41D110000E2152 /* RootContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A369291F41D110000E2152 /* RootContainerViewController.swift */; };
 		07AEE9031F3C42C300D20151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE9021F3C42C300D20151 /* AppDelegate.swift */; };
 		07AEE9081F3C42C300D20151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AEE9061F3C42C300D20151 /* Main.storyboard */; };
@@ -161,6 +159,8 @@
 		07AEE91B1F3C42C300D20151 /* CanYouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE91A1F3C42C300D20151 /* CanYouTests.swift */; };
 		07AEE9261F3C42C300D20151 /* CanYouUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE9251F3C42C300D20151 /* CanYouUITests.swift */; };
 		07B30B031F4F1F910063727D /* HealthInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B30B021F4F1F910063727D /* HealthInfoTableViewCell.swift */; };
+		07B30B121F4FC8F70063727D /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B30B111F4FC8F70063727D /* DashBoardViewController.swift */; };
+		07B30B141F4FC9080063727D /* BadgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B30B131F4FC9070063727D /* BadgeViewController.swift */; };
 		07D0C3931F48EB1400FE64EC /* BadgeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D0C3921F48EB1400FE64EC /* BadgeTableViewCell.swift */; };
 		07DB35371F48F445007E9515 /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB35361F48F445007E9515 /* RewardTableViewCell.swift */; };
 		07DB353A1F48FBBB007E9515 /* PlusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB35381F48FBBB007E9515 /* PlusTableViewCell.swift */; };
@@ -355,7 +355,6 @@
 		07671BAF1F3F746100DD4E24 /* HealthInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthInfo.swift; sourceTree = "<group>"; };
 		07671BB91F3F769500DD4E24 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		07671BBB1F3F797300DD4E24 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		076B7AA01F42FC6900C68F05 /* BadgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BadgeViewController.swift; path = "CanYou/ViewController/New Group/BadgeViewController.swift"; sourceTree = SOURCE_ROOT; };
 		076B7AA21F42FD2900C68F05 /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
 		076C2EF21F402FC100579914 /* RewardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardStore.swift; sourceTree = "<group>"; };
 		076C2EF41F40332A00579914 /* BadgeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeStore.swift; sourceTree = "<group>"; };
@@ -382,7 +381,6 @@
 		078A6EB81F4AAAE1002F5CA5 /* RewardNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardNewViewController.swift; sourceTree = "<group>"; };
 		078A6EBA1F4AB4B4002F5CA5 /* UYNotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UYNotificationDelegate.swift; sourceTree = "<group>"; };
 		078A6EBC1F4AC710002F5CA5 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
-		07A35BE41F405BCB00482782 /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DashBoardViewController.swift; path = "CanYou/ViewController/New Group/DashBoardViewController.swift"; sourceTree = SOURCE_ROOT; };
 		07A369291F41D110000E2152 /* RootContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContainerViewController.swift; sourceTree = "<group>"; };
 		07AEE8FF1F3C42C300D20151 /* CanYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AEE9021F3C42C300D20151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -397,6 +395,8 @@
 		07AEE9251F3C42C300D20151 /* CanYouUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanYouUITests.swift; sourceTree = "<group>"; };
 		07AEE9271F3C42C300D20151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07B30B021F4F1F910063727D /* HealthInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthInfoTableViewCell.swift; sourceTree = "<group>"; };
+		07B30B111F4FC8F70063727D /* DashBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
+		07B30B131F4FC9070063727D /* BadgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeViewController.swift; sourceTree = "<group>"; };
 		07D0C3921F48EB1400FE64EC /* BadgeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeTableViewCell.swift; sourceTree = "<group>"; };
 		07DB35361F48F445007E9515 /* RewardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
 		07DB35381F48FBBB007E9515 /* PlusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusTableViewCell.swift; sourceTree = "<group>"; };
@@ -689,7 +689,7 @@
 		07B30B071F4FC6100063727D /* Badge */ = {
 			isa = PBXGroup;
 			children = (
-				076B7AA01F42FC6900C68F05 /* BadgeViewController.swift */,
+				07B30B131F4FC9070063727D /* BadgeViewController.swift */,
 				07783FC71F47329F0081FB17 /* BadgeDetailViewController.swift */,
 			);
 			path = Badge;
@@ -698,7 +698,7 @@
 		07B30B081F4FC6150063727D /* DashBoard */ = {
 			isa = PBXGroup;
 			children = (
-				07A35BE41F405BCB00482782 /* DashBoardViewController.swift */,
+				07B30B111F4FC8F70063727D /* DashBoardViewController.swift */,
 			);
 			path = DashBoard;
 			sourceTree = "<group>";
@@ -1397,6 +1397,7 @@
 				077EEB0D1F3F070900555921 /* User.swift in Sources */,
 				07671BAA1F3F722100DD4E24 /* Badge.swift in Sources */,
 				076C2EF31F402FC100579914 /* RewardStore.swift in Sources */,
+				07B30B141F4FC9080063727D /* BadgeViewController.swift in Sources */,
 				075860D11F41908300E974F8 /* PageContainerView.swift in Sources */,
 				07DB353A1F48FBBB007E9515 /* PlusTableViewCell.swift in Sources */,
 				07D0C3931F48EB1400FE64EC /* BadgeTableViewCell.swift in Sources */,
@@ -1412,14 +1413,13 @@
 				076C2EF51F40332A00579914 /* BadgeStore.swift in Sources */,
 				07415F131F4D947100B82597 /* BaseTableViewController.swift in Sources */,
 				07A3692A1F41D110000E2152 /* RootContainerViewController.swift in Sources */,
+				07B30B121F4FC8F70063727D /* DashBoardViewController.swift in Sources */,
 				07671BBA1F3F769500DD4E24 /* UserStore.swift in Sources */,
 				07F7415C1F4EBFD20068DB89 /* HealthInfoTableViewController.swift in Sources */,
-				07A35BE51F405BCB00482782 /* DashBoardViewController.swift in Sources */,
 				07671BAC1F3F731600DD4E24 /* Reward.swift in Sources */,
 				07671BB01F3F746100DD4E24 /* HealthInfo.swift in Sources */,
 				076C2F031F4053FB00579914 /* CigaretteDailyViewController.swift in Sources */,
 				076B7AA31F42FD2900C68F05 /* RewardViewController.swift in Sources */,
-				076B7AA11F42FC6A00C68F05 /* BadgeViewController.swift in Sources */,
 				07671BAE1F3F73B700DD4E24 /* BadgeUser.swift in Sources */,
 				076C2F051F40543800579914 /* SettingTableViewController.swift in Sources */,
 				07671BBC1F3F797300DD4E24 /* DataController.swift in Sources */,

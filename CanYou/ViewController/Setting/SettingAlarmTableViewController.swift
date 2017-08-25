@@ -9,6 +9,7 @@
 import UIKit
 
 class SettingAlarmTableViewController: BaseTableViewController {
+    // MARK : - Properties
     var currentUser = DataController.sharedDataController.currentUser
     @IBOutlet var alarmSwitch: UISwitch!
     

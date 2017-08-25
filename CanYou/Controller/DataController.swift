@@ -17,13 +17,8 @@ struct DataController {
     var currentUser: User = User()
     let version = "v1.0.0"
     let dateFormatter = DateFormatter().then {
-        $0.dateStyle = .medium
+        $0.dateFormat = "yyyy. MM. dd"
     }
 
     private init() { }
-    
-//    @discardableResult mutating func signUp() -> User {
-//        self.currentUser = userStore.createUser()
-//        return self.currentUser!
-//    }
 }

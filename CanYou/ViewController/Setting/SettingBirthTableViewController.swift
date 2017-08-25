@@ -9,6 +9,7 @@
 import UIKit
 
 class SettingBirthTableViewController: BaseTableViewController {
+    // MARK : - Properties
     var currentUser = DataController.sharedDataController.currentUser
     
     @IBOutlet var datePicker: UIDatePicker!

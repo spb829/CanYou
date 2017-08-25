@@ -9,6 +9,7 @@
 import UIKit
 
 class SettingGenderTableViewController: BaseTableViewController {
+    // MARK : - Properties
     var currentUser = DataController.sharedDataController.currentUser
     
     @IBOutlet var maleCell: UITableViewCell!

@@ -9,6 +9,7 @@
 import UIKit
 
 class RewardViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
+    // MARK : - Properties
     var dataController = DataController.sharedDataController
     var rewardStore = DataController.sharedDataController.rewardStore
     @IBOutlet var tableView: UITableView!

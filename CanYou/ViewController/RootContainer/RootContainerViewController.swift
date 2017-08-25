@@ -10,14 +10,14 @@ import UIKit
 import Then
 
 class RootContainerViewController: BaseViewController {
+    // MARK : - Properties
     let scrollView = UIScrollView().then {
-//        $0.backgroundColor = UIColor.clear
         $0.isPagingEnabled = true
         $0.showsHorizontalScrollIndicator = false
         $0.showsVerticalScrollIndicator = false
     }
+    
     let pageControl = UIPageControl().then {
-//        $0.backgroundColor = UIColor.clear
         $0.currentPage = 0
     }
     
@@ -34,10 +34,7 @@ class RootContainerViewController: BaseViewController {
         // Add View Controller as Child View Controller
         self.addChildViewController(viewController)
         
-//        viewController.updateLabels()
-//        viewController.loadView()
         viewController.viewDidLoad()
-//        viewController.startTimer()
         
         return viewController
     }()
@@ -75,7 +72,7 @@ class RootContainerViewController: BaseViewController {
 }
 
 
-// Init Views
+// MARK : - Init Views
 extension RootContainerViewController {
     
     func initViews() {
@@ -121,6 +118,7 @@ extension RootContainerViewController {
         }
     }
     
+    // Reload Data in TableViews
     func reloadData() {
         rewardViewController.tableView.reloadData()
         badgeViewController.tableView.reloadData()
@@ -165,18 +163,13 @@ extension RootContainerViewController {
             break
         }
         
-//        self.rewardViewController.reloadInputViews()
-//        self.rewardViewController.tableView.reloadData()
         self.scrollView.contentOffset = CGPoint(x: size.width, y: 0)
         self.scrollView.contentSize = CGSize(width: size.width * 3, height: size.height)
         reloadData()
     }
     
+    // Present SettingTableView with Custom animation
     @IBAction func settingButtonTapped(_ sender: UIButton) {
-        
-//        let navController = storyboard.instantiateViewController(withIdentifier: "SettingNavigationController") as! SettingNavigationController
-//        present(navController, animated: true, completion: nil)
-        
         // push view controller but animate modally
         let storyboard = UIStoryboard(name: "Setting", bundle: Bundle.main)
         let vc = storyboard.instantiateViewController(withIdentifier: "SettingTableViewController") as! SettingTableViewController
@@ -197,7 +190,7 @@ extension RootContainerViewController {
     }
 }
 
-// 스크롤뷰 딜리게이트
+// MARK : - ScrollViewDelegate
 extension RootContainerViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offsetX = scrollView.contentOffset.x
@@ -208,8 +201,6 @@ extension RootContainerViewController: UIScrollViewDelegate {
         }
         
         var index = self.cardIndex
-        
-//        print("scroll \(offsetX)")
         
         switch offsetX {
         case 0:
@@ -230,7 +221,7 @@ extension RootContainerViewController: UIScrollViewDelegate {
     }
 }
 
-// 네비게이션 바 숨기기
+// Hide NavigationBar
 extension RootContainerViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

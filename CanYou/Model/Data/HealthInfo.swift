@@ -17,6 +17,7 @@ class HealthInfo: RealmSwift.Object {
     // Properties
     @objc dynamic var name: String = ""
     @objc dynamic var time: Double = 0
+    @objc dynamic var content: String = ""
     
     override static func primaryKey() -> String? {
         return "id"

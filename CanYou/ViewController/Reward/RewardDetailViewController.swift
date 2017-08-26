@@ -40,8 +40,24 @@ class RewardDetailViewController: BaseViewController {
     }
     
     @IBAction func buyTapped(_ sender: UIButton) {
+        let sheet = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
+        sheet.message = "Must be bigger than 0 !"
+        let okAction = UIAlertAction(title: "Confirm", style: .default, handler: {
+            // 구매 확인
+            
+            self.navigationController?.popViewController(animated: true)
+            
+            let sheet2 = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
+            sheet2.message = "Purchased !"
+            present(sheet2, animated: true, completion: nil)
+        })
+        sheet.addAction(okAction)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        sheet.addAction(cancelAction)
+        present(sheet, animated: true, completion: nil)
     }
     
     @IBAction func deleteTapped(_ sender: UIButton) {
+        
     }
 }

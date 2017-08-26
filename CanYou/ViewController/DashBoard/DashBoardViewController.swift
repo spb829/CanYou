@@ -17,6 +17,7 @@ class DashBoardViewController: UIViewController {
     @IBOutlet var imageView: UIImageView!
     
     @IBOutlet var savedMoneyView: UIView!
+    @IBOutlet var savedMoneyLabel: UILabel!
     
     let realm = try! Realm()
     let notificationController = NotificationController.shared
@@ -42,20 +43,21 @@ class DashBoardViewController: UIViewController {
     @objc func updateLabels() {
         dayLabel.text = String(format: "%d", timerController.day)
         timeLabel.text = String(format: "%02d : %02d : %02d", timerController.hours, timerController.minutes, timerController.seconds)
+        savedMoneyLabel.text = "\(currentUser.savedMoney) Won"
     }
 
     @objc func updateThings() {
         let ti = DataController.shared.timeInterval
         if ti < 60 {
-            imageView.image = UIImage(named: "양5")
+            imageView.image = UIImage(named: "sheep5")
         } else if ti < 70 {
-            imageView.image = UIImage(named: "양4")
+            imageView.image = UIImage(named: "sheep4")
         } else if ti < 80 {
-            imageView.image = UIImage(named: "양3")
+            imageView.image = UIImage(named: "sheep3")
         } else if ti < 90 {
-            imageView.image = UIImage(named: "양2")
+            imageView.image = UIImage(named: "sheep2")
         } else {
-            imageView.image = UIImage(named: "양1")
+            imageView.image = UIImage(named: "sheep1")
         }
         
         for badge in BadgeStore.toDoItems {

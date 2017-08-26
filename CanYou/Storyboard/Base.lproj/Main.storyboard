@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WMK-ce-zhF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TMx-Br-aKU">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +13,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="CanYou" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeViewController" id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="CanYou" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,8 +25,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7S-rX-f3F">
-                                <rect key="frame" x="0.0" y="597" width="375" height="30"/>
-                                <state key="normal" title="Start"/>
+                                <rect key="frame" x="0.0" y="591" width="375" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="o47-kT-Ydq" kind="showDetail" id="uIb-Hr-ZAf"/>
                                 </connections>
@@ -60,57 +63,10 @@
             </objects>
             <point key="canvasLocation" x="977" y="121"/>
         </scene>
-        <!--Can You Animation View Controller-->
-        <scene sceneID="ns5-JO-Abs">
-            <objects>
-                <viewController id="WMK-ce-zhF" customClass="CanYouAnimationViewController" customModule="CanYou" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="uxQ-un-f4e">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can You ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rar-D8-AQc">
-                                <rect key="frame" x="0.0" y="154" width="375" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Can !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2n-hE-3uZ">
-                                <rect key="frame" x="0.0" y="323" width="375" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5A-dp-puL">
-                                <rect key="frame" x="0.0" y="597" width="375" height="30"/>
-                                <state key="normal" title="Start"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="bP4-Cz-4lw"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="bTF-6N-yNl" firstAttribute="bottom" secondItem="r5A-dp-puL" secondAttribute="bottom" constant="40" id="9Kl-eq-MoE"/>
-                            <constraint firstItem="rar-D8-AQc" firstAttribute="leading" secondItem="bTF-6N-yNl" secondAttribute="leading" id="NgZ-Gv-JcF"/>
-                            <constraint firstItem="rar-D8-AQc" firstAttribute="top" secondItem="bTF-6N-yNl" secondAttribute="top" constant="134" id="alH-B2-9em"/>
-                            <constraint firstItem="r5A-dp-puL" firstAttribute="trailing" secondItem="bTF-6N-yNl" secondAttribute="trailing" id="prv-hJ-bvT"/>
-                            <constraint firstItem="bTF-6N-yNl" firstAttribute="trailing" secondItem="q2n-hE-3uZ" secondAttribute="trailing" id="tSQ-D9-EM7"/>
-                            <constraint firstItem="r5A-dp-puL" firstAttribute="leading" secondItem="bTF-6N-yNl" secondAttribute="leading" id="tzZ-34-zA0"/>
-                            <constraint firstItem="q2n-hE-3uZ" firstAttribute="top" secondItem="rar-D8-AQc" secondAttribute="bottom" constant="148" id="xba-2M-dwe"/>
-                            <constraint firstItem="bTF-6N-yNl" firstAttribute="trailing" secondItem="rar-D8-AQc" secondAttribute="trailing" id="yfe-aC-C3y"/>
-                            <constraint firstItem="q2n-hE-3uZ" firstAttribute="leading" secondItem="bTF-6N-yNl" secondAttribute="leading" id="zKF-XN-j1c"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="bTF-6N-yNl"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Y5z-wX-qeZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="116" y="122"/>
-        </scene>
         <!--Cigarette Daily View Controller-->
         <scene sceneID="HgR-PN-waE">
             <objects>
-                <viewController id="o47-kT-Ydq" customClass="CigaretteDailyViewController" customModule="CanYou" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CigaretteDailyViewController" id="o47-kT-Ydq" customClass="CigaretteDailyViewController" customModule="CanYou" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="45Q-OP-5NL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -233,6 +189,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7QF-xj-PSC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2777.5999999999999" y="121.4392803598201"/>
+        </scene>
+        <!--Can You Animation View Controller-->
+        <scene sceneID="5Wa-SX-muu">
+            <objects>
+                <viewController id="TMx-Br-aKU" customClass="CanYouAnimationViewController" customModule="CanYou" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IKc-zp-jPn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can You ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2j-3m-Y8Q">
+                                <rect key="frame" x="0.0" y="319" width="375" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="m2j-3m-Y8Q" firstAttribute="centerY" secondItem="IKc-zp-jPn" secondAttribute="centerY" id="CCx-X4-asq"/>
+                            <constraint firstItem="MQ2-ns-HGo" firstAttribute="trailing" secondItem="m2j-3m-Y8Q" secondAttribute="trailing" id="Oun-ch-VVq"/>
+                            <constraint firstItem="m2j-3m-Y8Q" firstAttribute="centerX" secondItem="IKc-zp-jPn" secondAttribute="centerX" id="VCl-V8-NFc"/>
+                            <constraint firstItem="m2j-3m-Y8Q" firstAttribute="leading" secondItem="MQ2-ns-HGo" secondAttribute="leading" id="a8a-zF-vE3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MQ2-ns-HGo"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="m2j-3m-Y8Q" id="hpT-0f-EV5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u9U-nW-96g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="164" y="122"/>
         </scene>
     </scenes>
     <resources>

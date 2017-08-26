@@ -26,7 +26,7 @@ class CigaretteDailyViewController: BaseViewController {
             present(sheet, animated: true, completion: nil)
             return
         }
-        if Int(text) <= 0 {
+        if Int(text)! <= 0 {
             let sheet = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
             sheet.message = "Must be bigger than 0 !"
             let okAction = UIAlertAction(title: "Confirm", style: .default, handler: nil)

@@ -26,4 +26,14 @@ struct AnimationController: Then {
             $0.subtype = kCATransitionFromBottom
         }
     }
+    
+    static func fadeTransition(_ view: UIView, for duration:CFTimeInterval) {
+        let animation = CATransition().then {
+            $0.timingFunction = CAMediaTimingFunction(name:
+                kCAMediaTimingFunctionEaseInEaseOut)
+            $0.type = kCATransitionFade
+            $0.duration = duration
+        }
+        view.layer.add(animation, forKey: kCATransitionFade)
+    }
 }

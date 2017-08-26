@@ -39,7 +39,7 @@ class User: RealmSwift.Object {
     }
     
     var cigarPerTI: Double {
-        return (86400.0 / (Double)(cigaretteDaily))
+        return ((Double)(cigaretteDaily) / 86400.0)
     }
     
     var cigarPricePerTI: Double {

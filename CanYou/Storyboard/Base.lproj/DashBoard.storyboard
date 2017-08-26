@@ -66,7 +66,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uhc-m9-CaB" userLabel="ImageContainerView">
                                 <rect key="frame" x="267" y="105.5" width="100" height="100"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="얭-코하얘-그리너리" translatesAutoresizingMaskIntoConstraints="NO" id="zyd-4s-SSc">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="양5" translatesAutoresizingMaskIntoConstraints="NO" id="zyd-4s-SSc">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doing good!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUu-Dp-8yY">
@@ -170,6 +170,7 @@
                     </view>
                     <connections>
                         <outlet property="dayLabel" destination="Pb8-cV-LcE" id="who-J1-cLA"/>
+                        <outlet property="imageView" destination="zyd-4s-SSc" id="VkG-1l-hc2"/>
                         <outlet property="savedMoneyView" destination="vhB-sz-6An" id="PKT-BT-qfq"/>
                         <outlet property="timeLabel" destination="gtC-Ru-4AS" id="XF3-Bo-UEr"/>
                     </connections>
@@ -180,6 +181,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="얭-코하얘-그리너리" width="240" height="241"/>
+        <image name="양5" width="150" height="150"/>
     </resources>
 </document>

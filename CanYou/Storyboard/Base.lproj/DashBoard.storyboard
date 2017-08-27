@@ -28,13 +28,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Pmw-IY-KUs">
-                                <rect key="frame" x="8" y="165.5" width="251" height="10"/>
-                                <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="10" id="hm4-H5-Jww"/>
-                                </constraints>
-                            </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ts4-ep-dYT">
                                 <rect key="frame" x="76" y="42.5" width="50" height="24"/>
                                 <constraints>
@@ -91,13 +84,13 @@
                                     <constraint firstAttribute="trailing" secondItem="zyd-4s-SSc" secondAttribute="trailing" id="zqb-Of-beq"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Getting better" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqF-pA-xp5">
-                                <rect key="frame" x="8" y="183.5" width="251" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.95919519659999997" green="0.46731954809999998" blue="0.4639127851" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ㅁ" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqF-pA-xp5">
+                                <rect key="frame" x="8" y="156" width="251" height="49.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="248" verticalCompressionResistancePriority="748" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rrj-zn-10D">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="248" verticalCompressionResistancePriority="748" ambiguous="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rrj-zn-10D">
                                 <rect key="frame" x="8" y="230" width="359" height="424"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vhB-sz-6An" userLabel="절약한 금액">
@@ -107,13 +100,13 @@
                                                 <rect key="frame" x="8" y="8" width="327" height="54"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Money saved :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBX-Gh-K2V">
-                                                        <rect key="frame" x="0.0" y="0.0" width="259.5" height="54"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="278" height="54"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="5,000 원" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1g9-7M-KFq">
-                                                        <rect key="frame" x="259.5" y="0.0" width="67.5" height="54"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0 won" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1g9-7M-KFq">
+                                                        <rect key="frame" x="278" y="0.0" width="49" height="54"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -130,14 +123,54 @@
                                             <constraint firstAttribute="bottom" secondItem="Yrb-iq-IAV" secondAttribute="bottom" constant="8" id="t7i-S0-H9G"/>
                                         </constraints>
                                     </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R0d-B3-Z6D" userLabel="절약한 담배">
+                                        <rect key="frame" x="8" y="94" width="343" height="70"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="frJ-f8-em4">
+                                                <rect key="frame" x="8" y="8" width="327" height="54"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cigarette saved :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4j-GB-WCZ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="316" height="54"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEb-Zi-9Kk">
+                                                        <rect key="frame" x="316" y="0.0" width="11" height="54"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="frJ-f8-em4" secondAttribute="trailing" constant="8" id="1zL-CH-JBd"/>
+                                            <constraint firstAttribute="bottom" secondItem="frJ-f8-em4" secondAttribute="bottom" constant="8" id="BL8-DU-eBN"/>
+                                            <constraint firstItem="frJ-f8-em4" firstAttribute="top" secondItem="R0d-B3-Z6D" secondAttribute="top" constant="8" id="J4R-Eq-n8Q"/>
+                                            <constraint firstItem="frJ-f8-em4" firstAttribute="leading" secondItem="R0d-B3-Z6D" secondAttribute="leading" constant="8" id="Pqv-zr-YHv"/>
+                                            <constraint firstAttribute="height" constant="70" id="dwy-k8-ngG"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="vhB-sz-6An" firstAttribute="top" secondItem="Rrj-zn-10D" secondAttribute="top" constant="8" id="DAo-Fa-dp7"/>
+                                    <constraint firstItem="R0d-B3-Z6D" firstAttribute="top" secondItem="vhB-sz-6An" secondAttribute="bottom" constant="16" id="HaC-Ek-uzA"/>
                                     <constraint firstAttribute="trailing" secondItem="vhB-sz-6An" secondAttribute="trailing" constant="8" id="PEB-7v-LnZ"/>
                                     <constraint firstItem="vhB-sz-6An" firstAttribute="width" secondItem="Rrj-zn-10D" secondAttribute="width" constant="-16" id="ahf-Fw-TxE"/>
                                     <constraint firstItem="vhB-sz-6An" firstAttribute="leading" secondItem="Rrj-zn-10D" secondAttribute="leading" constant="8" id="esZ-Iy-DHc"/>
+                                    <constraint firstItem="R0d-B3-Z6D" firstAttribute="leading" secondItem="Rrj-zn-10D" secondAttribute="leading" constant="8" id="fsD-V4-FbN"/>
+                                    <constraint firstAttribute="trailing" secondItem="R0d-B3-Z6D" secondAttribute="trailing" constant="8" id="vKP-Yh-M25"/>
                                 </constraints>
                             </scrollView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Pmw-IY-KUs">
+                                <rect key="frame" x="8" y="138" width="251" height="10"/>
+                                <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="hm4-H5-Jww"/>
+                                </constraints>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -145,10 +178,10 @@
                             <constraint firstItem="rIC-6a-FDr" firstAttribute="leading" secondItem="BPl-Jb-gCS" secondAttribute="leading" constant="8" id="4CA-ST-nhL"/>
                             <constraint firstItem="Rrj-zn-10D" firstAttribute="leading" secondItem="sto-fM-zXA" secondAttribute="leading" constant="8" id="4qX-eE-8Tc"/>
                             <constraint firstItem="ts4-ep-dYT" firstAttribute="leading" secondItem="Pb8-cV-LcE" secondAttribute="trailing" constant="8" id="9py-UN-sFU"/>
+                            <constraint firstItem="Pmw-IY-KUs" firstAttribute="top" secondItem="8Gp-YI-A14" secondAttribute="bottom" constant="40.5" id="DSY-82-zxY"/>
                             <constraint firstAttribute="trailing" secondItem="rIC-6a-FDr" secondAttribute="trailing" constant="8" id="H0d-rC-5J9"/>
                             <constraint firstItem="aqF-pA-xp5" firstAttribute="leading" secondItem="sto-fM-zXA" secondAttribute="leading" constant="8" id="HCM-s2-RRW"/>
                             <constraint firstItem="sto-fM-zXA" firstAttribute="trailing" secondItem="Rrj-zn-10D" secondAttribute="trailing" constant="8" id="Jf0-HZ-Hxp"/>
-                            <constraint firstItem="Pmw-IY-KUs" firstAttribute="centerY" secondItem="dUu-Dp-8yY" secondAttribute="centerY" id="K7d-Bp-DnE"/>
                             <constraint firstItem="uhc-m9-CaB" firstAttribute="leading" secondItem="aqF-pA-xp5" secondAttribute="trailing" constant="8" id="OC1-ru-MQR"/>
                             <constraint firstItem="uhc-m9-CaB" firstAttribute="top" secondItem="gtC-Ru-4AS" secondAttribute="bottom" constant="8" id="UZN-FG-ThW"/>
                             <constraint firstItem="gtC-Ru-4AS" firstAttribute="centerX" secondItem="BPl-Jb-gCS" secondAttribute="centerX" id="V6x-TM-afO"/>
@@ -161,6 +194,7 @@
                             <constraint firstItem="Pb8-cV-LcE" firstAttribute="top" secondItem="sto-fM-zXA" secondAttribute="top" constant="8" id="mIn-fW-1Jb"/>
                             <constraint firstItem="aqF-pA-xp5" firstAttribute="top" secondItem="Pmw-IY-KUs" secondAttribute="bottom" constant="8" id="njP-EW-ws7"/>
                             <constraint firstItem="8Gp-YI-A14" firstAttribute="leading" secondItem="sto-fM-zXA" secondAttribute="leading" constant="8" id="rs6-SQ-E2M"/>
+                            <constraint firstItem="rIC-6a-FDr" firstAttribute="top" secondItem="aqF-pA-xp5" secondAttribute="bottom" constant="8" id="sYd-62-vdS"/>
                             <constraint firstItem="sto-fM-zXA" firstAttribute="bottom" secondItem="Rrj-zn-10D" secondAttribute="bottom" constant="8" id="uQj-yw-Det"/>
                             <constraint firstItem="Pb8-cV-LcE" firstAttribute="leading" secondItem="sto-fM-zXA" secondAttribute="leading" constant="8" id="vZ1-8a-cXy"/>
                             <constraint firstItem="gtC-Ru-4AS" firstAttribute="top" secondItem="ts4-ep-dYT" secondAttribute="bottom" constant="10" id="yGX-QD-fZE"/>
@@ -169,10 +203,15 @@
                         <viewLayoutGuide key="safeArea" id="sto-fM-zXA"/>
                     </view>
                     <connections>
+                        <outlet property="contentLabel" destination="aqF-pA-xp5" id="I1q-SU-3wK"/>
                         <outlet property="dayLabel" destination="Pb8-cV-LcE" id="who-J1-cLA"/>
                         <outlet property="imageView" destination="zyd-4s-SSc" id="VkG-1l-hc2"/>
+                        <outlet property="progressView" destination="Pmw-IY-KUs" id="GGo-0C-itP"/>
+                        <outlet property="savedCigLabel" destination="yEb-Zi-9Kk" id="ws6-Le-XDJ"/>
+                        <outlet property="savedCigView" destination="R0d-B3-Z6D" id="4Tq-T0-Qi7"/>
                         <outlet property="savedMoneyLabel" destination="1g9-7M-KFq" id="UgJ-6W-XnR"/>
                         <outlet property="savedMoneyView" destination="vhB-sz-6An" id="PKT-BT-qfq"/>
+                        <outlet property="scrollView" destination="Rrj-zn-10D" id="3w9-s6-wnc"/>
                         <outlet property="timeLabel" destination="gtC-Ru-4AS" id="XF3-Bo-UEr"/>
                     </connections>
                 </viewController>
@@ -182,6 +221,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="sheep5" width="150" height="150"/>
+        <image name="sheep5" width="125" height="125"/>
     </resources>
 </document>

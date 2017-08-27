@@ -3,19 +3,19 @@
 "Bgv-ST-JgO.placeholder" = "4500";
 
 /* Class = "UILabel"; text = "Random alarm"; ObjectID = "FJi-Ar-jTn"; */
-"FJi-Ar-jTn.text" = "Random alarm";
+"FJi-Ar-jTn.text" = "랜덤 알람";
 
 /* Class = "UITableViewSection"; headerTitle = "Cigarette price(per)"; ObjectID = "LdF-HC-uSp"; */
-"LdF-HC-uSp.headerTitle" = "Cigarette price(per)";
+"LdF-HC-uSp.headerTitle" = "담배 가격 (1갑)";
 
 /* Class = "UITableViewSection"; headerTitle = "Alarm"; ObjectID = "ZAL-e8-C7V"; */
-"ZAL-e8-C7V.headerTitle" = "Alarm";
+"ZAL-e8-C7V.headerTitle" = "알람";
 
 /* Class = "UITableViewSection"; headerTitle = "Daily cigarette"; ObjectID = "aFJ-OJ-vFA"; */
-"aFJ-OJ-vFA.headerTitle" = "Daily cigarette";
+"aFJ-OJ-vFA.headerTitle" = "하루 평균 흡연량";
 
 /* Class = "UITextField"; placeholder = "20"; ObjectID = "gL7-z2-O9D"; */
 "gL7-z2-O9D.placeholder" = "20";
 
 /* Class = "UILabel"; text = "Enable "; ObjectID = "uEV-Xs-xbi"; */
-"uEV-Xs-xbi.text" = "Enable ";
+"uEV-Xs-xbi.text" = "설정 ";

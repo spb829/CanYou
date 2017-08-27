@@ -14,6 +14,8 @@ class CigaretteDailyViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        dataController.initAll()
     }
     
     @IBAction func startTapped(_ sender: UIButton) {
@@ -38,6 +40,7 @@ class CigaretteDailyViewController: BaseViewController {
             let currentUser = dataController.currentUser
             currentUser.cigaretteDaily = Int(text)!
             currentUser.startDate = Date()
+            currentUser.isNew = false
         }
         
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)

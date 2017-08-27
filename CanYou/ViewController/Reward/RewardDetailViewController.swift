@@ -12,7 +12,6 @@ class RewardDetailViewController: BaseViewController {
 	// MARK : - Properties
     var reward: Reward?
 
-    @IBOutlet var rewardImageView: UIImageView!
     @IBOutlet var contentLabel: UILabel!
     @IBOutlet var cansLabel: UILabel!
     
@@ -24,10 +23,6 @@ class RewardDetailViewController: BaseViewController {
         super.viewWillAppear(animated)
         guard let reward = self.reward else {
             return
-        }
-        
-        if let image = reward.image {
-            rewardImageView.image = image
         }
         
         contentLabel.text = reward.content

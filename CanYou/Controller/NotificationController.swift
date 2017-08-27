@@ -63,7 +63,7 @@ class NotificationController {
                                           title: badge.name,
                                           content: badge.content)
 //                    print("content:\(badge.content)")
-                print("\(timeinterval)초 후 \(badge.content)알람")
+//                print("\(timeinterval)초 후 \(badge.content)알람")
             case .money:
                 // Money Badge
                 var timeinterval = (currentUser.cigarPricePerTI * badge.conditionValue) - dataController.timeInterval
@@ -74,11 +74,15 @@ class NotificationController {
                                           title: badge.name,
                                           content: badge.content)
                 //                    print("content:\(badge.content)")
-                print("\(timeinterval)초 후 \(badge.content)알람")
+//                print("\(timeinterval)초 후 \(badge.content)알람")
             default:
                 break
             }
         }
+        
+        if !currentUser.randomAlarm { return }
+        
+        
     }
     
     func removeAllScheduledNotification() {

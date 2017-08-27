@@ -19,8 +19,9 @@ struct RewardStore{
     
     static func addItem(_ item: Reward){
         try! realm.write {
-            DataController.shared.currentUser.rewards.append(item)
-            item.user = DataController.shared.currentUser
+            let currentUser = DataController.shared.currentUser
+            item.user = currentUser
+            currentUser.rewards.append(item)
         }
     }
 }

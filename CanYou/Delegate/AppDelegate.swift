@@ -15,6 +15,7 @@ import WatchConnectivity
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     let center = UNUserNotificationCenter.current()
+//    let dataController = DataController.shared
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

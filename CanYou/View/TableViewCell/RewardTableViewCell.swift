@@ -10,7 +10,6 @@ import UIKit
 
 class RewardTableViewCell: UITableViewCell {
     
-    @IBOutlet var rewardImageView: UIImageView!
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var contentLabel: UILabel!
     @IBOutlet var cansLabel: UILabel!

@@ -31,9 +31,22 @@ class HealthInfoTableViewController: BaseTableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HealthInfoTableViewCell", for: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HealthInfoTableViewCell", for: indexPath) as! HealthInfoTableViewCell
+        
+        let item = HealthInfoStore.items[indexPath.row]
+        
+        var percent: Float = Float(DataController.shared.timeInterval / item.time)
+        
+        if percent > 1.0 {
+            percent = 1.0
+            cell.accessoryType = .checkmark
+        } else {
+            cell.accessoryType = .none
+        }
+        
+        cell.titleLabel.text = item.name
+        cell.progressView.progress = percent
+        print(percent)
 
         return cell
     }

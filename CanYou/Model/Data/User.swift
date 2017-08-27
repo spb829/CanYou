@@ -27,6 +27,8 @@ class User: RealmSwift.Object {
     @objc dynamic var alarm: Bool = false
     @objc dynamic var randomAlarm: Bool = false
     
+    @objc dynamic var isNew: Bool = true
+    
     // Realationships
     let rewards = List<Reward>()
     let badges = List<Badge>()

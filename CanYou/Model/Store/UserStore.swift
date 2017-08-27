@@ -16,7 +16,6 @@ struct UserStore{
     static func initUser() {
         try! realm.write {
             let user = User()
-            
             realm.add(user)
         }
     }

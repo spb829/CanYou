@@ -1,18 +1,18 @@
 
 /* Class = "UILabel"; text = "Without cigarette"; ObjectID = "8Gp-YI-A14"; */
-"8Gp-YI-A14.text" = "Without cigarette";
+"8Gp-YI-A14.text" = "담배 없이";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "Pb8-cV-LcE"; */
 "Pb8-cV-LcE.text" = "0";
 
 /* Class = "UILabel"; text = "Getting better"; ObjectID = "aqF-pA-xp5"; */
-"aqF-pA-xp5.text" = "Getting better";
+"aqF-pA-xp5.text" = "";
 
 /* Class = "UILabel"; text = "Doing good!"; ObjectID = "dUu-Dp-8yY"; */
-"dUu-Dp-8yY.text" = "Doing good!";
+"dUu-Dp-8yY.text" = "잘하고 있어요 !";
 
 /* Class = "UILabel"; text = "00 : 00 : 00"; ObjectID = "gtC-Ru-4AS"; */
 "gtC-Ru-4AS.text" = "00 : 00 : 00";
 
 /* Class = "UILabel"; text = "Days"; ObjectID = "ts4-ep-dYT"; */
-"ts4-ep-dYT.text" = "Days";
+"ts4-ep-dYT.text" = "일";

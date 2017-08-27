@@ -9,7 +9,7 @@
 "caT-9f-Msv.title" = "CanYou";
 
 /* Class = "UIButton"; normalTitle = "Start"; ObjectID = "fPc-W7-0U1"; */
-"fPc-W7-0U1.normalTitle" = "Start";
+"fPc-W7-0U1.normalTitle" = "시작하기";
 
 /* Class = "UILabel"; text = "개비"; ObjectID = "knf-hs-VSP"; */
 "knf-hs-VSP.text" = "개비";
@@ -18,13 +18,13 @@
 "q2n-hE-3uZ.text" = "You Can !";
 
 /* Class = "UIButton"; normalTitle = "Start"; ObjectID = "r5A-dp-puL"; */
-"r5A-dp-puL.normalTitle" = "Start";
+"r5A-dp-puL.normalTitle" = "시작하기";
 
 /* Class = "UILabel"; text = "Can You ?"; ObjectID = "rar-D8-AQc"; */
 "rar-D8-AQc.text" = "Can You ?";
 
 /* Class = "UIButton"; normalTitle = "Start"; ObjectID = "t7S-rX-f3F"; */
-"t7S-rX-f3F.normalTitle" = "Start";
+"t7S-rX-f3F.normalTitle" = "시작하기";
 
 /* Class = "UILabel"; text = "하루 흡연량이 어떻게 되시나요?"; ObjectID = "tb9-2A-7Fo"; */
 "tb9-2A-7Fo.text" = "하루 흡연량이 어떻게 되시나요?";

@@ -70,10 +70,6 @@ extension RewardViewController: UITableViewDelegate, UITableViewDataSource {
         cell.cansLabel.text = "\(reward.price) Cans"
         cell.contentLabel.text = reward.content
         
-        if let image = reward.image {
-            cell.rewardImageView.image = image
-        }
-        
         return cell
     }
     

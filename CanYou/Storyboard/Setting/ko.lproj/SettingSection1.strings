@@ -1,21 +1,23 @@
 
+
 /* Class = "UITableViewSection"; headerTitle = "Start date"; ObjectID = "0Nk-7M-tA4"; */
-"0Nk-7M-tA4.headerTitle" = "Start date";
+"0Nk-7M-tA4.headerTitle" = "금연 시작일";
 
 /* Class = "UILabel"; text = "Male"; ObjectID = "2Qj-04-d6z"; */
-"2Qj-04-d6z.text" = "Male";
+"2Qj-04-d6z.text" = "남자";
 
 /* Class = "UILabel"; text = "Female"; ObjectID = "7P2-tY-cC9"; */
-"7P2-tY-cC9.text" = "Female";
+"7P2-tY-cC9.text" = "여자";
 
 /* Class = "UITextField"; placeholder = "박현민"; ObjectID = "Hq9-uN-ZGq"; */
 "Hq9-uN-ZGq.placeholder" = "박현민";
 
 /* Class = "UITableViewSection"; headerTitle = "Name"; ObjectID = "hYj-ex-rmq"; */
-"hYj-ex-rmq.headerTitle" = "Name";
+"hYj-ex-rmq.headerTitle" = "이름";
 
 /* Class = "UITableViewSection"; headerTitle = "Gender"; ObjectID = "nQ5-jW-rmQ"; */
-"nQ5-jW-rmQ.headerTitle" = "Gender";
+"nQ5-jW-rmQ.headerTitle" = "성별";
 
 /* Class = "UITableViewSection"; headerTitle = "Birthdate"; ObjectID = "u31-pG-SBo"; */
-"u31-pG-SBo.headerTitle" = "Birthdate";
+"u31-pG-SBo.headerTitle" = "생년월일";
+

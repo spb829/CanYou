@@ -111,6 +111,7 @@ class DashBoardViewController: UIViewController {
                     try! realm.write {
                         badge.isDone = true
                         currentUser.canValue += 100
+                        currentUser.recentBadge = badge
                     }
                 }
             case .money:
@@ -119,6 +120,7 @@ class DashBoardViewController: UIViewController {
                     try! realm.write {
                         badge.isDone = true
                         currentUser.canValue += 100
+                        currentUser.recentBadge = badge
                     }
                 }
             default:

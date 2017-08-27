@@ -51,7 +51,7 @@ class DashBoardInterfaceController: BaseInterfaceController {
     func startAnimation() {
         self.contentLabel.setText(dataController.healthInfo)
         self.dataController.setPercent(dataController.healthInfoPercent)
-//        self.group.setBackgroundImageNamed("percent")
+        self.group.setBackgroundImageNamed("percent")
         self.group.startAnimatingWithImages(in: NSMakeRange(0, dataController.healthInfoPercent), duration: self.duration, repeatCount: 1)
     }
     

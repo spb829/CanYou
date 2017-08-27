@@ -66,9 +66,9 @@ struct DataController {
     }
     
     func initBadges() {
-//        if currentUser.badges.count > 5 {
-//            return
-//        }
+        if currentUser.badges.count > 5 {
+            return
+        }
 //        BadgeStore.createItem(user: currentUser, name: "24hours", imageName: "badge-24hours", content: "Good start !1", conditionType: .time, conditionValue: 10)
 //        BadgeStore.createItem(user: currentUser, name: "24hours", imageName: "badge-24hours", content: "Good start !2", conditionType: .time, conditionValue: 20)
 //        BadgeStore.createItem(user: currentUser, name: "24hours", imageName: "badge-24hours", content: "Good start !3", conditionType: .time, conditionValue: 30)
@@ -82,6 +82,10 @@ struct DataController {
     }
     
     func initHealthInfos() {
+        if healthInfos.count > 5 {
+            return
+        }
+
         HealthInfoStore.createItem(name: "혈압, 맥박, 손과 발의 체온이 정상으로 돌아옴", time: 1200, content: "20분")
         HealthInfoStore.createItem(name: "혈중 니코틴 농도가 낮아지기 시작함", time: 7200, content: "2시간")
         HealthInfoStore.createItem(name: "혈중 니코틴 수치가 6.2%로 거의 사라짐", time: 28800, content: "8시간")

@@ -109,9 +109,9 @@ extension BadgeViewController: UITableViewDelegate, UITableViewDataSource {
         
         switch isDoneList {
         case true:
-            listButton.setTitle("Not achieved List", for: .normal)
-        case false:
             listButton.setTitle("Achieved List", for: .normal)
+        case false:
+            listButton.setTitle("Not achieved List", for: .normal)
         }
         
         let range = NSMakeRange(0, self.tableView.numberOfSections)

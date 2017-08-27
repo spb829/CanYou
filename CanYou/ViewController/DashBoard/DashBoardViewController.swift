@@ -85,15 +85,21 @@ class DashBoardViewController: UIViewController {
 
     @objc func updateThings() {
         let ti = DataController.shared.timeInterval
-        if ti < 60 {
+        
+        if ti < 86400 {
+            // 처음
             imageView.image = UIImage(named: "sheep5")
-        } else if ti < 70 {
+        } else if ti < 604800 {
+            // 24시간 후
             imageView.image = UIImage(named: "sheep4")
-        } else if ti < 80 {
+        } else if ti < 2592000 {
+            // 일주일 후
             imageView.image = UIImage(named: "sheep3")
-        } else if ti < 90 {
+        } else if ti < 31536000 {
+            // 한달 후
             imageView.image = UIImage(named: "sheep2")
         } else {
+            // 1년 후
             imageView.image = UIImage(named: "sheep1")
         }
         

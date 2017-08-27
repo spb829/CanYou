@@ -16,18 +16,34 @@ class BadgeViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     @IBOutlet var listButton: UIButton!
     
+    @IBOutlet var recentImageView: UIImageView!
+    @IBOutlet var recentTitleLabel: UILabel!
+    @IBOutlet var recentContentLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        updateRecentBadge()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    // MARK: - Table view data source
+    func updateRecentBadge() {
+        if let badge = dataController.currentUser.recentBadge {
+            if let image = badge.image {
+                recentImageView.image = image
+            }
+            recentTitleLabel.text = badge.name
+            recentContentLabel.text = badge.content
+        } else {
+            recentImageView.image = UIImage(named: "nobadge")
+            recentTitleLabel.text = "없음"
+            recentContentLabel.text = "아직 달성한 뱃지가 없어요."
+        }
+    }
 }
-
+// MARK: - Table view data source
 extension BadgeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -95,7 +111,7 @@ extension BadgeViewController: UITableViewDelegate, UITableViewDataSource {
         case true:
             listButton.setTitle("Not achieved List", for: .normal)
         case false:
-            listButton.setTitle("Achieved List", for: .selected)
+            listButton.setTitle("Achieved List", for: .normal)
         }
         
         let range = NSMakeRange(0, self.tableView.numberOfSections)

@@ -123,6 +123,7 @@ extension RootContainerViewController {
     func reloadData() {
         rewardViewController.tableView.reloadData()
         badgeViewController.tableView.reloadData()
+        badgeViewController.updateRecentBadge()
     }
     
     override func viewWillLayoutSubviews() {

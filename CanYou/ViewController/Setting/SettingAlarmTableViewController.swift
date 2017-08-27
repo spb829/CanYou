@@ -56,11 +56,11 @@ class SettingAlarmTableViewController: BaseTableViewController {
         // random alarm on, off
         switch sender.isOn {
         case true:
-            break
             // random alarm on!
+            notificationController.updateNotifications()
         case false:
-            break
             // random alarm off !
+            notificationController.removeAllScheduledNotification()
         }
     }
 }

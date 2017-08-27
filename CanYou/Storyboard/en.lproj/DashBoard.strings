@@ -1,12 +1,21 @@
 
+/* Class = "UILabel"; text = "0 won"; ObjectID = "1g9-7M-KFq"; */
+"1g9-7M-KFq.text" = "0 won";
+
 /* Class = "UILabel"; text = "Without cigarette"; ObjectID = "8Gp-YI-A14"; */
 "8Gp-YI-A14.text" = "Without cigarette";
+
+/* Class = "UILabel"; text = "Money saved :"; ObjectID = "KBX-Gh-K2V"; */
+"KBX-Gh-K2V.text" = "Money saved :";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "Pb8-cV-LcE"; */
 "Pb8-cV-LcE.text" = "0";
 
-/* Class = "UILabel"; text = "Getting better"; ObjectID = "aqF-pA-xp5"; */
-"aqF-pA-xp5.text" = "";
+/* Class = "UILabel"; text = "Cigarette saved :"; ObjectID = "Y4j-GB-WCZ"; */
+"Y4j-GB-WCZ.text" = "Cigarette saved :";
+
+/* Class = "UILabel"; text = "ㅁ"; ObjectID = "aqF-pA-xp5"; */
+"aqF-pA-xp5.text" = "ㅁ";
 
 /* Class = "UILabel"; text = "Doing good!"; ObjectID = "dUu-Dp-8yY"; */
 "dUu-Dp-8yY.text" = "Doing good!";
@@ -16,3 +25,6 @@
 
 /* Class = "UILabel"; text = "Days"; ObjectID = "ts4-ep-dYT"; */
 "ts4-ep-dYT.text" = "Days";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "yEb-Zi-9Kk"; */
+"yEb-Zi-9Kk.text" = "0";

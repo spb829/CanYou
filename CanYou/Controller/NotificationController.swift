@@ -55,8 +55,8 @@ class NotificationController {
             case .time:
                 // Time Badge
                 var timeinterval = badge.conditionValue - dataController.timeInterval
-                if timeinterval < 0 {
-                    timeinterval = 0
+                if timeinterval <= 0 {
+                    timeinterval = 1
                 }
                 self.scheduleNotification(byTimeInterval: timeinterval,
                                           title: badge.name,
@@ -66,8 +66,8 @@ class NotificationController {
             case .money:
                 // Money Badge
                 var timeinterval = (currentUser.cigarPricePerTI * badge.conditionValue) - dataController.timeInterval
-                if timeinterval < 0 {
-                    timeinterval = 0
+                if timeinterval <= 0 {
+                    timeinterval = 1
                 }
                 self.scheduleNotification(byTimeInterval: timeinterval,
                                           title: badge.name,

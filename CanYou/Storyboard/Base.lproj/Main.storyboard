@@ -18,43 +18,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9U6-9M-lDO">
-                                <rect key="frame" x="0.0" y="60" width="375" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7S-rX-f3F">
-                                <rect key="frame" x="0.0" y="591" width="375" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Start">
-                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="0.0" y="581" width="375" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="o47-kT-Ydq" kind="showDetail" id="uIb-Hr-ZAf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaS-Ig-LNo">
-                                <rect key="frame" x="0.0" y="313" width="375" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaS-Ig-LNo">
+                                <rect key="frame" x="0.0" y="310" width="375" height="48"/>
                                 <string key="text">금연이라는 어려운 결심을 하셨군요 !
 시작이 반이라는 말이 있잖아요?</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9U6-9M-lDO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2pf-XV-biI"/>
                             <constraint firstItem="LaS-Ig-LNo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Gk-8k-egO"/>
-                            <constraint firstItem="9U6-9M-lDO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="CFx-5P-H74"/>
                             <constraint firstItem="LaS-Ig-LNo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KSi-ka-jfq"/>
                             <constraint firstItem="LaS-Ig-LNo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WV3-1d-Xrz"/>
                             <constraint firstItem="t7S-rX-f3F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iSc-0u-8m0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="t7S-rX-f3F" secondAttribute="bottom" constant="40" id="oTh-u6-7Kp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t7S-rX-f3F" secondAttribute="trailing" id="qhu-j2-3pL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LaS-Ig-LNo" secondAttribute="trailing" id="rqP-tn-zrw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9U6-9M-lDO" secondAttribute="trailing" id="u7g-8y-mUg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -72,8 +63,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="하루 흡연량이 어떻게 되시나요?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tb9-2A-7Fo">
-                                <rect key="frame" x="0.0" y="141" width="375" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="0.0" y="141" width="375" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -96,8 +87,11 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPc-W7-0U1">
-                                <rect key="frame" x="0.0" y="597" width="375" height="30"/>
-                                <state key="normal" title="Start"/>
+                                <rect key="frame" x="0.0" y="581" width="375" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="startTapped:" destination="o47-kT-Ydq" eventType="touchUpInside" id="XiA-mb-d7V"/>
                                 </connections>

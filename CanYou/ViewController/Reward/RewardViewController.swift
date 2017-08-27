@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import RealmSwift
 
 class RewardViewController: UIViewController {
     // MARK : - Properties
     var dataController = DataController.shared
     var isDoneList = false
+    let realm = try! Realm()
     
     @IBOutlet var tableView: UITableView!
     @IBOutlet var cansLabel: UILabel!
@@ -75,6 +77,52 @@ extension RewardViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        if isDoneList { return }
+        if indexPath.row == RewardStore.toDoItems.count { return }
+        
+        let item = RewardStore.toDoItems[indexPath.row]
+        
+        let sheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        if dataController.currentUser.canValue >= item.price {
+            let rewardAction = UIAlertAction(title: "나에게 보상하기", style: .default, handler: { (alertAction) -> Void in
+                try! self.realm.write {
+                    item.isDone = true
+                }
+                
+                let sheet2 = UIAlertController(title: "보상완료", message: "\(item.name)을 보상 받았어요!", preferredStyle: .alert)
+                
+                let okAction = UIAlertAction(title: "확인", style: .default, handler: nil)
+                sheet2.addAction(okAction)
+                
+                self.tableView.reloadData()
+                self.present(sheet2, animated: true, completion: nil)
+            })
+            
+            sheet.addAction(rewardAction)
+        }
+        
+        let deleteAction = UIAlertAction(title: "삭제하기", style: .destructive, handler: { (alertAction) -> Void in
+            try! self.realm.write {
+                self.realm.delete(item)
+            }
+            
+            let sheet2 = UIAlertController(title: "삭제완료", message: "\(item.name)를 삭제했습니다.", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "확인", style: .default, handler: nil)
+            sheet2.addAction(okAction)
+            
+            self.tableView.reloadData()
+            self.present(sheet2, animated: true, completion: nil)
+        })
+        
+        sheet.addAction(deleteAction)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        sheet.addAction(cancelAction)
+        
+        present(sheet, animated: true, completion: nil)
     }
     
     @IBAction func toggleTapped(_ sender: UIButton) {
@@ -84,7 +132,7 @@ extension RewardViewController: UITableViewDelegate, UITableViewDataSource {
         case true:
             listButton.setTitle("Not achieved List", for: .normal)
         case false:
-            listButton.setTitle("Achieved List", for: .selected)
+            listButton.setTitle("Achieved List", for: .normal)
         }
         
         let range = NSMakeRange(0, self.tableView.numberOfSections)

@@ -22,6 +22,7 @@ struct RewardStore{
             let currentUser = DataController.shared.currentUser
             item.user = currentUser
             currentUser.rewards.append(item)
+            realm.add(item)
         }
     }
 }

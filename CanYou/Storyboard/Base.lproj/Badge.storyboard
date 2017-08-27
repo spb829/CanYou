@@ -160,6 +160,9 @@
                     </view>
                     <connections>
                         <outlet property="listButton" destination="At1-hz-Xto" id="HfI-h9-kvM"/>
+                        <outlet property="recentContentLabel" destination="jbp-xq-jSU" id="QR0-7K-IsM"/>
+                        <outlet property="recentImageView" destination="e1W-x3-zQf" id="5Fx-6v-uQl"/>
+                        <outlet property="recentTitleLabel" destination="eJI-mh-23M" id="quA-0m-gSR"/>
                         <outlet property="tableView" destination="DOV-oH-yGK" id="cyA-zI-q1R"/>
                     </connections>
                 </viewController>

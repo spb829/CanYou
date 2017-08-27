@@ -367,6 +367,8 @@
 		07783FC71F47329F0081FB17 /* BadgeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeDetailViewController.swift; sourceTree = "<group>"; };
 		07783FC91F4732E30081FB17 /* RewardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardDetailViewController.swift; sourceTree = "<group>"; };
 		077B91B91F52B71100EC4512 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		077B91BC1F52C3E700EC4512 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DashBoard.strings; sourceTree = "<group>"; };
+		077B91BF1F52C40A00EC4512 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/DashBoard.strings; sourceTree = "<group>"; };
 		077E8ECA1F4562550057DDC3 /* CanYouWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanYouWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		077E8ECD1F4562550057DDC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		077E8ECF1F4562550057DDC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -413,8 +415,6 @@
 		07B0F01D1F5047DD00215CAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/HealthInfo.strings; sourceTree = "<group>"; };
 		07B0F01F1F5047DE00215CAB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/HealthInfo.strings; sourceTree = "<group>"; };
 		07B0F0211F5047EF00215CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DashBoard.storyboard; sourceTree = "<group>"; };
-		07B0F0241F5047F000215CAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DashBoard.strings; sourceTree = "<group>"; };
-		07B0F0261F5047F100215CAB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/DashBoard.strings; sourceTree = "<group>"; };
 		07B0F0281F5047F500215CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Badge.storyboard; sourceTree = "<group>"; };
 		07B0F02B1F5047F700215CAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Badge.strings; sourceTree = "<group>"; };
 		07B0F02D1F5047F800215CAB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Badge.strings; sourceTree = "<group>"; };
@@ -1583,8 +1583,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				07B0F0211F5047EF00215CAB /* Base */,
-				07B0F0241F5047F000215CAB /* en */,
-				07B0F0261F5047F100215CAB /* ko */,
+				077B91BC1F52C3E700EC4512 /* en */,
+				077B91BF1F52C40A00EC4512 /* ko */,
 			);
 			name = DashBoard.storyboard;
 			sourceTree = "<group>";

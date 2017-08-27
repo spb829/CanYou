@@ -34,7 +34,6 @@ class NotificationController {
     
     func updateNotifications() {
         if !currentUser.alarm { return }
-//        print("1")
         self.removeAllScheduledNotification()
         center.getNotificationSettings { (settings) in
             switch settings.authorizationStatus {
@@ -82,7 +81,10 @@ class NotificationController {
         
         if !currentUser.randomAlarm { return }
         
-        
+        let roll = Double(arc4random_uniform(3600))
+        self.scheduleNotification(byTimeInterval: roll,
+                                  title: "Are you Smoking?",
+                                  content: "혹시 담배 피고 계시나요?")
     }
     
     func removeAllScheduledNotification() {
@@ -109,7 +111,7 @@ class NotificationController {
             }
         })
         
-        print("added")
+//        print("added")
         
     }
 }

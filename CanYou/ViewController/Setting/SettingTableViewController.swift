@@ -41,7 +41,9 @@ class SettingTableViewController: BaseTableViewController {
             alarmLabel.text = "Off"
         }
         cigaretteDailyLabel.text = String(currentUser.cigaretteDaily)
-//        cigarettePriceLabel.text = String(currentUser.cigarettePrice)
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        cigarettePriceLabel.text = numberFormatter.string(from: NSNumber(value:currentUser.cigarettePrice))!
     }
     
     @IBAction func closeButtonTapped(_ sender: UIBarButtonItem) {

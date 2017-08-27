@@ -134,6 +134,7 @@
 		07764A511F45F5380086105F /* DashBoardInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07764A4F1F45F5340086105F /* DashBoardInterfaceController.swift */; };
 		07783FC81F47329F0081FB17 /* BadgeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07783FC71F47329F0081FB17 /* BadgeDetailViewController.swift */; };
 		07783FCA1F4732E30081FB17 /* RewardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07783FC91F4732E30081FB17 /* RewardDetailViewController.swift */; };
+		077B91BA1F52B71100EC4512 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 077B91B91F52B71100EC4512 /* README.md */; };
 		077E8ECE1F4562550057DDC3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077E8ECC1F4562550057DDC3 /* Interface.storyboard */; };
 		077E8ED01F4562550057DDC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 077E8ECF1F4562550057DDC3 /* Assets.xcassets */; };
 		077E8ED71F4562560057DDC3 /* CanYouWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 077E8ED61F4562560057DDC3 /* CanYouWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -365,6 +366,7 @@
 		07764A4F1F45F5340086105F /* DashBoardInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardInterfaceController.swift; sourceTree = "<group>"; };
 		07783FC71F47329F0081FB17 /* BadgeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeDetailViewController.swift; sourceTree = "<group>"; };
 		07783FC91F4732E30081FB17 /* RewardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardDetailViewController.swift; sourceTree = "<group>"; };
+		077B91B91F52B71100EC4512 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		077E8ECA1F4562550057DDC3 /* CanYouWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanYouWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		077E8ECD1F4562550057DDC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		077E8ECF1F4562550057DDC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -563,6 +565,7 @@
 		07AEE8F61F3C42C200D20151 = {
 			isa = PBXGroup;
 			children = (
+				077B91B91F52B71100EC4512 /* README.md */,
 				07AEE9011F3C42C300D20151 /* CanYou */,
 				07AEE9191F3C42C300D20151 /* CanYouTests */,
 				07AEE9241F3C42C300D20151 /* CanYouUITests */,
@@ -1226,6 +1229,7 @@
 				07B0F00B1F5047CB00215CAB /* SettingSection1.storyboard in Resources */,
 				07B0F0271F5047F500215CAB /* Badge.storyboard in Resources */,
 				07B0F0191F5047DB00215CAB /* HealthInfo.storyboard in Resources */,
+				077B91BA1F52B71100EC4512 /* README.md in Resources */,
 				07B0F0041F5047C000215CAB /* Setting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

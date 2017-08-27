@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13168.3" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13189.4" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13042.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13049.2"/>
     </dependencies>
     <scenes>
         <!--Stop Watch Interface Controller-->
@@ -21,20 +21,16 @@
                                 </label>
                             </items>
                         </group>
-                        <timer width="1" height="98" alignment="left" textAlignment="center" previewedSeconds="9234" id="gTG-71-sQA">
+                        <timer width="1" height="115" alignment="left" textAlignment="center" numberOfLines="0" previewedSeconds="199234" id="gTG-71-sQA">
                             <fontDescription key="font" type="boldSystem" pointSize="32"/>
+                            <calendarUnit key="units" day="YES" hour="YES" minute="YES" second="YES"/>
                         </timer>
                     </items>
-                    <menu key="menu" id="0Qg-mn-Oh7">
+                    <menu key="menu" id="NPW-xx-e5C">
                         <items>
-                            <menuItem title="Start1" icon="play" id="C14-A4-sVs">
+                            <menuItem title="Refresh" icon="resume" id="JxI-Cb-JYn">
                                 <connections>
-                                    <action selector="menuStart" destination="AgC-eL-Hgc" id="BI6-Nj-aBt"/>
-                                </connections>
-                            </menuItem>
-                            <menuItem title="Stop" icon="block" id="eyX-gf-1K1">
-                                <connections>
-                                    <action selector="menuStop" destination="AgC-eL-Hgc" id="Otz-ao-fLP"/>
+                                    <action selector="menuRefresh" destination="AgC-eL-Hgc" id="c1c-FG-gPc"/>
                                 </connections>
                             </menuItem>
                         </items>
@@ -64,7 +60,17 @@
                             </items>
                         </group>
                     </items>
+                    <menu key="menu" id="qbc-7p-sgw">
+                        <items>
+                            <menuItem title="Refresh" icon="resume" id="SHx-4g-Jlm">
+                                <connections>
+                                    <action selector="menuRefresh" destination="1mh-Az-CZt" id="5O4-PQ-Uur"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
+                        <outlet property="contentLabel" destination="n3s-WF-3Xf" id="HFE-vy-jNn"/>
                         <outlet property="group" destination="tfb-2v-of4" id="J3m-qI-7Uz"/>
                     </connections>
                 </controller>

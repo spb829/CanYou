@@ -9,6 +9,7 @@
 import UIKit
 import RealmSwift
 import UserNotifications
+import WatchConnectivity
 
 class BaseViewController: UIViewController {
     let realm = try! Realm()
@@ -39,6 +40,8 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
         // Realm Browser file URL
 //        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -73,4 +76,6 @@ extension BaseViewController: UNUserNotificationCenterDelegate{
         completionHandler( [.alert,.sound,.badge])
     }
 }
+
+
 

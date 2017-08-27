@@ -10,6 +10,7 @@ import WatchKit
 import WatchConnectivity
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
+    var dataController = DataController.shared
 
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
@@ -17,6 +18,29 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
             let session = WCSession.default
             session.delegate = self
             session.activate()
+            print("session activated")
+            
+            session.sendMessage(["request":"healthinfo"], replyHandler:{
+                if let healthinfo = $0["healthinfo"] as? String,
+                    let percent = $0["percent"] as? Int {
+                    self.dataController.setHealthInfo(healthinfo)
+                    self.dataController.setPercent(percent)
+                }
+                print($0)
+            }, errorHandler:  {
+                print($0)
+            })
+            
+            session.sendMessage(["request":"date"], replyHandler:{
+                if let date = $0["date"] as? Date {
+                    self.dataController.setDate(date)
+                }
+            }, errorHandler: {
+                print($0)
+            })
+            
+        } else {
+            print("not Supported !")
         }
     }
 
@@ -60,5 +84,8 @@ extension ExtensionDelegate: WCSessionDelegate {
         
     }
     
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+        
+    }
 }
 

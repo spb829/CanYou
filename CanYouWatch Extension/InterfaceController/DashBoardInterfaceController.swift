@@ -8,10 +8,13 @@
 
 import WatchKit
 import Foundation
+import WatchConnectivity
 
 
-class DashBoardInterfaceController: WKInterfaceController {
+class DashBoardInterfaceController: BaseInterfaceController {
     @IBOutlet var group: WKInterfaceGroup!
+    @IBOutlet var contentLabel: WKInterfaceLabel!
+    
     let duration = 1.2
     
     override func awake(withContext context: Any?) {
@@ -23,14 +26,38 @@ class DashBoardInterfaceController: WKInterfaceController {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
         
-        group.setBackgroundImageNamed("percent")
-        group.startAnimatingWithImages(in: NSMakeRange(0, 35), duration: self.duration, repeatCount: 1)
+//        self.group.setBackgroundImageNamed("percent0")
+        self.menuRefresh()
+    }
+    
+    @IBAction func menuRefresh(){
+        if(WCSession.isSupported()){
+            watchSession = WCSession.default
+            watchSession.delegate = self
+            watchSession.activate()
+            watchSession.sendMessage(["request":"healthinfo"], replyHandler:{
+//                print($0)
+                if let healthinfo = $0["helthinfo"] as? String,
+                    let percent = $0["percent"] as? Int {
+                    self.dataController.setHealthInfo(healthinfo)
+                    self.dataController.setPercent(percent)
+//                    print("info: \(healthinfo), percent: \(percent)")
+                }
+            }, errorHandler: nil)
+        }
+        self.startAnimation()
+    }
+    
+    func startAnimation() {
+        self.contentLabel.setText(dataController.healthInfo)
+        self.dataController.setPercent(dataController.healthInfoPercent)
+//        self.group.setBackgroundImageNamed("percent")
+        self.group.startAnimatingWithImages(in: NSMakeRange(0, dataController.healthInfoPercent), duration: self.duration, repeatCount: 1)
     }
     
     override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
         super.didDeactivate()
-        group.setBackgroundImageNamed("percent0")
+        self.group.setBackgroundImageNamed("percent0")
     }
     
 }

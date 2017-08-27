@@ -13,7 +13,9 @@ struct TimerController {
     let dataController = DataController.shared
     var timer: Timer = Timer()
     
-    var startDate: Date
+    var startDate: Date {
+        return dataController.currentUser.startDate
+    }
     
     var timeElapsed: TimeInterval {
         return Date().timeIntervalSince1970 - startDate.timeIntervalSince1970
@@ -35,9 +37,7 @@ struct TimerController {
         return UInt8(timeElapsed.truncatingRemainder(dividingBy: 60))
     }
     
-    private init() {
-        startDate = dataController.currentUser.startDate
-    }
+    private init() { }
     
     
 }

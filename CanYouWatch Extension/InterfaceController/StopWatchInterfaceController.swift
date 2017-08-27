@@ -8,51 +8,40 @@
 
 import WatchKit
 import Foundation
+import WatchConnectivity
 
 
-class StopWatchInterfaceController: WKInterfaceController {
+class StopWatchInterfaceController: BaseInterfaceController {
 
     @IBOutlet var stopTimer: WKInterfaceTimer!
     @IBOutlet var dayLabel: WKInterfaceLabel!
     
     var timer: Timer!
-    var start = Date()
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        // Configure interface objects here.
-//        self.stopTimer.count
-        dayLabel.setText("금연을 시작하세요!")
+        dayLabel.setText("Please Refresh")
     }
     
     func startTimer() {
-        let device = WKInterfaceDevice.current()
-        device.play(.notification)
+//        let device = WKInterfaceDevice.current()
+//        device.play(.notification)
         
-        dayLabel.setText("0 일")
+        dayLabel.setText("")
         
-        start = Date()
-        
-        self.stopTimer.setDate(start)
+        self.stopTimer.setDate(dataController.startDate)
         self.stopTimer.start()
     }
     
-    @IBAction func menuStart() {
+    @IBAction func menuRefresh() {
+        self.refreshDate()
         self.startTimer()
     }
     
-    @IBAction func menuStop() {
-        stopTimer.stop()
-        if let timer = self.timer {
-            timer.invalidate()
-        }
-        dayLabel.setText("금연을 시작하세요!")
-    }
-    
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        self.menuRefresh()
     }
     
     override func didDeactivate() {
@@ -60,4 +49,16 @@ class StopWatchInterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    func refreshDate() {
+        if(WCSession.isSupported()){
+            watchSession = WCSession.default
+            watchSession.delegate = self
+            watchSession.activate()
+            watchSession.sendMessage(["request":"date"], replyHandler:{
+                if let startDate = $0["date"] as? Date {
+                    self.dataController.setDate(startDate)
+                }
+            }, errorHandler: nil)
+        }
+    }
 }

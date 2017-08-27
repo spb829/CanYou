@@ -10,12 +10,14 @@ import UIKit
 import CoreData
 import UserNotifications
 import WatchConnectivity
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     let center = UNUserNotificationCenter.current()
-//    let dataController = DataController.shared
+    let dataController = DataController.shared
+    let realm = try! Realm()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -50,6 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             print("WatchConnectivity is not supported on this device")
         }
+        
         return true
     }
     
@@ -63,21 +66,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
         
         // content
-//        let content = UNMutableNotificationContent()
-//        content.title = "Are you Smoking?"
-//        content.body = "설마 담배피고 있나열"
-//        content.sound = UNNotificationSound.default()
-//
-//        // trigger
-//        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
-//
-//        let identifier = "somenoti"
-//        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
-//        center.add(request, withCompletionHandler: { (error) in
-//            if let error = error {
-//                print("error: \(error)")
-//            }
-//        })
+        let content = UNMutableNotificationContent()
+        content.title = "Are you Smoking?"
+        content.body = "설마 담배피고 있는 거 아니죠?"
+        content.sound = UNNotificationSound.default()
+
+        // trigger
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 30, repeats: false)
+
+        let identifier = "somenoti"
+        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+        center.add(request, withCompletionHandler: { (error) in
+            if let error = error {
+                print("error: \(error)")
+            }
+        })
         
         //        let date = Date(timeIntervalSinceNow: 3600)
         //        let triggerDate = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second,], from: date)
@@ -151,35 +154,54 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
-
 extension AppDelegate: WCSessionDelegate {
     // MARK : WCSessionDelegate
-    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-//        var receivedData: [String:String] = session.receivedApplicationContext as! [String:String]
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+        DispatchQueue.main.async {
+            var replyValues = [String : Any]()
+            
+            switch message["request"] as! String {
+            case "date":
+                replyValues["date"] = self.dataController.currentUser.startDate
+            case "healthinfo":
+                let healthInfo = self.dataController.lastHealthInfo
+                replyValues["percent"] = Int((self.dataController.timeInterval / healthInfo.time) * 100)
+                replyValues["helthinfo"] = "\(healthInfo.name)"
+            default:
+                break
+            }
+            
+            replyHandler(replyValues)
+        }
         
-//        func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
-//        session.receivedApplicationContext = [string:::any]
-//        session.reply
-//
-//        var replyValues = Dictionary<String, AnyObject>()
-//
-//        let viewController = self.window!.rootViewController as! ViewController
-//
-//        switch message["command"] as! String {
-//        case "start" :
-//            viewController.startPlay()
-//            replyValues["status"] = "Playing"
-//        case "stop" :
-//            viewController.stopPlay()
-//            replyValues["status"] = "Stopped"
-//        case "volume" :
-//            let level = message["level"] as! Float
-//            viewController.adjustVolume(level)
-//            replyValues["status"] = "Vol = \(level)"
-//        default:
-//            break
-//        }
-//        replyHandler(replyValues)
+    }
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+        //        func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+        //        session.receivedApplicationContext = [string:::any]
+        //        session.reply
+        //
+        //        var replyValues = Dictionary<String, AnyObject>()
+        //
+        //        let viewController = self.window!.rootViewController as! ViewController
+        //
+        //        switch message["command"] as! String {
+        //        case "start" :
+        //            viewController.startPlay()
+        //            replyValues["status"] = "Playing"
+        //        case "stop" :
+        //            viewController.stopPlay()
+        //            replyValues["status"] = "Stopped"
+        //        case "volume" :
+        //            let level = message["level"] as! Float
+        //            viewController.adjustVolume(level)
+        //            replyValues["status"] = "Vol = \(level)"
+        //        default:
+        //            break
+        //        }
+        //        replyHandler(replyValues)
         
         
     }
@@ -192,3 +214,6 @@ extension AppDelegate: WCSessionDelegate {
         
     }
 }
+
+
+

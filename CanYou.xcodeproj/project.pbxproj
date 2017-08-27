@@ -145,6 +145,7 @@
 		077EEB0D1F3F070900555921 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077EEB0C1F3F070900555921 /* User.swift */; };
 		078A6EB91F4AAAE1002F5CA5 /* RewardNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A6EB81F4AAAE1002F5CA5 /* RewardNewViewController.swift */; };
 		078A6EBD1F4AC710002F5CA5 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A6EBC1F4AC710002F5CA5 /* UIColorExtension.swift */; };
+		0790A8C31F52985600F9A642 /* BaseInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790A8C21F52985600F9A642 /* BaseInterfaceController.swift */; };
 		07A3692A1F41D110000E2152 /* RootContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A369291F41D110000E2152 /* RootContainerViewController.swift */; };
 		07AC068C1F501E2500C5DC7A /* RealmResultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AC068B1F501E2500C5DC7A /* RealmResultsExtension.swift */; };
 		07AEE9031F3C42C300D20151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE9021F3C42C300D20151 /* AppDelegate.swift */; };
@@ -378,6 +379,7 @@
 		077EEB0C1F3F070900555921 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		078A6EB81F4AAAE1002F5CA5 /* RewardNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardNewViewController.swift; sourceTree = "<group>"; };
 		078A6EBC1F4AC710002F5CA5 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		0790A8C21F52985600F9A642 /* BaseInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInterfaceController.swift; sourceTree = "<group>"; };
 		07A369291F41D110000E2152 /* RootContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContainerViewController.swift; sourceTree = "<group>"; };
 		07AC068B1F501E2500C5DC7A /* RealmResultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmResultsExtension.swift; sourceTree = "<group>"; };
 		07AEE8FF1F3C42C300D20151 /* CanYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -514,6 +516,7 @@
 		07764A521F45F5430086105F /* InterfaceController */ = {
 			isa = PBXGroup;
 			children = (
+				0790A8C21F52985600F9A642 /* BaseInterfaceController.swift */,
 				07764A4F1F45F5340086105F /* DashBoardInterfaceController.swift */,
 				077E8EDB1F4562560057DDC3 /* StopWatchInterfaceController.swift */,
 			);
@@ -1402,6 +1405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0790A8C31F52985600F9A642 /* BaseInterfaceController.swift in Sources */,
 				07F741571F4EB67F0068DB89 /* DataController.swift in Sources */,
 				077E8EE01F4562560057DDC3 /* NotificationController.swift in Sources */,
 				077E8EDE1F4562560057DDC3 /* ExtensionDelegate.swift in Sources */,

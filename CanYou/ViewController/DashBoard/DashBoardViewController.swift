@@ -34,6 +34,10 @@ class DashBoardViewController: UIViewController {
     let timerController = TimerController.shared
     let dataController = DataController.shared
     let currentUser = DataController.shared.currentUser
+    let numberFormatter = NumberFormatter().then {
+        $0.numberStyle = .decimal
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,8 +82,8 @@ class DashBoardViewController: UIViewController {
         progressView.progress = percent
         dayLabel.text = String(format: "%d", timerController.day)
         timeLabel.text = String(format: "%02d : %02d : %02d", timerController.hours, timerController.minutes, timerController.seconds)
-        savedMoneyLabel.text = "\(currentUser.savedMoney) Won"
-        savedCigLabel.text = "\(currentUser.savedCigarette)"
+        savedMoneyLabel.text = numberFormatter.string(from: NSNumber(value:currentUser.savedMoney))! + " 원"
+        savedCigLabel.text = "\(currentUser.savedCigarette) 개비"
         
     }
 

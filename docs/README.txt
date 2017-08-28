@@ -1,48 +1,37 @@
-Tessellate by HTML5 UP
+Story by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 
-This is Tessellate, a brand new responsive site template by AJ for HTML5 UP. It's a
-single pager (a format I'm pretty into right now), has styling for a crapload of
-basic elements, and includes a handy "dark" modifier class to flip a given element
-to a light-on-dark color scheme.
+Say hello to Story, a brand new responsive one-pager for HTML5 UP! Inspired by my work
+on Carrd*, Story is built to be extremely modular and tweakable, and as such is entirely
+built on reusable, insanely customizable elements (like "spotlight" and "gallery") that
+can be endlessly duplicated and tweaked into whatever you need to tell your story --
+without, in many cases, touching *any* CSS. Check out index-demo.html for an interactive
+demo, and index.html for the actual template. Enjoy!
 
-Demo images* courtesy of Felicia Simion, a highly creative photographer/artist
-friend of mine over at deviantART. See more of her incredible work here:
+Demo images** courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
+you can use for pretty much whatever.
 
-http://ineedchemicalx.deviantart.com/
+PS: Delete index-demo.html and assets/js/demo.js when you're done messing with the demo
+as neither are needed in production :)
 
-(* = Not included! Only meant for use with my own on-site demo, so please do NOT download
-and/or use any of Felicia's work without her explicit permission!)
+(* = my other side project -- carrd.co)
+(** = not included)
 
 AJ
 aj@lkn.io | @ajlkn
-
-PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
 
 
 Credits:
 
 	Demo Images:
-		Felicia Simion (ineedchemicalx.deviantart.com)
-			"Look for the bare necessities of life" (ineedchemicalx.deviantart.com/art/Look-for-the-bare-necessities-of-life-402262777)
-			"You and I collide" (ineedchemicalx.deviantart.com/art/You-and-I-collide-401457901)
-			"Emperor of the Stars" (ineedchemicalx.deviantart.com/art/Emperor-of-the-Stars-370265193)
-			"Sherlockin" (ineedchemicalx.deviantart.com/art/Sherlockin-369847236)
-			"A breath of Hope" (ineedchemicalx.deviantart.com/art/A-breath-of-Hope-366359145)
-			"The Pursuit" (ineedchemicalx.deviantart.com/art/The-Pursuit-355003425)
-			"Cherish" (ineedchemicalx.deviantart.com/art/Cherish-320041163)
-			"Mind is a clear stage" (ineedchemicalx.deviantart.com/art/Mind-is-a-clear-stage-375431607)
+		Unsplash (unsplash.com)
 
 	Icons:
 		Font Awesome (fortawesome.github.com/Font-Awesome)
 
 	Other:
 		jQuery (jquery.com)
-		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
-		CSS3 Pie (css3pie.com)
-		background-size polyfill (github.com/louisremi)
-		Respond.js (j.mp/respondjs)
-		jquery.scrolly (@ajlkn)
+		Misc. Sass functions (@HugoGiraudel)
 		Skel (skel.io)

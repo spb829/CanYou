@@ -11,9 +11,20 @@ import UIKit
 class CanYouAnimationViewController: UIViewController {
     @IBOutlet var label: UILabel!
     
+    var timer: Timer!
+    var timer2: Timer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        timer = Timer.scheduledTimer(timeInterval: 3.6, target: self, selector: #selector(animateRepeat1), userInfo: nil, repeats: true)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.8, execute: {
+            self.timer2 = Timer.scheduledTimer(timeInterval: 3.6, target: self, selector: #selector(self.animateRepeat2), userInfo: nil, repeats: true)
+        })
+        
+    }
+    
+    func temp() {
         
         let dataController = DataController.shared
         
@@ -26,7 +37,7 @@ class CanYouAnimationViewController: UIViewController {
             // Load Storyboard
             let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
             
-//            let dataController = DataController.shared
+            //            let dataController = DataController.shared
             
             // Instantiate View Controller
             var viewController: UIViewController!
@@ -40,6 +51,30 @@ class CanYouAnimationViewController: UIViewController {
             
             self.present(viewController, animated: true, completion: nil)
         })
+    }
+    
+    @objc func animateRepeat() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.2, execute: {
+            AnimationController.fadeTransition(self.label, for: 1.2)
+            self.label.text = "You Can !"
+        })
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.2, execute: {
+            AnimationController.fadeTransition(self.label, for: 1.2)
+            self.label.text = "Can You ?"
+        })
+    }
+    
+    @objc func animateRepeat1() {
+        print(1)
+        AnimationController.fadeTransition(self.label, for: 1.2)
+        self.label.text = "You Can !"
+    }
+    
+    @objc func animateRepeat2() {
+        print(2)
+        AnimationController.fadeTransition(self.label, for: 1.2)
+        self.label.text = "Can You ?"
     }
 
     override func didReceiveMemoryWarning() {
